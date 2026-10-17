@@ -2,26 +2,29 @@
 
 ## Diseño de Graduación de VLSI: Micro8088 (Síntesis → Place → CTS → Route)
 
-Tarea Final del curso **Introducción al Diseño de Circuitos Integrados**, Tecnológico de Costa Rica (TEC), II semestre 2025.
+Tarea Final del curso **Introducción al Diseño de Circuitos Integrados (VLSI)**, Instituto Tecnológico de Costa Rica (TEC), II semestre 2025.
 
 - **Autor:** Jeffrey Salas
 - **Profesor:** Ing. Kervin Sánchez, M.Sc.
 - **Diseño:** `Micro8088` (procesador 8088 descrito en Verilog, proporcionado por el profesor)
 - **Tecnología:** SAED 90 nm (`saed90nm_max.db`, `saed90nm_1p9m_1t_nominal.tluplus`)
-- **Herramientas:** Synopsys Design Compiler (`dc_shell`) para síntesis e IC Compiler II para place, CTS y route
+- **Herramientas:** Synopsys Design Compiler (`dc_shell`) para Síntesis e IC Compiler II para Place, CTS y Route
+
+## Layout obtenido Micro8088
+![](Project/layout.png)
 
 ---
 
 ## Descripción
 
-El objetivo es tomar un diseño, el procesador `Micro8088`, y llevarlo por el flujo completo de **síntesis, placement, CTS y routing**, generando reportes en cada etapa de optimización (`place_opt`, `clock_opt`, `route_opt`) y analizando cómo evolucionan las métricas del diseño.
+El objetivo es tomar un diseño, el procesador `Micro8088`, y llevarlo por el flujo completo de **síntesis, placement, CTS y routing**, generando reportes en cada etapa de optimización (`place_opt`, `clock_opt`, `route_opt`) y analizando cómo evolucionan las métricas del diseño, al final se obtiene el layout del diseño.
 
 El flujo se ejecutó en un servidor remoto. Este repositorio contiene únicamente los **scripts** y **reportes** del flujo, junto con el documento de entrega.
 
 ## Estructura del repositorio
 
 ```
-├── Tarea_Final_Entrega.pdf  # Documento de entrega (scripts, reportes, análisis)
+├── Tarea_Final_Entrega.pdf  # Documento de entrega (scripts, reportes, análisis y layout)
 └── Project/
     ├── SYN/
     │   ├── scripts/    # constraints.tcl, syn.tcl, syn_reports.tcl
@@ -31,7 +34,7 @@ El flujo se ejecutó en un servidor remoto. Este repositorio contiene únicament
         └── reports/    # Reportes por etapa: sin optimizar, place_opt, clock_opt, route_opt
 ```
 
-> **No se incluyen** los archivos Verilog del 8088, las bibliotecas (`.db`, `.ndb`, `.tluplus`) ni las bases de datos generadas (`.ddc`, `.ndm`).
+> **No se incluyen** los archivos Verilog del 8088 ni las bibliotecas (`.db`, `.tluplus`, `.ndb`), ni los archivos generados por las herramientas (`.ddc`, `.ndm`).
 
 ## Requisitos del enunciado y cómo se implementaron
 
@@ -64,14 +67,12 @@ Reloj de 1 ns, uncertainty de 0.05 ns, latencia 0, input/output delays (máx. 0.
 
 ### `PLACE/scripts/place_and_route.tcl`
 
-1. Crea la biblioteca de diseño (`diseno.ndm`) y lee la netlist sintetizada.
+1. Crea la biblioteca de diseño y de referencia (`diseno.ndm` y `my_ref_lib.ndb`), y lee la netlist sintetizada.
 2. Crea el floorplan (450 × 253) y el blockage de señales en M5–M9.
 3. Define el dominio de alimentación (`VDD`/`VSS`) y construye el power mesh en M5/M6.
 4. Carga constraints, coloca los pines y ejecuta el placement.
 5. Configura voltaje (0.70 V en VDD), parámetros parásiticos y reglas de ruteo del clock.
 6. Ejecuta `place_opt` → `clock_opt` → `route_global` / `route_auto` → `route_opt`.
-
-> `constraints.tcl` de PLACE es igual al de síntesis, salvo que no incluye la línea `set_max_fanout`.
 
 ## Resultados
 
@@ -120,7 +121,7 @@ Reloj de 1 ns, uncertainty de 0.05 ns, latencia 0, input/output delays (máx. 0.
 
 **Número de celdas de reloj.** La ruta crítica del grupo `CLK` tiene 75 niveles de lógica (QOR de `route_opt`).
 
-**Layout.** La figura del layout final se encuentra en `Tarea_Final_Entrega.pdf`. Los blockages de M5–M9 se hicieron transparentes en la vista de capas para poder observar el ruteo.
+**Layout.** Se muestra al inicio de este README y también se encuentra en `Tarea_Final_Entrega.pdf`. Los blockages de M5–M9 se hicieron transparentes en la vista de capas para poder observar el ruteo.
 
 ## Estado de convergencia
 
@@ -142,7 +143,7 @@ Project/
 
 1. Colocar en `SYN/source` los `.v` del `Micro8088` y en `SYN/libs` la biblioteca `saed90nm_max.db`.
 2. Desde `SYN/work`, ejecutar `dc_shell -f ../scripts/syn.tcl`.
-3. Copiar la netlist generada (`diseno.v`) a `PLACE/source` y las bibliotecas de referencia (`my_ref_lib.ndb`, `saed90nm_1p9m_1t_nominal.tluplus`, ...) a `PLACE/libs`.
+3. Copiar la netlist generada (`diseno.v`) a `PLACE/source` y las bibliotecas (`saed90nm_1p9m_1t_nominal.tluplus`) a `PLACE/libs`.
 4. Desde `PLACE/work`, ejecutar `icc2_shell -f ../scripts/place_and_route.tcl`.
 
 ## Créditos
