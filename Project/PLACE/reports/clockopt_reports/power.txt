@@ -1,0 +1,100 @@
+****************************************
+Report : power
+        -significant_digits 2
+Design : Micro8088
+Version: R-2020.09-SP6
+Date   : Wed Dec  3 19:33:39 2025
+****************************************
+Information: Activity propagation will be performed for scenario default.
+Information: Doing activity propagation for mode 'default' and corner 'default' with effort level 'medium'. (POW-024)
+Information: Timer-derived activity data is cached on scenario default (POW-052)
+Infomation: Fast mode activity propagation power.rtl_activity_annotation setup is ignored. Always use accurate mode.
+
+ **** Information : No. of simulation cycles = 7 ****
+Information: The stitching and editing of coupling caps is turned OFF for design 'diseno.ndm:diseno.design'. (TIM-125)
+Information: Design diseno has 11617 nets, 0 global routed, 11615 detail routed. (NEX-024)
+Information: The RC mode used is DR for design 'Micro8088'. (NEX-022)
+---extraction options---
+Corner: default
+ late_cap_scale                : 1.
+ late_res_scale                : 1.
+ early_cap_scale               : 1.
+ early_res_scale               : 1.
+Global options:
+ reference_direction       : use_from_tluplus
+ real_metalfill_extraction : none
+ virtual_shield_extraction : true
+---app options---
+ host.max_cores                   : 1
+ extract.connect_open           : true
+ extract.incremental_extraction : true
+ extract.enable_coupling_cap    : false
+Extracting design: diseno 
+Information: coupling capacitance is lumped to ground. (NEX-030)
+Information: 11615 nets are successfully extracted. (NEX-028)
+Warning: Advanced receiver model has not been enabled for detailed routed design. (TIM-204)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 11615, routed nets = 11615, across physical hierarchy nets = 0, parasitics cached nets = 11615, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+Mode: default
+Corner: default
+Scenario: default
+Voltage: 0.70
+Temperature: 125.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1fF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1pW
+Leakage Power Unit   : 1pW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+Warning: Power table extrapolation (extrapolation mode) for port Z on cell CDM/DDE/ZBUF_340_inst_1830 for parameter Cout. Lowest table value = 0.000100, highest table value = 0.048000, value = 0.067929 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Z on cell CDM/DDE/HFSBUF_1319_1714 for parameter Cout. Lowest table value = 0.000100, highest table value = 0.048000, value = 0.103528 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Z on cell CDM/DDE/HFSBUF_390_1661 for parameter Cout. Lowest table value = 0.000100, highest table value = 0.048000, value = 0.096392 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Z on cell CDM/DDE/HFSBUF_220_1684 for parameter Cout. Lowest table value = 0.000100, highest table value = 0.048000, value = 0.054045 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Z on cell CDM/DDE/ZBUF_476_inst_1916 for parameter Cout. Lowest table value = 0.000100, highest table value = 0.048000, value = 0.051893 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Z on cell CDM/DDE/HFSBUF_1821_1711 for parameter Cout. Lowest table value = 0.000100, highest table value = 0.048000, value = 0.087758 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Z on cell CDM/DDE/gre_mt_inst_24483 for parameter Cout. Lowest table value = 0.000100, highest table value = 0.048000, value = 0.061904 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Z on cell CDM/DDE/gre_mt_inst_24671 for parameter Cout. Lowest table value = 0.000100, highest table value = 0.048000, value = 0.050876 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Z on cell CDM/DDE/gre_mt_inst_24723 for parameter Cout. Lowest table value = 0.000100, highest table value = 0.048000, value = 0.049323 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Q on cell CDM/MDE_FCI_PRE_reg_2_ for parameter Cout. Lowest table value = 0.001000, highest table value = 0.208000, value = 0.000000 (POW-046)
+Warning: Fall toggles on pin MDM_ModInt_DIO_RegSal2_Q_reg_8_/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin MDM_ModInt_BanInt_RegES_Q_reg_4_/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin MDM_ModInt_BanInt_RegSS_Q_reg_4_/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin MDM_ModInt_BanInt_RegDS_Q_reg_4_/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin MDM_ModInt_DIO_RegSal2_Q_reg_4_/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin MDM_ModInt_BanInt_RegES_Q_reg_3_/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin MDM_ModInt_DIO_RegSal2_Q_reg_3_/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin MDM_ModInt_BanInt_RegES_Q_reg_2_/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin MDM_ModInt_BanInt_RegDS_Q_reg_2_/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin MDM_ModInt_BanInt_RegES_Q_reg_1_/QN are impossible given input states; converted to rise toggles. (POW-069)
+
+  Cell Internal Power    = 1.50e+09 pW ( 58.7%)
+  Net Switching Power    = 1.05e+09 pW ( 41.3%)
+Total Dynamic Power      = 2.55e+09 pW (100.0%)
+
+Cell Leakage Power       = 5.36e+08 pW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+memory                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+black_box                 0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+clock_network             1.19e+09               8.40e+08               5.01e+06               2.03e+09    ( 65.8%)         
+register                  5.60e+06               1.14e+07               6.17e+07               7.87e+07    (  2.5%)         
+sequential                0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+combinational             3.06e+08               2.02e+08               4.70e+08               9.77e+08    ( 31.6%)         
+-----------------------------------------------------------------------------------------------------------------------------
+Total                     1.50e+09 pW            1.05e+09 pW            5.36e+08 pW            3.09e+09 pW
+1

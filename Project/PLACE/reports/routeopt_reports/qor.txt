@@ -1,0 +1,107 @@
+****************************************
+Report : qor
+Design : Micro8088
+Version: R-2020.09-SP6
+Date   : Wed Dec  3 19:39:55 2025
+****************************************
+
+
+Scenario           'default'
+Timing Path Group  '**in2reg_default**'
+----------------------------------------
+Levels of Logic:                     10
+Critical Path Length:              1.42
+Critical Path Slack:              -1.14
+Critical Path Clk Period:          1.00
+Total Negative Slack:            -17.90
+No. of Violating Paths:              41
+Worst Hold Violation:             -1.05
+Total Hold Violation:             -6.91
+No. of Hold Violations:              28
+----------------------------------------
+
+Scenario           'default'
+Timing Path Group  '**reg2out_default**'
+----------------------------------------
+Levels of Logic:                     61
+Critical Path Length:             11.81
+Critical Path Slack:             -10.73
+Critical Path Clk Period:          1.00
+Total Negative Slack:           -228.52
+No. of Violating Paths:              33
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'default'
+Timing Path Group  'CLK'
+----------------------------------------
+Levels of Logic:                     73
+Critical Path Length:             16.50
+Critical Path Slack:             -15.73
+Critical Path Clk Period:          1.00
+Total Negative Slack:          -6455.97
+No. of Violating Paths:             626
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:              6
+Hierarchical Port Count:            536
+Leaf Cell Count:                  11144
+Buf/Inv Cell Count:                3681
+Buf Cell Count:                    2252
+Inv Cell Count:                    1429
+CT Buf/Inv Cell Count:                0
+Combinational Cell Count:         10534
+   Single-bit Isolation Cell Count:                        0
+   Multi-bit Isolation Cell Count:                         0
+   Isolation Cell Banking Ratio:                           0.00%
+   Single-bit Level Shifter Cell Count:                    0
+   Multi-bit Level Shifter Cell Count:                     0
+   Level Shifter Cell Banking Ratio:                       0.00%
+   Single-bit ELS Cell Count:                              0
+   Multi-bit ELS Cell Count:                               0
+   ELS Cell Banking Ratio:                                 0.00%
+Sequential Cell Count:              610
+   Integrated Clock-Gating Cell Count:                     0
+   Sequential Macro Cell Count:                            0
+   Single-bit Sequential Cell Count:                       610
+   Multi-bit Sequential Cell Count:                        0
+   Sequential Cell Banking Ratio:                          0.00%
+   BitsPerflop:                                            1.00
+Macro Count:                          0
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:            90267.96
+Noncombinational Area:         19976.60
+Buf/Inv Area:                  25743.05
+Total Buffer Area:             15906.82
+Total Inverter Area:            9836.24
+Macro/Black Box Area:              0.00
+Net Area:                             0
+Net XLength:                  182462.78
+Net YLength:                  132270.01
+----------------------------------------
+Cell Area (netlist):                         110244.56
+Cell Area (netlist and physical only):       110244.56
+Net Length:                   314732.79
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:             11686
+Nets with Violations:              1321
+Max Trans Violations:              1229
+Max Cap Violations:                 115
+----------------------------------------
+
+1

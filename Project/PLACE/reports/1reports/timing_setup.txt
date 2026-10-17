@@ -1,0 +1,2780 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 20
+        -report_by design
+Design : Micro8088
+Version: R-2020.09-SP6
+Date   : Wed Dec  3 18:15:47 2025
+****************************************
+
+  Startpoint: MDM_ModEje_RegInst_Q_reg_41_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: MDM_ModInt_regIP_REGIP_Q_reg_15_ (falling edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  MDM_ModEje_RegInst_Q_reg_41_/CLK (DFFARX2)       0.00      0.00 r
+  MDM_ModEje_RegInst_Q_reg_41_/QN (DFFARX2)        0.48      0.48 f
+  U668/ZN (INVX0)                                  0.44      0.93 r
+  U1261/ZN (INVX0)                                 0.33      1.25 f
+  U667/ZN (INVX0)                                  0.17      1.42 r
+  CDM/U126/QN (AOI22X1)                            0.44      1.87 f
+  CDM/U128/ZN (INVX0)                              0.22      2.08 r
+  CDM/U80/ZN (INVX0)                               0.24      2.32 f
+  CDM/U275/ZN (INVX0)                              0.10      2.42 r
+  CDM/U276/ZN (INVX0)                              0.18      2.60 f
+  CDM/U362/QN (NAND2X0)                            0.18      2.78 r
+  CDM/U68/ZN (INVX0)                               0.17      2.95 f
+  CDM/U70/ZN (INVX0)                               0.15      3.10 r
+  CDM/U854/ZN (INVX0)                              0.12      3.22 f
+  CDM/U456/QN (NAND2X0)                            0.16      3.38 r
+  CDM/U21/QN (NAND2X1)                             0.19      3.57 f
+  CDM/U383/QN (NOR4X1)                             0.37      3.94 r
+  CDM/U90/QN (NAND2X1)                             0.30      4.24 f
+  CDM/U445/ZN (INVX0)                              0.15      4.39 r
+  CDM/U87/ZN (INVX1)                               0.12      4.51 f
+  CDM/U440/ZN (INVX0)                              0.16      4.67 r
+  CDM/U153/ZN (INVX0)                              0.16      4.83 f
+  CDM/U49/Q (AND2X2)                               0.25      5.08 f
+  CDM/U50/ZN (INVX0)                               0.09      5.17 r
+  CDM/U649/Q (OR2X1)                               0.22      5.39 r
+  CDM/U666/ZN (INVX0)                              0.12      5.51 f
+  CDM/U242/QN (NAND2X1)                            0.12      5.63 r
+  CDM/U610/Q (AND4X1)                              0.42      6.05 r
+  CDM/U147/Q (AND2X2)                              0.28      6.33 r
+  CDM/U98/QN (NAND2X0)                             0.38      6.71 f
+  CDM/DDE/U52/ZN (INVX0)                           0.36      7.07 r
+  CDM/DDE/U237/ZN (INVX0)                          0.29      7.36 f
+  CDM/DDE/U527/ZN (INVX0)                          0.19      7.55 r
+  CDM/DDE/U304/ZN (INVX0)                          0.17      7.71 f
+  CDM/DDE/U164/ZN (INVX0)                          0.23      7.94 r
+  CDM/DDE/U529/ZN (INVX0)                          0.31      8.25 f
+  CDM/DDE/U109/ZN (INVX1)                          0.18      8.43 r
+  CDM/DDE/U703/Q (OR2X1)                           0.29      8.72 r
+  CDM/DDE/U208/ZN (INVX0)                          0.13      8.85 f
+  CDM/DDE/U291/ZN (INVX0)                          0.08      8.93 r
+  CDM/DDE/U209/Q (AND2X1)                          0.20      9.13 r
+  CDM/DDE/U279/QN (NAND2X0)                        0.28      9.41 f
+  CDM/DDE/U289/ZN (INVX0)                          0.19      9.61 r
+  CDM/DDE/U247/QN (NAND2X0)                        0.19      9.80 f
+  CDM/DDE/U246/QN (NOR2X0)                         0.19      9.99 r
+  CDM/DDE/U210/QN (NAND3X1)                        0.54     10.53 f
+  MDM_ModEje_mALU/U1538/Z (NBUFFX2)                0.24     10.77 f
+  MDM_ModEje_mALU/U732/ZN (INVX1)                  0.15     10.92 r
+  MDM_ModEje_mALU/U1665/ZN (INVX0)                 0.27     11.19 f
+  MDM_ModEje_mALU/U998/Q (AND2X2)                  0.33     11.52 f
+  MDM_ModEje_mALU/U1007/ZN (INVX1)                 0.18     11.69 r
+  MDM_ModEje_mALU/U181/QN (NAND3X2)                0.43     12.12 f
+  MDM_ModEje_mALU/U1730/QN (NAND2X1)               0.11     12.23 r
+  MDM_ModEje_mALU/U1746/QN (NAND2X1)               0.18     12.41 f
+  MDM_ModEje_mALU/U1783/Q (AND2X1)                 0.24     12.65 f
+  MDM_ModEje_mALU/U1784/ZN (INVX0)                 0.13     12.78 r
+  MDM_ModEje_mALU/U1785/Q (OA22X1)                 0.35     13.13 r
+  MDM_ModEje_mALU/U670/Q (OR2X1)                   0.21     13.34 r
+  MDM_ModEje_mALU/U952/ZN (INVX0)                  0.11     13.45 f
+  MDM_ModEje_mALU/U102/QN (NOR2X2)                 0.10     13.55 r
+  MDM_ModEje_mALU/U94/Q (AND4X1)                   0.37     13.92 r
+  MDM_ModEje_mALU/U95/ZN (INVX0)                   0.11     14.03 f
+  MDM_ModEje_mALU/U255/Q (OR2X2)                   0.23     14.26 f
+  MDM_ModEje_mALU/U1884/QN (NOR2X0)                0.13     14.38 r
+  MDM_ModEje_mALU/U1134/ZN (INVX0)                 0.14     14.53 f
+  MDM_ModEje_mALU/U1135/ZN (INVX0)                 0.09     14.61 r
+  MDM_ModEje_mALU/U1925/Q (AND2X1)                 0.24     14.86 r
+  MDM_ModEje_mALU/U1989/QN (NAND2X1)               0.15     15.00 f
+  MDM_ModEje_mALU/U1990/Q (OA21X1)                 0.32     15.33 f
+  MDM_ModEje_mALU/U1991/ZN (INVX0)                 0.28     15.61 r
+  MDM_ModEje_mALU/U1372/ZN (INVX1)                 0.31     15.92 f
+  MDM_ModEje_mALU/U595/Q (XNOR2X1)                 0.45     16.37 r
+  MDM_ModEje_mALU/U158/QN (OAI22X2)                0.40     16.77 f
+  MDM_ModEje_mALU/U2062/S (FADDX1)                 0.49     17.26 f
+  MDM_ModEje_mALU/U2063/S (FADDX1)                 0.47     17.73 f
+  MDM_ModEje_mALU/U295/ZN (INVX0)                  0.10     17.83 r
+  MDM_ModEje_mALU/U296/ZN (INVX0)                  0.09     17.92 f
+  MDM_ModEje_mALU/U2065/QN (NOR2X0)                0.13     18.05 r
+  MDM_ModEje_mALU/U2066/ZN (INVX0)                 0.14     18.18 f
+  MDM_ModEje_mALU/U265/QN (NAND2X0)                0.16     18.35 r
+  MDM_ModEje_mALU/U2067/QN (NOR2X0)                0.17     18.52 f
+  MDM_ModEje_mALU/U214/Q (AND2X1)                  0.23     18.75 f
+  MDM_ModEje_mALU/U215/QN (NOR2X1)                 0.15     18.90 r
+  MDM_ModEje_mALU/U236/ZN (INVX0)                  0.15     19.06 f
+  MDM_ModEje_mALU/U237/ZN (INVX0)                  0.12     19.18 r
+  MDM_ModEje_mALU/U814/QN (OAI21X1)                0.40     19.58 f
+  MDM_ModEje_mALU/U2522/ZN (INVX0)                 0.22     19.80 r
+  MDM_ModEje_mALU/U109/QN (OAI21X2)                0.44     20.24 f
+  MDM_ModEje_mALU/U2541/Q (XNOR2X1)                0.44     20.68 f
+  MDM_ModEje_mALU/U2542/Q (AND2X1)                 0.25     20.94 f
+  MDM_ModEje_mALU/U520/QN (NOR2X0)                 0.24     21.18 r
+  MDM_ModEje_mALU/U1647/QN (NAND2X0)               0.24     21.41 f
+  MDM_ModEje_mALU/U3092/Q (OR2X1)                  0.27     21.68 f
+  MDM_ModEje_mALU/U3093/ZN (INVX0)                 0.11     21.80 r
+  MDM_ModEje_mALU/U1029/Q (AND2X1)                 0.26     22.06 r
+  MDM_ModEje_mALU/U227/QN (NAND2X1)                0.13     22.19 f
+  MDM_ModEje_mALU/U1078/ZN (INVX0)                 0.11     22.30 r
+  MDM_ModEje_mALU/U1079/ZN (INVX0)                 0.16     22.46 f
+  MDM_ModEje_mALU/U13/Q (OR3X2)                    0.30     22.76 f
+  MDM_ModEje_mALU/U3104/Q (MUX21X1)                0.26     23.02 f
+  MDM_ModEje_mALU/U3105/Q (OA21X1)                 0.25     23.27 f
+  U1784/QN (NAND2X0)                               0.13     23.40 r
+  U3184/Q (AND3X1)                                 0.34     23.74 r
+  U984/Q (AND3X1)                                  0.43     24.17 r
+  U1993/ZN (INVX0)                                 0.34     24.50 f
+  U715/QN (NAND2X0)                                0.18     24.68 r
+  U291/QN (OAI21X1)                                0.32     25.01 f
+  U1624/Q (AO21X1)                                 0.20     25.20 f
+  MDM_ModInt_regIP_REGIP_Q_reg_15_/D (DFFNARX2)    0.00     25.20 f
+  data arrival time                                         25.20
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModInt_regIP_REGIP_Q_reg_15_/CLK (DFFNARX2)
+                                                   0.00      0.50 f
+  clock uncertainty                               -0.05      0.45
+  library setup time                              -0.27      0.18
+  data required time                                         0.18
+  ------------------------------------------------------------------------
+  data required time                                         0.18
+  data arrival time                                        -25.20
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -25.02
+
+
+
+  Startpoint: MDM_ModEje_RegInst_Q_reg_41_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: MDM_ModEje_mALU/REGA_Q_reg_15_ (falling edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  MDM_ModEje_RegInst_Q_reg_41_/CLK (DFFARX2)       0.00      0.00 r
+  MDM_ModEje_RegInst_Q_reg_41_/QN (DFFARX2)        0.48      0.48 f
+  U668/ZN (INVX0)                                  0.44      0.93 r
+  U1261/ZN (INVX0)                                 0.33      1.25 f
+  U667/ZN (INVX0)                                  0.17      1.42 r
+  CDM/U126/QN (AOI22X1)                            0.44      1.87 f
+  CDM/U128/ZN (INVX0)                              0.22      2.08 r
+  CDM/U80/ZN (INVX0)                               0.24      2.32 f
+  CDM/U275/ZN (INVX0)                              0.10      2.42 r
+  CDM/U276/ZN (INVX0)                              0.18      2.60 f
+  CDM/U362/QN (NAND2X0)                            0.18      2.78 r
+  CDM/U68/ZN (INVX0)                               0.17      2.95 f
+  CDM/U70/ZN (INVX0)                               0.15      3.10 r
+  CDM/U854/ZN (INVX0)                              0.12      3.22 f
+  CDM/U456/QN (NAND2X0)                            0.16      3.38 r
+  CDM/U21/QN (NAND2X1)                             0.19      3.57 f
+  CDM/U383/QN (NOR4X1)                             0.37      3.94 r
+  CDM/U90/QN (NAND2X1)                             0.30      4.24 f
+  CDM/U445/ZN (INVX0)                              0.15      4.39 r
+  CDM/U87/ZN (INVX1)                               0.12      4.51 f
+  CDM/U440/ZN (INVX0)                              0.16      4.67 r
+  CDM/U153/ZN (INVX0)                              0.16      4.83 f
+  CDM/U49/Q (AND2X2)                               0.25      5.08 f
+  CDM/U50/ZN (INVX0)                               0.09      5.17 r
+  CDM/U649/Q (OR2X1)                               0.22      5.39 r
+  CDM/U666/ZN (INVX0)                              0.12      5.51 f
+  CDM/U242/QN (NAND2X1)                            0.12      5.63 r
+  CDM/U610/Q (AND4X1)                              0.42      6.05 r
+  CDM/U147/Q (AND2X2)                              0.28      6.33 r
+  CDM/U98/QN (NAND2X0)                             0.38      6.71 f
+  CDM/DDE/U52/ZN (INVX0)                           0.36      7.07 r
+  CDM/DDE/U237/ZN (INVX0)                          0.29      7.36 f
+  CDM/DDE/U527/ZN (INVX0)                          0.19      7.55 r
+  CDM/DDE/U304/ZN (INVX0)                          0.17      7.71 f
+  CDM/DDE/U164/ZN (INVX0)                          0.23      7.94 r
+  CDM/DDE/U529/ZN (INVX0)                          0.31      8.25 f
+  CDM/DDE/U109/ZN (INVX1)                          0.18      8.43 r
+  CDM/DDE/U703/Q (OR2X1)                           0.29      8.72 r
+  CDM/DDE/U208/ZN (INVX0)                          0.13      8.85 f
+  CDM/DDE/U291/ZN (INVX0)                          0.08      8.93 r
+  CDM/DDE/U209/Q (AND2X1)                          0.20      9.13 r
+  CDM/DDE/U279/QN (NAND2X0)                        0.28      9.41 f
+  CDM/DDE/U289/ZN (INVX0)                          0.19      9.61 r
+  CDM/DDE/U247/QN (NAND2X0)                        0.19      9.80 f
+  CDM/DDE/U246/QN (NOR2X0)                         0.19      9.99 r
+  CDM/DDE/U210/QN (NAND3X1)                        0.54     10.53 f
+  MDM_ModEje_mALU/U1538/Z (NBUFFX2)                0.24     10.77 f
+  MDM_ModEje_mALU/U732/ZN (INVX1)                  0.15     10.92 r
+  MDM_ModEje_mALU/U1665/ZN (INVX0)                 0.27     11.19 f
+  MDM_ModEje_mALU/U998/Q (AND2X2)                  0.33     11.52 f
+  MDM_ModEje_mALU/U1007/ZN (INVX1)                 0.18     11.69 r
+  MDM_ModEje_mALU/U181/QN (NAND3X2)                0.43     12.12 f
+  MDM_ModEje_mALU/U1730/QN (NAND2X1)               0.11     12.23 r
+  MDM_ModEje_mALU/U1746/QN (NAND2X1)               0.18     12.41 f
+  MDM_ModEje_mALU/U1783/Q (AND2X1)                 0.24     12.65 f
+  MDM_ModEje_mALU/U1784/ZN (INVX0)                 0.13     12.78 r
+  MDM_ModEje_mALU/U1785/Q (OA22X1)                 0.35     13.13 r
+  MDM_ModEje_mALU/U670/Q (OR2X1)                   0.21     13.34 r
+  MDM_ModEje_mALU/U952/ZN (INVX0)                  0.11     13.45 f
+  MDM_ModEje_mALU/U102/QN (NOR2X2)                 0.10     13.55 r
+  MDM_ModEje_mALU/U94/Q (AND4X1)                   0.37     13.92 r
+  MDM_ModEje_mALU/U95/ZN (INVX0)                   0.11     14.03 f
+  MDM_ModEje_mALU/U255/Q (OR2X2)                   0.23     14.26 f
+  MDM_ModEje_mALU/U1884/QN (NOR2X0)                0.13     14.38 r
+  MDM_ModEje_mALU/U1134/ZN (INVX0)                 0.14     14.53 f
+  MDM_ModEje_mALU/U1135/ZN (INVX0)                 0.09     14.61 r
+  MDM_ModEje_mALU/U1925/Q (AND2X1)                 0.24     14.86 r
+  MDM_ModEje_mALU/U1989/QN (NAND2X1)               0.15     15.00 f
+  MDM_ModEje_mALU/U1990/Q (OA21X1)                 0.32     15.33 f
+  MDM_ModEje_mALU/U1991/ZN (INVX0)                 0.28     15.61 r
+  MDM_ModEje_mALU/U1372/ZN (INVX1)                 0.31     15.92 f
+  MDM_ModEje_mALU/U595/Q (XNOR2X1)                 0.45     16.37 r
+  MDM_ModEje_mALU/U158/QN (OAI22X2)                0.40     16.77 f
+  MDM_ModEje_mALU/U2062/S (FADDX1)                 0.49     17.26 f
+  MDM_ModEje_mALU/U2063/S (FADDX1)                 0.47     17.73 f
+  MDM_ModEje_mALU/U295/ZN (INVX0)                  0.10     17.83 r
+  MDM_ModEje_mALU/U296/ZN (INVX0)                  0.09     17.92 f
+  MDM_ModEje_mALU/U2065/QN (NOR2X0)                0.13     18.05 r
+  MDM_ModEje_mALU/U2066/ZN (INVX0)                 0.14     18.18 f
+  MDM_ModEje_mALU/U265/QN (NAND2X0)                0.16     18.35 r
+  MDM_ModEje_mALU/U2067/QN (NOR2X0)                0.17     18.52 f
+  MDM_ModEje_mALU/U214/Q (AND2X1)                  0.23     18.75 f
+  MDM_ModEje_mALU/U215/QN (NOR2X1)                 0.15     18.90 r
+  MDM_ModEje_mALU/U236/ZN (INVX0)                  0.15     19.06 f
+  MDM_ModEje_mALU/U237/ZN (INVX0)                  0.12     19.18 r
+  MDM_ModEje_mALU/U814/QN (OAI21X1)                0.40     19.58 f
+  MDM_ModEje_mALU/U2522/ZN (INVX0)                 0.22     19.80 r
+  MDM_ModEje_mALU/U109/QN (OAI21X2)                0.44     20.24 f
+  MDM_ModEje_mALU/U2541/Q (XNOR2X1)                0.44     20.68 f
+  MDM_ModEje_mALU/U2542/Q (AND2X1)                 0.25     20.94 f
+  MDM_ModEje_mALU/U520/QN (NOR2X0)                 0.24     21.18 r
+  MDM_ModEje_mALU/U1647/QN (NAND2X0)               0.24     21.41 f
+  MDM_ModEje_mALU/U3092/Q (OR2X1)                  0.27     21.68 f
+  MDM_ModEje_mALU/U3093/ZN (INVX0)                 0.11     21.80 r
+  MDM_ModEje_mALU/U1029/Q (AND2X1)                 0.26     22.06 r
+  MDM_ModEje_mALU/U227/QN (NAND2X1)                0.13     22.19 f
+  MDM_ModEje_mALU/U1078/ZN (INVX0)                 0.11     22.30 r
+  MDM_ModEje_mALU/U1079/ZN (INVX0)                 0.16     22.46 f
+  MDM_ModEje_mALU/U13/Q (OR3X2)                    0.30     22.76 f
+  MDM_ModEje_mALU/U3104/Q (MUX21X1)                0.26     23.02 f
+  MDM_ModEje_mALU/U3105/Q (OA21X1)                 0.25     23.27 f
+  U1784/QN (NAND2X0)                               0.13     23.40 r
+  U3184/Q (AND3X1)                                 0.34     23.74 r
+  U984/Q (AND3X1)                                  0.43     24.17 r
+  U2102/ZN (INVX0)                                 0.34     24.51 f
+  MDM_ModEje_mALU/U1537/Z (NBUFFX2)                0.27     24.78 f
+  MDM_ModEje_mALU/U1556/QN (NAND2X0)               0.11     24.89 r
+  MDM_ModEje_mALU/U1555/QN (NAND2X0)               0.15     25.04 f
+  MDM_ModEje_mALU/REGA_Q_reg_15_/D (DFFNARX1)      0.00     25.04 f
+  data arrival time                                         25.04
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModEje_mALU/REGA_Q_reg_15_/CLK (DFFNARX1)    0.00      0.50 f
+  clock uncertainty                               -0.05      0.45
+  library setup time                              -0.35      0.10
+  data required time                                         0.10
+  ------------------------------------------------------------------------
+  data required time                                         0.10
+  data arrival time                                        -25.04
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -24.95
+
+
+
+  Startpoint: MDM_ModEje_RegInst_Q_reg_41_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: MDM_ModEje_mALU/REGF10_Q_reg (falling edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  MDM_ModEje_RegInst_Q_reg_41_/CLK (DFFARX2)       0.00      0.00 r
+  MDM_ModEje_RegInst_Q_reg_41_/QN (DFFARX2)        0.48      0.48 f
+  U668/ZN (INVX0)                                  0.44      0.93 r
+  U1261/ZN (INVX0)                                 0.33      1.25 f
+  U667/ZN (INVX0)                                  0.17      1.42 r
+  CDM/U126/QN (AOI22X1)                            0.44      1.87 f
+  CDM/U128/ZN (INVX0)                              0.22      2.08 r
+  CDM/U80/ZN (INVX0)                               0.24      2.32 f
+  CDM/U275/ZN (INVX0)                              0.10      2.42 r
+  CDM/U276/ZN (INVX0)                              0.18      2.60 f
+  CDM/U362/QN (NAND2X0)                            0.18      2.78 r
+  CDM/U68/ZN (INVX0)                               0.17      2.95 f
+  CDM/U70/ZN (INVX0)                               0.15      3.10 r
+  CDM/U854/ZN (INVX0)                              0.12      3.22 f
+  CDM/U456/QN (NAND2X0)                            0.16      3.38 r
+  CDM/U21/QN (NAND2X1)                             0.19      3.57 f
+  CDM/U383/QN (NOR4X1)                             0.37      3.94 r
+  CDM/U90/QN (NAND2X1)                             0.30      4.24 f
+  CDM/U445/ZN (INVX0)                              0.15      4.39 r
+  CDM/U87/ZN (INVX1)                               0.12      4.51 f
+  CDM/U440/ZN (INVX0)                              0.16      4.67 r
+  CDM/U153/ZN (INVX0)                              0.16      4.83 f
+  CDM/U49/Q (AND2X2)                               0.25      5.08 f
+  CDM/U50/ZN (INVX0)                               0.09      5.17 r
+  CDM/U649/Q (OR2X1)                               0.22      5.39 r
+  CDM/U666/ZN (INVX0)                              0.12      5.51 f
+  CDM/U242/QN (NAND2X1)                            0.12      5.63 r
+  CDM/U610/Q (AND4X1)                              0.42      6.05 r
+  CDM/U147/Q (AND2X2)                              0.28      6.33 r
+  CDM/U98/QN (NAND2X0)                             0.38      6.71 f
+  CDM/DDE/U52/ZN (INVX0)                           0.36      7.07 r
+  CDM/DDE/U237/ZN (INVX0)                          0.29      7.36 f
+  CDM/DDE/U527/ZN (INVX0)                          0.19      7.55 r
+  CDM/DDE/U304/ZN (INVX0)                          0.17      7.71 f
+  CDM/DDE/U164/ZN (INVX0)                          0.23      7.94 r
+  CDM/DDE/U529/ZN (INVX0)                          0.31      8.25 f
+  CDM/DDE/U109/ZN (INVX1)                          0.18      8.43 r
+  CDM/DDE/U703/Q (OR2X1)                           0.29      8.72 r
+  CDM/DDE/U208/ZN (INVX0)                          0.13      8.85 f
+  CDM/DDE/U291/ZN (INVX0)                          0.08      8.93 r
+  CDM/DDE/U209/Q (AND2X1)                          0.20      9.13 r
+  CDM/DDE/U279/QN (NAND2X0)                        0.28      9.41 f
+  CDM/DDE/U289/ZN (INVX0)                          0.19      9.61 r
+  CDM/DDE/U247/QN (NAND2X0)                        0.19      9.80 f
+  CDM/DDE/U246/QN (NOR2X0)                         0.19      9.99 r
+  CDM/DDE/U210/QN (NAND3X1)                        0.54     10.53 f
+  MDM_ModEje_mALU/U1538/Z (NBUFFX2)                0.24     10.77 f
+  MDM_ModEje_mALU/U732/ZN (INVX1)                  0.15     10.92 r
+  MDM_ModEje_mALU/U1665/ZN (INVX0)                 0.27     11.19 f
+  MDM_ModEje_mALU/U998/Q (AND2X2)                  0.33     11.52 f
+  MDM_ModEje_mALU/U1007/ZN (INVX1)                 0.18     11.69 r
+  MDM_ModEje_mALU/U181/QN (NAND3X2)                0.43     12.12 f
+  MDM_ModEje_mALU/U1730/QN (NAND2X1)               0.11     12.23 r
+  MDM_ModEje_mALU/U1746/QN (NAND2X1)               0.18     12.41 f
+  MDM_ModEje_mALU/U1783/Q (AND2X1)                 0.24     12.65 f
+  MDM_ModEje_mALU/U1784/ZN (INVX0)                 0.13     12.78 r
+  MDM_ModEje_mALU/U1785/Q (OA22X1)                 0.35     13.13 r
+  MDM_ModEje_mALU/U670/Q (OR2X1)                   0.21     13.34 r
+  MDM_ModEje_mALU/U952/ZN (INVX0)                  0.11     13.45 f
+  MDM_ModEje_mALU/U102/QN (NOR2X2)                 0.10     13.55 r
+  MDM_ModEje_mALU/U94/Q (AND4X1)                   0.37     13.92 r
+  MDM_ModEje_mALU/U95/ZN (INVX0)                   0.11     14.03 f
+  MDM_ModEje_mALU/U255/Q (OR2X2)                   0.23     14.26 f
+  MDM_ModEje_mALU/U1884/QN (NOR2X0)                0.13     14.38 r
+  MDM_ModEje_mALU/U1134/ZN (INVX0)                 0.14     14.53 f
+  MDM_ModEje_mALU/U1135/ZN (INVX0)                 0.09     14.61 r
+  MDM_ModEje_mALU/U1925/Q (AND2X1)                 0.24     14.86 r
+  MDM_ModEje_mALU/U1989/QN (NAND2X1)               0.15     15.00 f
+  MDM_ModEje_mALU/U1990/Q (OA21X1)                 0.32     15.33 f
+  MDM_ModEje_mALU/U1991/ZN (INVX0)                 0.28     15.61 r
+  MDM_ModEje_mALU/U1372/ZN (INVX1)                 0.31     15.92 f
+  MDM_ModEje_mALU/U595/Q (XNOR2X1)                 0.45     16.37 r
+  MDM_ModEje_mALU/U158/QN (OAI22X2)                0.40     16.77 f
+  MDM_ModEje_mALU/U2062/S (FADDX1)                 0.49     17.26 f
+  MDM_ModEje_mALU/U2063/S (FADDX1)                 0.47     17.73 f
+  MDM_ModEje_mALU/U295/ZN (INVX0)                  0.10     17.83 r
+  MDM_ModEje_mALU/U296/ZN (INVX0)                  0.09     17.92 f
+  MDM_ModEje_mALU/U2065/QN (NOR2X0)                0.13     18.05 r
+  MDM_ModEje_mALU/U2066/ZN (INVX0)                 0.14     18.18 f
+  MDM_ModEje_mALU/U265/QN (NAND2X0)                0.16     18.35 r
+  MDM_ModEje_mALU/U2067/QN (NOR2X0)                0.17     18.52 f
+  MDM_ModEje_mALU/U214/Q (AND2X1)                  0.23     18.75 f
+  MDM_ModEje_mALU/U215/QN (NOR2X1)                 0.15     18.90 r
+  MDM_ModEje_mALU/U236/ZN (INVX0)                  0.15     19.06 f
+  MDM_ModEje_mALU/U237/ZN (INVX0)                  0.12     19.18 r
+  MDM_ModEje_mALU/U814/QN (OAI21X1)                0.40     19.58 f
+  MDM_ModEje_mALU/U2522/ZN (INVX0)                 0.22     19.80 r
+  MDM_ModEje_mALU/U109/QN (OAI21X2)                0.44     20.24 f
+  MDM_ModEje_mALU/U2541/Q (XNOR2X1)                0.44     20.68 f
+  MDM_ModEje_mALU/U2542/Q (AND2X1)                 0.25     20.94 f
+  MDM_ModEje_mALU/U520/QN (NOR2X0)                 0.24     21.18 r
+  MDM_ModEje_mALU/U1647/QN (NAND2X0)               0.24     21.41 f
+  MDM_ModEje_mALU/U3092/Q (OR2X1)                  0.27     21.68 f
+  MDM_ModEje_mALU/U3093/ZN (INVX0)                 0.11     21.80 r
+  MDM_ModEje_mALU/U1029/Q (AND2X1)                 0.26     22.06 r
+  MDM_ModEje_mALU/U1545/ZN (INVX0)                 0.10     22.17 f
+  MDM_ModEje_mALU/U335/ZN (INVX0)                  0.10     22.26 r
+  MDM_ModEje_mALU/U334/ZN (INVX0)                  0.11     22.37 f
+  MDM_ModEje_mALU/U3582/Q (OA22X1)                 0.27     22.64 f
+  MDM_ModEje_mALU/U3583/Q (AND2X1)                 0.23     22.87 f
+  U2185/QN (NAND2X0)                               0.12     22.98 r
+  U1669/QN (NAND2X0)                               0.19     23.18 f
+  U3149/QN (AOI21X1)                               0.29     23.47 r
+  U3150/Q (AND2X1)                                 0.26     23.72 r
+  U2465/Z (NBUFFX2)                                0.20     23.92 r
+  U3151/ZN (INVX0)                                 0.20     24.12 f
+  MDM_ModEje_mALU/U1035/ZN (INVX0)                 0.13     24.25 r
+  MDM_ModEje_mALU/U1036/ZN (INVX0)                 0.28     24.53 f
+  MDM_ModEje_mALU/U1543/QN (NAND2X0)               0.23     24.76 r
+  MDM_ModEje_mALU/U1540/QN (NAND2X0)               0.22     24.99 f
+  MDM_ModEje_mALU/REGF10_Q_reg/D (DFFNARX1)        0.00     24.99 f
+  data arrival time                                         24.99
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModEje_mALU/REGF10_Q_reg/CLK (DFFNARX1)      0.00      0.50 f
+  clock uncertainty                               -0.05      0.45
+  library setup time                              -0.38      0.07
+  data required time                                         0.07
+  ------------------------------------------------------------------------
+  data required time                                         0.07
+  data arrival time                                        -24.99
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -24.92
+
+
+
+  Startpoint: MDM_ModEje_RegInst_Q_reg_41_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: MDM_ModEje_mALU/REGD_Q_reg_15_ (falling edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  MDM_ModEje_RegInst_Q_reg_41_/CLK (DFFARX2)       0.00      0.00 r
+  MDM_ModEje_RegInst_Q_reg_41_/QN (DFFARX2)        0.48      0.48 f
+  U668/ZN (INVX0)                                  0.44      0.93 r
+  U1261/ZN (INVX0)                                 0.33      1.25 f
+  U667/ZN (INVX0)                                  0.17      1.42 r
+  CDM/U126/QN (AOI22X1)                            0.44      1.87 f
+  CDM/U128/ZN (INVX0)                              0.22      2.08 r
+  CDM/U80/ZN (INVX0)                               0.24      2.32 f
+  CDM/U275/ZN (INVX0)                              0.10      2.42 r
+  CDM/U276/ZN (INVX0)                              0.18      2.60 f
+  CDM/U362/QN (NAND2X0)                            0.18      2.78 r
+  CDM/U68/ZN (INVX0)                               0.17      2.95 f
+  CDM/U70/ZN (INVX0)                               0.15      3.10 r
+  CDM/U854/ZN (INVX0)                              0.12      3.22 f
+  CDM/U456/QN (NAND2X0)                            0.16      3.38 r
+  CDM/U21/QN (NAND2X1)                             0.19      3.57 f
+  CDM/U383/QN (NOR4X1)                             0.37      3.94 r
+  CDM/U90/QN (NAND2X1)                             0.30      4.24 f
+  CDM/U445/ZN (INVX0)                              0.15      4.39 r
+  CDM/U87/ZN (INVX1)                               0.12      4.51 f
+  CDM/U440/ZN (INVX0)                              0.16      4.67 r
+  CDM/U153/ZN (INVX0)                              0.16      4.83 f
+  CDM/U49/Q (AND2X2)                               0.25      5.08 f
+  CDM/U50/ZN (INVX0)                               0.09      5.17 r
+  CDM/U649/Q (OR2X1)                               0.22      5.39 r
+  CDM/U666/ZN (INVX0)                              0.12      5.51 f
+  CDM/U242/QN (NAND2X1)                            0.12      5.63 r
+  CDM/U610/Q (AND4X1)                              0.42      6.05 r
+  CDM/U147/Q (AND2X2)                              0.28      6.33 r
+  CDM/U98/QN (NAND2X0)                             0.38      6.71 f
+  CDM/DDE/U52/ZN (INVX0)                           0.36      7.07 r
+  CDM/DDE/U237/ZN (INVX0)                          0.29      7.36 f
+  CDM/DDE/U527/ZN (INVX0)                          0.19      7.55 r
+  CDM/DDE/U304/ZN (INVX0)                          0.17      7.71 f
+  CDM/DDE/U164/ZN (INVX0)                          0.23      7.94 r
+  CDM/DDE/U529/ZN (INVX0)                          0.31      8.25 f
+  CDM/DDE/U109/ZN (INVX1)                          0.18      8.43 r
+  CDM/DDE/U703/Q (OR2X1)                           0.29      8.72 r
+  CDM/DDE/U208/ZN (INVX0)                          0.13      8.85 f
+  CDM/DDE/U291/ZN (INVX0)                          0.08      8.93 r
+  CDM/DDE/U209/Q (AND2X1)                          0.20      9.13 r
+  CDM/DDE/U279/QN (NAND2X0)                        0.28      9.41 f
+  CDM/DDE/U289/ZN (INVX0)                          0.19      9.61 r
+  CDM/DDE/U247/QN (NAND2X0)                        0.19      9.80 f
+  CDM/DDE/U246/QN (NOR2X0)                         0.19      9.99 r
+  CDM/DDE/U210/QN (NAND3X1)                        0.54     10.53 f
+  MDM_ModEje_mALU/U1538/Z (NBUFFX2)                0.24     10.77 f
+  MDM_ModEje_mALU/U732/ZN (INVX1)                  0.15     10.92 r
+  MDM_ModEje_mALU/U1665/ZN (INVX0)                 0.27     11.19 f
+  MDM_ModEje_mALU/U998/Q (AND2X2)                  0.33     11.52 f
+  MDM_ModEje_mALU/U1007/ZN (INVX1)                 0.18     11.69 r
+  MDM_ModEje_mALU/U181/QN (NAND3X2)                0.43     12.12 f
+  MDM_ModEje_mALU/U1730/QN (NAND2X1)               0.11     12.23 r
+  MDM_ModEje_mALU/U1746/QN (NAND2X1)               0.18     12.41 f
+  MDM_ModEje_mALU/U1783/Q (AND2X1)                 0.24     12.65 f
+  MDM_ModEje_mALU/U1784/ZN (INVX0)                 0.13     12.78 r
+  MDM_ModEje_mALU/U1785/Q (OA22X1)                 0.35     13.13 r
+  MDM_ModEje_mALU/U670/Q (OR2X1)                   0.21     13.34 r
+  MDM_ModEje_mALU/U952/ZN (INVX0)                  0.11     13.45 f
+  MDM_ModEje_mALU/U102/QN (NOR2X2)                 0.10     13.55 r
+  MDM_ModEje_mALU/U94/Q (AND4X1)                   0.37     13.92 r
+  MDM_ModEje_mALU/U95/ZN (INVX0)                   0.11     14.03 f
+  MDM_ModEje_mALU/U255/Q (OR2X2)                   0.23     14.26 f
+  MDM_ModEje_mALU/U1884/QN (NOR2X0)                0.13     14.38 r
+  MDM_ModEje_mALU/U1134/ZN (INVX0)                 0.14     14.53 f
+  MDM_ModEje_mALU/U1135/ZN (INVX0)                 0.09     14.61 r
+  MDM_ModEje_mALU/U1925/Q (AND2X1)                 0.24     14.86 r
+  MDM_ModEje_mALU/U1989/QN (NAND2X1)               0.15     15.00 f
+  MDM_ModEje_mALU/U1990/Q (OA21X1)                 0.32     15.33 f
+  MDM_ModEje_mALU/U1991/ZN (INVX0)                 0.28     15.61 r
+  MDM_ModEje_mALU/U1372/ZN (INVX1)                 0.31     15.92 f
+  MDM_ModEje_mALU/U595/Q (XNOR2X1)                 0.45     16.37 r
+  MDM_ModEje_mALU/U158/QN (OAI22X2)                0.40     16.77 f
+  MDM_ModEje_mALU/U2062/S (FADDX1)                 0.49     17.26 f
+  MDM_ModEje_mALU/U2063/S (FADDX1)                 0.47     17.73 f
+  MDM_ModEje_mALU/U295/ZN (INVX0)                  0.10     17.83 r
+  MDM_ModEje_mALU/U296/ZN (INVX0)                  0.09     17.92 f
+  MDM_ModEje_mALU/U2065/QN (NOR2X0)                0.13     18.05 r
+  MDM_ModEje_mALU/U2066/ZN (INVX0)                 0.14     18.18 f
+  MDM_ModEje_mALU/U265/QN (NAND2X0)                0.16     18.35 r
+  MDM_ModEje_mALU/U2067/QN (NOR2X0)                0.17     18.52 f
+  MDM_ModEje_mALU/U214/Q (AND2X1)                  0.23     18.75 f
+  MDM_ModEje_mALU/U215/QN (NOR2X1)                 0.15     18.90 r
+  MDM_ModEje_mALU/U236/ZN (INVX0)                  0.15     19.06 f
+  MDM_ModEje_mALU/U237/ZN (INVX0)                  0.12     19.18 r
+  MDM_ModEje_mALU/U814/QN (OAI21X1)                0.40     19.58 f
+  MDM_ModEje_mALU/U2522/ZN (INVX0)                 0.22     19.80 r
+  MDM_ModEje_mALU/U109/QN (OAI21X2)                0.44     20.24 f
+  MDM_ModEje_mALU/U2541/Q (XNOR2X1)                0.44     20.68 f
+  MDM_ModEje_mALU/U2542/Q (AND2X1)                 0.25     20.94 f
+  MDM_ModEje_mALU/U520/QN (NOR2X0)                 0.24     21.18 r
+  MDM_ModEje_mALU/U1647/QN (NAND2X0)               0.24     21.41 f
+  MDM_ModEje_mALU/U3092/Q (OR2X1)                  0.27     21.68 f
+  MDM_ModEje_mALU/U3093/ZN (INVX0)                 0.11     21.80 r
+  MDM_ModEje_mALU/U1029/Q (AND2X1)                 0.26     22.06 r
+  MDM_ModEje_mALU/U227/QN (NAND2X1)                0.13     22.19 f
+  MDM_ModEje_mALU/U1078/ZN (INVX0)                 0.11     22.30 r
+  MDM_ModEje_mALU/U1079/ZN (INVX0)                 0.16     22.46 f
+  MDM_ModEje_mALU/U13/Q (OR3X2)                    0.30     22.76 f
+  MDM_ModEje_mALU/U3104/Q (MUX21X1)                0.26     23.02 f
+  MDM_ModEje_mALU/U3105/Q (OA21X1)                 0.25     23.27 f
+  U1784/QN (NAND2X0)                               0.13     23.40 r
+  U3184/Q (AND3X1)                                 0.34     23.74 r
+  U984/Q (AND3X1)                                  0.43     24.17 r
+  U2102/ZN (INVX0)                                 0.34     24.51 f
+  MDM_ModEje_mALU/U1537/Z (NBUFFX2)                0.27     24.78 f
+  MDM_ModEje_mALU/U911/QN (NAND2X0)                0.13     24.91 r
+  MDM_ModEje_mALU/U1258/QN (NAND2X0)               0.17     25.08 f
+  MDM_ModEje_mALU/REGD_Q_reg_15_/D (DFFNARX2)      0.00     25.08 f
+  data arrival time                                         25.08
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModEje_mALU/REGD_Q_reg_15_/CLK (DFFNARX2)    0.00      0.50 f
+  clock uncertainty                               -0.05      0.45
+  library setup time                              -0.29      0.16
+  data required time                                         0.16
+  ------------------------------------------------------------------------
+  data required time                                         0.16
+  data arrival time                                        -25.08
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -24.92
+
+
+
+  Startpoint: MDM_ModEje_RegInst_Q_reg_41_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: MDM_ModInt_DIO_RegSal_Q_reg_14_ (falling edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  MDM_ModEje_RegInst_Q_reg_41_/CLK (DFFARX2)       0.00      0.00 r
+  MDM_ModEje_RegInst_Q_reg_41_/QN (DFFARX2)        0.48      0.48 f
+  U668/ZN (INVX0)                                  0.44      0.93 r
+  U1261/ZN (INVX0)                                 0.33      1.25 f
+  U667/ZN (INVX0)                                  0.17      1.42 r
+  CDM/U126/QN (AOI22X1)                            0.44      1.87 f
+  CDM/U128/ZN (INVX0)                              0.22      2.08 r
+  CDM/U80/ZN (INVX0)                               0.24      2.32 f
+  CDM/U275/ZN (INVX0)                              0.10      2.42 r
+  CDM/U276/ZN (INVX0)                              0.18      2.60 f
+  CDM/U362/QN (NAND2X0)                            0.18      2.78 r
+  CDM/U68/ZN (INVX0)                               0.17      2.95 f
+  CDM/U70/ZN (INVX0)                               0.15      3.10 r
+  CDM/U854/ZN (INVX0)                              0.12      3.22 f
+  CDM/U456/QN (NAND2X0)                            0.16      3.38 r
+  CDM/U21/QN (NAND2X1)                             0.19      3.57 f
+  CDM/U383/QN (NOR4X1)                             0.37      3.94 r
+  CDM/U90/QN (NAND2X1)                             0.30      4.24 f
+  CDM/U445/ZN (INVX0)                              0.15      4.39 r
+  CDM/U87/ZN (INVX1)                               0.12      4.51 f
+  CDM/U440/ZN (INVX0)                              0.16      4.67 r
+  CDM/U153/ZN (INVX0)                              0.16      4.83 f
+  CDM/U49/Q (AND2X2)                               0.25      5.08 f
+  CDM/U50/ZN (INVX0)                               0.09      5.17 r
+  CDM/U649/Q (OR2X1)                               0.22      5.39 r
+  CDM/U666/ZN (INVX0)                              0.12      5.51 f
+  CDM/U242/QN (NAND2X1)                            0.12      5.63 r
+  CDM/U610/Q (AND4X1)                              0.42      6.05 r
+  CDM/U147/Q (AND2X2)                              0.28      6.33 r
+  CDM/U98/QN (NAND2X0)                             0.38      6.71 f
+  CDM/DDE/U52/ZN (INVX0)                           0.36      7.07 r
+  CDM/DDE/U237/ZN (INVX0)                          0.29      7.36 f
+  CDM/DDE/U527/ZN (INVX0)                          0.19      7.55 r
+  CDM/DDE/U304/ZN (INVX0)                          0.17      7.71 f
+  CDM/DDE/U164/ZN (INVX0)                          0.23      7.94 r
+  CDM/DDE/U529/ZN (INVX0)                          0.31      8.25 f
+  CDM/DDE/U109/ZN (INVX1)                          0.18      8.43 r
+  CDM/DDE/U703/Q (OR2X1)                           0.29      8.72 r
+  CDM/DDE/U208/ZN (INVX0)                          0.13      8.85 f
+  CDM/DDE/U291/ZN (INVX0)                          0.08      8.93 r
+  CDM/DDE/U209/Q (AND2X1)                          0.20      9.13 r
+  CDM/DDE/U279/QN (NAND2X0)                        0.28      9.41 f
+  CDM/DDE/U289/ZN (INVX0)                          0.19      9.61 r
+  CDM/DDE/U247/QN (NAND2X0)                        0.19      9.80 f
+  CDM/DDE/U246/QN (NOR2X0)                         0.19      9.99 r
+  CDM/DDE/U210/QN (NAND3X1)                        0.54     10.53 f
+  MDM_ModEje_mALU/U1538/Z (NBUFFX2)                0.24     10.77 f
+  MDM_ModEje_mALU/U732/ZN (INVX1)                  0.15     10.92 r
+  MDM_ModEje_mALU/U1665/ZN (INVX0)                 0.27     11.19 f
+  MDM_ModEje_mALU/U998/Q (AND2X2)                  0.33     11.52 f
+  MDM_ModEje_mALU/U1007/ZN (INVX1)                 0.18     11.69 r
+  MDM_ModEje_mALU/U181/QN (NAND3X2)                0.43     12.12 f
+  MDM_ModEje_mALU/U1730/QN (NAND2X1)               0.11     12.23 r
+  MDM_ModEje_mALU/U1746/QN (NAND2X1)               0.18     12.41 f
+  MDM_ModEje_mALU/U1783/Q (AND2X1)                 0.24     12.65 f
+  MDM_ModEje_mALU/U1784/ZN (INVX0)                 0.13     12.78 r
+  MDM_ModEje_mALU/U1785/Q (OA22X1)                 0.35     13.13 r
+  MDM_ModEje_mALU/U670/Q (OR2X1)                   0.21     13.34 r
+  MDM_ModEje_mALU/U952/ZN (INVX0)                  0.11     13.45 f
+  MDM_ModEje_mALU/U102/QN (NOR2X2)                 0.10     13.55 r
+  MDM_ModEje_mALU/U94/Q (AND4X1)                   0.37     13.92 r
+  MDM_ModEje_mALU/U95/ZN (INVX0)                   0.11     14.03 f
+  MDM_ModEje_mALU/U255/Q (OR2X2)                   0.23     14.26 f
+  MDM_ModEje_mALU/U1884/QN (NOR2X0)                0.13     14.38 r
+  MDM_ModEje_mALU/U1134/ZN (INVX0)                 0.14     14.53 f
+  MDM_ModEje_mALU/U1135/ZN (INVX0)                 0.09     14.61 r
+  MDM_ModEje_mALU/U1925/Q (AND2X1)                 0.24     14.86 r
+  MDM_ModEje_mALU/U1989/QN (NAND2X1)               0.15     15.00 f
+  MDM_ModEje_mALU/U1990/Q (OA21X1)                 0.32     15.33 f
+  MDM_ModEje_mALU/U1991/ZN (INVX0)                 0.28     15.61 r
+  MDM_ModEje_mALU/U1372/ZN (INVX1)                 0.31     15.92 f
+  MDM_ModEje_mALU/U595/Q (XNOR2X1)                 0.45     16.37 r
+  MDM_ModEje_mALU/U158/QN (OAI22X2)                0.40     16.77 f
+  MDM_ModEje_mALU/U2062/S (FADDX1)                 0.49     17.26 f
+  MDM_ModEje_mALU/U2063/S (FADDX1)                 0.47     17.73 f
+  MDM_ModEje_mALU/U295/ZN (INVX0)                  0.10     17.83 r
+  MDM_ModEje_mALU/U296/ZN (INVX0)                  0.09     17.92 f
+  MDM_ModEje_mALU/U2065/QN (NOR2X0)                0.13     18.05 r
+  MDM_ModEje_mALU/U2066/ZN (INVX0)                 0.14     18.18 f
+  MDM_ModEje_mALU/U265/QN (NAND2X0)                0.16     18.35 r
+  MDM_ModEje_mALU/U2067/QN (NOR2X0)                0.17     18.52 f
+  MDM_ModEje_mALU/U214/Q (AND2X1)                  0.23     18.75 f
+  MDM_ModEje_mALU/U215/QN (NOR2X1)                 0.15     18.90 r
+  MDM_ModEje_mALU/U236/ZN (INVX0)                  0.15     19.06 f
+  MDM_ModEje_mALU/U237/ZN (INVX0)                  0.12     19.18 r
+  MDM_ModEje_mALU/U814/QN (OAI21X1)                0.40     19.58 f
+  MDM_ModEje_mALU/U2522/ZN (INVX0)                 0.22     19.80 r
+  MDM_ModEje_mALU/U109/QN (OAI21X2)                0.44     20.24 f
+  MDM_ModEje_mALU/U2541/Q (XNOR2X1)                0.44     20.68 f
+  MDM_ModEje_mALU/U2542/Q (AND2X1)                 0.25     20.94 f
+  MDM_ModEje_mALU/U520/QN (NOR2X0)                 0.24     21.18 r
+  MDM_ModEje_mALU/U1647/QN (NAND2X0)               0.24     21.41 f
+  MDM_ModEje_mALU/U3092/Q (OR2X1)                  0.27     21.68 f
+  MDM_ModEje_mALU/U3093/ZN (INVX0)                 0.11     21.80 r
+  MDM_ModEje_mALU/U1029/Q (AND2X1)                 0.26     22.06 r
+  MDM_ModEje_mALU/U227/QN (NAND2X1)                0.13     22.19 f
+  MDM_ModEje_mALU/U1078/ZN (INVX0)                 0.11     22.30 r
+  MDM_ModEje_mALU/U1079/ZN (INVX0)                 0.16     22.46 f
+  MDM_ModEje_mALU/U211/Q (OR3X2)                   0.30     22.76 f
+  MDM_ModEje_mALU/U3621/Q (AND3X1)                 0.33     23.09 f
+  U1156/QN (AOI21X1)                               0.42     23.51 r
+  U146/Q (AND2X1)                                  0.20     23.71 r
+  U950/QN (NAND3X1)                                0.45     24.16 f
+  U2079/ZN (INVX0)                                 0.14     24.29 r
+  U2008/ZN (INVX0)                                 0.31     24.60 f
+  U1085/Q (MUX21X2)                                0.39     24.99 f
+  MDM_ModInt_DIO_RegSal_Q_reg_14_/D (DFFNARX1)     0.00     24.99 f
+  data arrival time                                         24.99
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModInt_DIO_RegSal_Q_reg_14_/CLK (DFFNARX1)   0.00      0.50 f
+  clock uncertainty                               -0.05      0.45
+  library setup time                              -0.34      0.11
+  data required time                                         0.11
+  ------------------------------------------------------------------------
+  data required time                                         0.11
+  data arrival time                                        -24.99
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -24.89
+
+
+
+  Startpoint: MDM_ModEje_RegInst_Q_reg_41_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: MDM_ModEje_mALU/REGD_Q_reg_9_ (falling edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  MDM_ModEje_RegInst_Q_reg_41_/CLK (DFFARX2)       0.00      0.00 r
+  MDM_ModEje_RegInst_Q_reg_41_/QN (DFFARX2)        0.48      0.48 f
+  U668/ZN (INVX0)                                  0.44      0.93 r
+  U1261/ZN (INVX0)                                 0.33      1.25 f
+  U667/ZN (INVX0)                                  0.17      1.42 r
+  CDM/U126/QN (AOI22X1)                            0.44      1.87 f
+  CDM/U128/ZN (INVX0)                              0.22      2.08 r
+  CDM/U80/ZN (INVX0)                               0.24      2.32 f
+  CDM/U275/ZN (INVX0)                              0.10      2.42 r
+  CDM/U276/ZN (INVX0)                              0.18      2.60 f
+  CDM/U362/QN (NAND2X0)                            0.18      2.78 r
+  CDM/U68/ZN (INVX0)                               0.17      2.95 f
+  CDM/U70/ZN (INVX0)                               0.15      3.10 r
+  CDM/U854/ZN (INVX0)                              0.12      3.22 f
+  CDM/U456/QN (NAND2X0)                            0.16      3.38 r
+  CDM/U21/QN (NAND2X1)                             0.19      3.57 f
+  CDM/U383/QN (NOR4X1)                             0.37      3.94 r
+  CDM/U90/QN (NAND2X1)                             0.30      4.24 f
+  CDM/U445/ZN (INVX0)                              0.15      4.39 r
+  CDM/U87/ZN (INVX1)                               0.12      4.51 f
+  CDM/U440/ZN (INVX0)                              0.16      4.67 r
+  CDM/U153/ZN (INVX0)                              0.16      4.83 f
+  CDM/U49/Q (AND2X2)                               0.25      5.08 f
+  CDM/U50/ZN (INVX0)                               0.09      5.17 r
+  CDM/U649/Q (OR2X1)                               0.22      5.39 r
+  CDM/U666/ZN (INVX0)                              0.12      5.51 f
+  CDM/U242/QN (NAND2X1)                            0.12      5.63 r
+  CDM/U610/Q (AND4X1)                              0.42      6.05 r
+  CDM/U147/Q (AND2X2)                              0.28      6.33 r
+  CDM/U98/QN (NAND2X0)                             0.38      6.71 f
+  CDM/DDE/U52/ZN (INVX0)                           0.36      7.07 r
+  CDM/DDE/U237/ZN (INVX0)                          0.29      7.36 f
+  CDM/DDE/U527/ZN (INVX0)                          0.19      7.55 r
+  CDM/DDE/U304/ZN (INVX0)                          0.17      7.71 f
+  CDM/DDE/U164/ZN (INVX0)                          0.23      7.94 r
+  CDM/DDE/U529/ZN (INVX0)                          0.31      8.25 f
+  CDM/DDE/U109/ZN (INVX1)                          0.18      8.43 r
+  CDM/DDE/U703/Q (OR2X1)                           0.29      8.72 r
+  CDM/DDE/U208/ZN (INVX0)                          0.13      8.85 f
+  CDM/DDE/U291/ZN (INVX0)                          0.08      8.93 r
+  CDM/DDE/U209/Q (AND2X1)                          0.20      9.13 r
+  CDM/DDE/U279/QN (NAND2X0)                        0.28      9.41 f
+  CDM/DDE/U289/ZN (INVX0)                          0.19      9.61 r
+  CDM/DDE/U247/QN (NAND2X0)                        0.19      9.80 f
+  CDM/DDE/U246/QN (NOR2X0)                         0.19      9.99 r
+  CDM/DDE/U210/QN (NAND3X1)                        0.54     10.53 f
+  MDM_ModEje_mALU/U1538/Z (NBUFFX2)                0.24     10.77 f
+  MDM_ModEje_mALU/U732/ZN (INVX1)                  0.15     10.92 r
+  MDM_ModEje_mALU/U1665/ZN (INVX0)                 0.27     11.19 f
+  MDM_ModEje_mALU/U998/Q (AND2X2)                  0.33     11.52 f
+  MDM_ModEje_mALU/U1007/ZN (INVX1)                 0.18     11.69 r
+  MDM_ModEje_mALU/U181/QN (NAND3X2)                0.43     12.12 f
+  MDM_ModEje_mALU/U1730/QN (NAND2X1)               0.11     12.23 r
+  MDM_ModEje_mALU/U1746/QN (NAND2X1)               0.18     12.41 f
+  MDM_ModEje_mALU/U1783/Q (AND2X1)                 0.24     12.65 f
+  MDM_ModEje_mALU/U1784/ZN (INVX0)                 0.13     12.78 r
+  MDM_ModEje_mALU/U1785/Q (OA22X1)                 0.35     13.13 r
+  MDM_ModEje_mALU/U670/Q (OR2X1)                   0.21     13.34 r
+  MDM_ModEje_mALU/U952/ZN (INVX0)                  0.11     13.45 f
+  MDM_ModEje_mALU/U102/QN (NOR2X2)                 0.10     13.55 r
+  MDM_ModEje_mALU/U94/Q (AND4X1)                   0.37     13.92 r
+  MDM_ModEje_mALU/U95/ZN (INVX0)                   0.11     14.03 f
+  MDM_ModEje_mALU/U255/Q (OR2X2)                   0.23     14.26 f
+  MDM_ModEje_mALU/U1884/QN (NOR2X0)                0.13     14.38 r
+  MDM_ModEje_mALU/U1134/ZN (INVX0)                 0.14     14.53 f
+  MDM_ModEje_mALU/U1135/ZN (INVX0)                 0.09     14.61 r
+  MDM_ModEje_mALU/U1925/Q (AND2X1)                 0.24     14.86 r
+  MDM_ModEje_mALU/U1989/QN (NAND2X1)               0.15     15.00 f
+  MDM_ModEje_mALU/U1990/Q (OA21X1)                 0.32     15.33 f
+  MDM_ModEje_mALU/U1991/ZN (INVX0)                 0.28     15.61 r
+  MDM_ModEje_mALU/U1372/ZN (INVX1)                 0.31     15.92 f
+  MDM_ModEje_mALU/U595/Q (XNOR2X1)                 0.45     16.37 r
+  MDM_ModEje_mALU/U158/QN (OAI22X2)                0.40     16.77 f
+  MDM_ModEje_mALU/U2062/S (FADDX1)                 0.49     17.26 f
+  MDM_ModEje_mALU/U2063/S (FADDX1)                 0.47     17.73 f
+  MDM_ModEje_mALU/U295/ZN (INVX0)                  0.10     17.83 r
+  MDM_ModEje_mALU/U296/ZN (INVX0)                  0.09     17.92 f
+  MDM_ModEje_mALU/U2065/QN (NOR2X0)                0.13     18.05 r
+  MDM_ModEje_mALU/U2066/ZN (INVX0)                 0.14     18.18 f
+  MDM_ModEje_mALU/U265/QN (NAND2X0)                0.16     18.35 r
+  MDM_ModEje_mALU/U2067/QN (NOR2X0)                0.17     18.52 f
+  MDM_ModEje_mALU/U214/Q (AND2X1)                  0.23     18.75 f
+  MDM_ModEje_mALU/U215/QN (NOR2X1)                 0.15     18.90 r
+  MDM_ModEje_mALU/U236/ZN (INVX0)                  0.15     19.06 f
+  MDM_ModEje_mALU/U237/ZN (INVX0)                  0.12     19.18 r
+  MDM_ModEje_mALU/U814/QN (OAI21X1)                0.40     19.58 f
+  MDM_ModEje_mALU/U2522/ZN (INVX0)                 0.22     19.80 r
+  MDM_ModEje_mALU/U109/QN (OAI21X2)                0.44     20.24 f
+  MDM_ModEje_mALU/U2541/Q (XNOR2X1)                0.44     20.68 f
+  MDM_ModEje_mALU/U2542/Q (AND2X1)                 0.25     20.94 f
+  MDM_ModEje_mALU/U520/QN (NOR2X0)                 0.24     21.18 r
+  MDM_ModEje_mALU/U1647/QN (NAND2X0)               0.24     21.41 f
+  MDM_ModEje_mALU/U3092/Q (OR2X1)                  0.27     21.68 f
+  MDM_ModEje_mALU/U3093/ZN (INVX0)                 0.11     21.80 r
+  MDM_ModEje_mALU/U346/ZN (INVX0)                  0.12     21.92 f
+  MDM_ModEje_mALU/U341/QN (NOR2X0)                 0.14     22.06 r
+  MDM_ModEje_mALU/U1325/ZN (INVX0)                 0.13     22.19 f
+  MDM_ModEje_mALU/U21/Q (OR2X1)                    0.21     22.41 f
+  MDM_ModEje_mALU/U337/ZN (INVX0)                  0.08     22.49 r
+  MDM_ModEje_mALU/U338/ZN (INVX0)                  0.08     22.56 f
+  MDM_ModEje_mALU/U3606/Q (OA22X1)                 0.29     22.85 f
+  U2572/QN (NAND2X0)                               0.12     22.97 r
+  U3133/Q (AND3X1)                                 0.35     23.32 r
+  U3135/Q (AND2X1)                                 0.24     23.57 r
+  U1355/Q (AND2X1)                                 0.30     23.86 r
+  U3152/ZN (INVX0)                                 0.22     24.08 f
+  MDM_ModEje_mALU/U1076/ZN (INVX0)                 0.17     24.25 r
+  MDM_ModEje_mALU/U1077/ZN (INVX0)                 0.23     24.48 f
+  MDM_ModEje_mALU/U3357/Z (NBUFFX2)                0.24     24.73 f
+  MDM_ModEje_mALU/U3526/Q (MUX21X1)                0.25     24.98 f
+  MDM_ModEje_mALU/REGD_Q_reg_9_/D (DFFNARX1)       0.00     24.98 f
+  data arrival time                                         24.98
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModEje_mALU/REGD_Q_reg_9_/CLK (DFFNARX1)     0.00      0.50 f
+  clock uncertainty                               -0.05      0.45
+  library setup time                              -0.34      0.11
+  data required time                                         0.11
+  ------------------------------------------------------------------------
+  data required time                                         0.11
+  data arrival time                                        -24.98
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -24.87
+
+
+
+  Startpoint: MDM_ModEje_RegInst_Q_reg_41_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: MDM_ModEje_mALU/REGB_Q_reg_15_ (falling edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  MDM_ModEje_RegInst_Q_reg_41_/CLK (DFFARX2)       0.00      0.00 r
+  MDM_ModEje_RegInst_Q_reg_41_/QN (DFFARX2)        0.48      0.48 f
+  U668/ZN (INVX0)                                  0.44      0.93 r
+  U1261/ZN (INVX0)                                 0.33      1.25 f
+  U667/ZN (INVX0)                                  0.17      1.42 r
+  CDM/U126/QN (AOI22X1)                            0.44      1.87 f
+  CDM/U128/ZN (INVX0)                              0.22      2.08 r
+  CDM/U80/ZN (INVX0)                               0.24      2.32 f
+  CDM/U275/ZN (INVX0)                              0.10      2.42 r
+  CDM/U276/ZN (INVX0)                              0.18      2.60 f
+  CDM/U362/QN (NAND2X0)                            0.18      2.78 r
+  CDM/U68/ZN (INVX0)                               0.17      2.95 f
+  CDM/U70/ZN (INVX0)                               0.15      3.10 r
+  CDM/U854/ZN (INVX0)                              0.12      3.22 f
+  CDM/U456/QN (NAND2X0)                            0.16      3.38 r
+  CDM/U21/QN (NAND2X1)                             0.19      3.57 f
+  CDM/U383/QN (NOR4X1)                             0.37      3.94 r
+  CDM/U90/QN (NAND2X1)                             0.30      4.24 f
+  CDM/U445/ZN (INVX0)                              0.15      4.39 r
+  CDM/U87/ZN (INVX1)                               0.12      4.51 f
+  CDM/U440/ZN (INVX0)                              0.16      4.67 r
+  CDM/U153/ZN (INVX0)                              0.16      4.83 f
+  CDM/U49/Q (AND2X2)                               0.25      5.08 f
+  CDM/U50/ZN (INVX0)                               0.09      5.17 r
+  CDM/U649/Q (OR2X1)                               0.22      5.39 r
+  CDM/U666/ZN (INVX0)                              0.12      5.51 f
+  CDM/U242/QN (NAND2X1)                            0.12      5.63 r
+  CDM/U610/Q (AND4X1)                              0.42      6.05 r
+  CDM/U147/Q (AND2X2)                              0.28      6.33 r
+  CDM/U98/QN (NAND2X0)                             0.38      6.71 f
+  CDM/DDE/U52/ZN (INVX0)                           0.36      7.07 r
+  CDM/DDE/U237/ZN (INVX0)                          0.29      7.36 f
+  CDM/DDE/U527/ZN (INVX0)                          0.19      7.55 r
+  CDM/DDE/U304/ZN (INVX0)                          0.17      7.71 f
+  CDM/DDE/U164/ZN (INVX0)                          0.23      7.94 r
+  CDM/DDE/U529/ZN (INVX0)                          0.31      8.25 f
+  CDM/DDE/U109/ZN (INVX1)                          0.18      8.43 r
+  CDM/DDE/U703/Q (OR2X1)                           0.29      8.72 r
+  CDM/DDE/U208/ZN (INVX0)                          0.13      8.85 f
+  CDM/DDE/U291/ZN (INVX0)                          0.08      8.93 r
+  CDM/DDE/U209/Q (AND2X1)                          0.20      9.13 r
+  CDM/DDE/U279/QN (NAND2X0)                        0.28      9.41 f
+  CDM/DDE/U289/ZN (INVX0)                          0.19      9.61 r
+  CDM/DDE/U247/QN (NAND2X0)                        0.19      9.80 f
+  CDM/DDE/U246/QN (NOR2X0)                         0.19      9.99 r
+  CDM/DDE/U210/QN (NAND3X1)                        0.54     10.53 f
+  MDM_ModEje_mALU/U1538/Z (NBUFFX2)                0.24     10.77 f
+  MDM_ModEje_mALU/U732/ZN (INVX1)                  0.15     10.92 r
+  MDM_ModEje_mALU/U1665/ZN (INVX0)                 0.27     11.19 f
+  MDM_ModEje_mALU/U998/Q (AND2X2)                  0.33     11.52 f
+  MDM_ModEje_mALU/U1007/ZN (INVX1)                 0.18     11.69 r
+  MDM_ModEje_mALU/U181/QN (NAND3X2)                0.43     12.12 f
+  MDM_ModEje_mALU/U1730/QN (NAND2X1)               0.11     12.23 r
+  MDM_ModEje_mALU/U1746/QN (NAND2X1)               0.18     12.41 f
+  MDM_ModEje_mALU/U1783/Q (AND2X1)                 0.24     12.65 f
+  MDM_ModEje_mALU/U1784/ZN (INVX0)                 0.13     12.78 r
+  MDM_ModEje_mALU/U1785/Q (OA22X1)                 0.35     13.13 r
+  MDM_ModEje_mALU/U670/Q (OR2X1)                   0.21     13.34 r
+  MDM_ModEje_mALU/U952/ZN (INVX0)                  0.11     13.45 f
+  MDM_ModEje_mALU/U102/QN (NOR2X2)                 0.10     13.55 r
+  MDM_ModEje_mALU/U94/Q (AND4X1)                   0.37     13.92 r
+  MDM_ModEje_mALU/U95/ZN (INVX0)                   0.11     14.03 f
+  MDM_ModEje_mALU/U255/Q (OR2X2)                   0.23     14.26 f
+  MDM_ModEje_mALU/U1884/QN (NOR2X0)                0.13     14.38 r
+  MDM_ModEje_mALU/U1134/ZN (INVX0)                 0.14     14.53 f
+  MDM_ModEje_mALU/U1135/ZN (INVX0)                 0.09     14.61 r
+  MDM_ModEje_mALU/U1925/Q (AND2X1)                 0.24     14.86 r
+  MDM_ModEje_mALU/U1989/QN (NAND2X1)               0.15     15.00 f
+  MDM_ModEje_mALU/U1990/Q (OA21X1)                 0.32     15.33 f
+  MDM_ModEje_mALU/U1991/ZN (INVX0)                 0.28     15.61 r
+  MDM_ModEje_mALU/U1372/ZN (INVX1)                 0.31     15.92 f
+  MDM_ModEje_mALU/U595/Q (XNOR2X1)                 0.45     16.37 r
+  MDM_ModEje_mALU/U158/QN (OAI22X2)                0.40     16.77 f
+  MDM_ModEje_mALU/U2062/S (FADDX1)                 0.49     17.26 f
+  MDM_ModEje_mALU/U2063/S (FADDX1)                 0.47     17.73 f
+  MDM_ModEje_mALU/U295/ZN (INVX0)                  0.10     17.83 r
+  MDM_ModEje_mALU/U296/ZN (INVX0)                  0.09     17.92 f
+  MDM_ModEje_mALU/U2065/QN (NOR2X0)                0.13     18.05 r
+  MDM_ModEje_mALU/U2066/ZN (INVX0)                 0.14     18.18 f
+  MDM_ModEje_mALU/U265/QN (NAND2X0)                0.16     18.35 r
+  MDM_ModEje_mALU/U2067/QN (NOR2X0)                0.17     18.52 f
+  MDM_ModEje_mALU/U214/Q (AND2X1)                  0.23     18.75 f
+  MDM_ModEje_mALU/U215/QN (NOR2X1)                 0.15     18.90 r
+  MDM_ModEje_mALU/U236/ZN (INVX0)                  0.15     19.06 f
+  MDM_ModEje_mALU/U237/ZN (INVX0)                  0.12     19.18 r
+  MDM_ModEje_mALU/U814/QN (OAI21X1)                0.40     19.58 f
+  MDM_ModEje_mALU/U2522/ZN (INVX0)                 0.22     19.80 r
+  MDM_ModEje_mALU/U109/QN (OAI21X2)                0.44     20.24 f
+  MDM_ModEje_mALU/U2541/Q (XNOR2X1)                0.44     20.68 f
+  MDM_ModEje_mALU/U2542/Q (AND2X1)                 0.25     20.94 f
+  MDM_ModEje_mALU/U520/QN (NOR2X0)                 0.24     21.18 r
+  MDM_ModEje_mALU/U1647/QN (NAND2X0)               0.24     21.41 f
+  MDM_ModEje_mALU/U3092/Q (OR2X1)                  0.27     21.68 f
+  MDM_ModEje_mALU/U3093/ZN (INVX0)                 0.11     21.80 r
+  MDM_ModEje_mALU/U1029/Q (AND2X1)                 0.26     22.06 r
+  MDM_ModEje_mALU/U227/QN (NAND2X1)                0.13     22.19 f
+  MDM_ModEje_mALU/U1078/ZN (INVX0)                 0.11     22.30 r
+  MDM_ModEje_mALU/U1079/ZN (INVX0)                 0.16     22.46 f
+  MDM_ModEje_mALU/U13/Q (OR3X2)                    0.30     22.76 f
+  MDM_ModEje_mALU/U3104/Q (MUX21X1)                0.26     23.02 f
+  MDM_ModEje_mALU/U3105/Q (OA21X1)                 0.25     23.27 f
+  U1784/QN (NAND2X0)                               0.13     23.40 r
+  U3184/Q (AND3X1)                                 0.34     23.74 r
+  U984/Q (AND3X1)                                  0.43     24.17 r
+  U2102/ZN (INVX0)                                 0.34     24.51 f
+  MDM_ModEje_mALU/U1537/Z (NBUFFX2)                0.27     24.78 f
+  MDM_ModEje_mALU/U1558/QN (NAND2X0)               0.11     24.89 r
+  MDM_ModEje_mALU/U1557/QN (NAND2X0)               0.14     25.03 f
+  MDM_ModEje_mALU/REGB_Q_reg_15_/D (DFFNARX2)      0.00     25.03 f
+  data arrival time                                         25.03
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModEje_mALU/REGB_Q_reg_15_/CLK (DFFNARX2)    0.00      0.50 f
+  clock uncertainty                               -0.05      0.45
+  library setup time                              -0.28      0.17
+  data required time                                         0.17
+  ------------------------------------------------------------------------
+  data required time                                         0.17
+  data arrival time                                        -25.03
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -24.86
+
+
+
+  Startpoint: MDM_ModEje_RegInst_Q_reg_41_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: MDM_ModEje_BanEje_RegBP_Q_reg_14_ (falling edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  MDM_ModEje_RegInst_Q_reg_41_/CLK (DFFARX2)       0.00      0.00 r
+  MDM_ModEje_RegInst_Q_reg_41_/QN (DFFARX2)        0.48      0.48 f
+  U668/ZN (INVX0)                                  0.44      0.93 r
+  U1261/ZN (INVX0)                                 0.33      1.25 f
+  U667/ZN (INVX0)                                  0.17      1.42 r
+  CDM/U126/QN (AOI22X1)                            0.44      1.87 f
+  CDM/U128/ZN (INVX0)                              0.22      2.08 r
+  CDM/U80/ZN (INVX0)                               0.24      2.32 f
+  CDM/U275/ZN (INVX0)                              0.10      2.42 r
+  CDM/U276/ZN (INVX0)                              0.18      2.60 f
+  CDM/U362/QN (NAND2X0)                            0.18      2.78 r
+  CDM/U68/ZN (INVX0)                               0.17      2.95 f
+  CDM/U70/ZN (INVX0)                               0.15      3.10 r
+  CDM/U854/ZN (INVX0)                              0.12      3.22 f
+  CDM/U456/QN (NAND2X0)                            0.16      3.38 r
+  CDM/U21/QN (NAND2X1)                             0.19      3.57 f
+  CDM/U383/QN (NOR4X1)                             0.37      3.94 r
+  CDM/U90/QN (NAND2X1)                             0.30      4.24 f
+  CDM/U445/ZN (INVX0)                              0.15      4.39 r
+  CDM/U87/ZN (INVX1)                               0.12      4.51 f
+  CDM/U440/ZN (INVX0)                              0.16      4.67 r
+  CDM/U153/ZN (INVX0)                              0.16      4.83 f
+  CDM/U49/Q (AND2X2)                               0.25      5.08 f
+  CDM/U50/ZN (INVX0)                               0.09      5.17 r
+  CDM/U649/Q (OR2X1)                               0.22      5.39 r
+  CDM/U666/ZN (INVX0)                              0.12      5.51 f
+  CDM/U242/QN (NAND2X1)                            0.12      5.63 r
+  CDM/U610/Q (AND4X1)                              0.42      6.05 r
+  CDM/U147/Q (AND2X2)                              0.28      6.33 r
+  CDM/U98/QN (NAND2X0)                             0.38      6.71 f
+  CDM/DDE/U52/ZN (INVX0)                           0.36      7.07 r
+  CDM/DDE/U237/ZN (INVX0)                          0.29      7.36 f
+  CDM/DDE/U527/ZN (INVX0)                          0.19      7.55 r
+  CDM/DDE/U304/ZN (INVX0)                          0.17      7.71 f
+  CDM/DDE/U164/ZN (INVX0)                          0.23      7.94 r
+  CDM/DDE/U529/ZN (INVX0)                          0.31      8.25 f
+  CDM/DDE/U109/ZN (INVX1)                          0.18      8.43 r
+  CDM/DDE/U703/Q (OR2X1)                           0.29      8.72 r
+  CDM/DDE/U208/ZN (INVX0)                          0.13      8.85 f
+  CDM/DDE/U291/ZN (INVX0)                          0.08      8.93 r
+  CDM/DDE/U209/Q (AND2X1)                          0.20      9.13 r
+  CDM/DDE/U279/QN (NAND2X0)                        0.28      9.41 f
+  CDM/DDE/U289/ZN (INVX0)                          0.19      9.61 r
+  CDM/DDE/U247/QN (NAND2X0)                        0.19      9.80 f
+  CDM/DDE/U246/QN (NOR2X0)                         0.19      9.99 r
+  CDM/DDE/U210/QN (NAND3X1)                        0.54     10.53 f
+  MDM_ModEje_mALU/U1538/Z (NBUFFX2)                0.24     10.77 f
+  MDM_ModEje_mALU/U732/ZN (INVX1)                  0.15     10.92 r
+  MDM_ModEje_mALU/U1665/ZN (INVX0)                 0.27     11.19 f
+  MDM_ModEje_mALU/U998/Q (AND2X2)                  0.33     11.52 f
+  MDM_ModEje_mALU/U1007/ZN (INVX1)                 0.18     11.69 r
+  MDM_ModEje_mALU/U181/QN (NAND3X2)                0.43     12.12 f
+  MDM_ModEje_mALU/U1730/QN (NAND2X1)               0.11     12.23 r
+  MDM_ModEje_mALU/U1746/QN (NAND2X1)               0.18     12.41 f
+  MDM_ModEje_mALU/U1783/Q (AND2X1)                 0.24     12.65 f
+  MDM_ModEje_mALU/U1784/ZN (INVX0)                 0.13     12.78 r
+  MDM_ModEje_mALU/U1785/Q (OA22X1)                 0.35     13.13 r
+  MDM_ModEje_mALU/U670/Q (OR2X1)                   0.21     13.34 r
+  MDM_ModEje_mALU/U952/ZN (INVX0)                  0.11     13.45 f
+  MDM_ModEje_mALU/U102/QN (NOR2X2)                 0.10     13.55 r
+  MDM_ModEje_mALU/U94/Q (AND4X1)                   0.37     13.92 r
+  MDM_ModEje_mALU/U95/ZN (INVX0)                   0.11     14.03 f
+  MDM_ModEje_mALU/U255/Q (OR2X2)                   0.23     14.26 f
+  MDM_ModEje_mALU/U1884/QN (NOR2X0)                0.13     14.38 r
+  MDM_ModEje_mALU/U1134/ZN (INVX0)                 0.14     14.53 f
+  MDM_ModEje_mALU/U1135/ZN (INVX0)                 0.09     14.61 r
+  MDM_ModEje_mALU/U1925/Q (AND2X1)                 0.24     14.86 r
+  MDM_ModEje_mALU/U1989/QN (NAND2X1)               0.15     15.00 f
+  MDM_ModEje_mALU/U1990/Q (OA21X1)                 0.32     15.33 f
+  MDM_ModEje_mALU/U1991/ZN (INVX0)                 0.28     15.61 r
+  MDM_ModEje_mALU/U1372/ZN (INVX1)                 0.31     15.92 f
+  MDM_ModEje_mALU/U595/Q (XNOR2X1)                 0.45     16.37 r
+  MDM_ModEje_mALU/U158/QN (OAI22X2)                0.40     16.77 f
+  MDM_ModEje_mALU/U2062/S (FADDX1)                 0.49     17.26 f
+  MDM_ModEje_mALU/U2063/S (FADDX1)                 0.47     17.73 f
+  MDM_ModEje_mALU/U295/ZN (INVX0)                  0.10     17.83 r
+  MDM_ModEje_mALU/U296/ZN (INVX0)                  0.09     17.92 f
+  MDM_ModEje_mALU/U2065/QN (NOR2X0)                0.13     18.05 r
+  MDM_ModEje_mALU/U2066/ZN (INVX0)                 0.14     18.18 f
+  MDM_ModEje_mALU/U265/QN (NAND2X0)                0.16     18.35 r
+  MDM_ModEje_mALU/U2067/QN (NOR2X0)                0.17     18.52 f
+  MDM_ModEje_mALU/U214/Q (AND2X1)                  0.23     18.75 f
+  MDM_ModEje_mALU/U215/QN (NOR2X1)                 0.15     18.90 r
+  MDM_ModEje_mALU/U236/ZN (INVX0)                  0.15     19.06 f
+  MDM_ModEje_mALU/U237/ZN (INVX0)                  0.12     19.18 r
+  MDM_ModEje_mALU/U814/QN (OAI21X1)                0.40     19.58 f
+  MDM_ModEje_mALU/U2522/ZN (INVX0)                 0.22     19.80 r
+  MDM_ModEje_mALU/U109/QN (OAI21X2)                0.44     20.24 f
+  MDM_ModEje_mALU/U2541/Q (XNOR2X1)                0.44     20.68 f
+  MDM_ModEje_mALU/U2542/Q (AND2X1)                 0.25     20.94 f
+  MDM_ModEje_mALU/U520/QN (NOR2X0)                 0.24     21.18 r
+  MDM_ModEje_mALU/U1647/QN (NAND2X0)               0.24     21.41 f
+  MDM_ModEje_mALU/U3092/Q (OR2X1)                  0.27     21.68 f
+  MDM_ModEje_mALU/U3093/ZN (INVX0)                 0.11     21.80 r
+  MDM_ModEje_mALU/U1029/Q (AND2X1)                 0.26     22.06 r
+  MDM_ModEje_mALU/U227/QN (NAND2X1)                0.13     22.19 f
+  MDM_ModEje_mALU/U1078/ZN (INVX0)                 0.11     22.30 r
+  MDM_ModEje_mALU/U1079/ZN (INVX0)                 0.16     22.46 f
+  MDM_ModEje_mALU/U211/Q (OR3X2)                   0.30     22.76 f
+  MDM_ModEje_mALU/U3621/Q (AND3X1)                 0.33     23.09 f
+  U1156/QN (AOI21X1)                               0.42     23.51 r
+  U152/Q (AND2X1)                                  0.19     23.70 r
+  U1072/QN (NAND3X1)                               0.38     24.08 f
+  U2021/ZN (INVX0)                                 0.14     24.22 r
+  U1994/ZN (INVX0)                                 0.31     24.53 f
+  U1152/QN (NAND2X0)                               0.22     24.75 r
+  U1154/QN (NAND2X0)                               0.19     24.94 f
+  MDM_ModEje_BanEje_RegBP_Q_reg_14_/D (DFFNARX1)   0.00     24.94 f
+  data arrival time                                         24.94
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModEje_BanEje_RegBP_Q_reg_14_/CLK (DFFNARX1)
+                                                   0.00      0.50 f
+  clock uncertainty                               -0.05      0.45
+  library setup time                              -0.36      0.09
+  data required time                                         0.09
+  ------------------------------------------------------------------------
+  data required time                                         0.09
+  data arrival time                                        -24.94
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -24.85
+
+
+
+  Startpoint: MDM_ModEje_RegInst_Q_reg_41_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: MDM_ModInt_BanInt_RegDS_Q_reg_14_ (falling edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  MDM_ModEje_RegInst_Q_reg_41_/CLK (DFFARX2)       0.00      0.00 r
+  MDM_ModEje_RegInst_Q_reg_41_/QN (DFFARX2)        0.48      0.48 f
+  U668/ZN (INVX0)                                  0.44      0.93 r
+  U1261/ZN (INVX0)                                 0.33      1.25 f
+  U667/ZN (INVX0)                                  0.17      1.42 r
+  CDM/U126/QN (AOI22X1)                            0.44      1.87 f
+  CDM/U128/ZN (INVX0)                              0.22      2.08 r
+  CDM/U80/ZN (INVX0)                               0.24      2.32 f
+  CDM/U275/ZN (INVX0)                              0.10      2.42 r
+  CDM/U276/ZN (INVX0)                              0.18      2.60 f
+  CDM/U362/QN (NAND2X0)                            0.18      2.78 r
+  CDM/U68/ZN (INVX0)                               0.17      2.95 f
+  CDM/U70/ZN (INVX0)                               0.15      3.10 r
+  CDM/U854/ZN (INVX0)                              0.12      3.22 f
+  CDM/U456/QN (NAND2X0)                            0.16      3.38 r
+  CDM/U21/QN (NAND2X1)                             0.19      3.57 f
+  CDM/U383/QN (NOR4X1)                             0.37      3.94 r
+  CDM/U90/QN (NAND2X1)                             0.30      4.24 f
+  CDM/U445/ZN (INVX0)                              0.15      4.39 r
+  CDM/U87/ZN (INVX1)                               0.12      4.51 f
+  CDM/U440/ZN (INVX0)                              0.16      4.67 r
+  CDM/U153/ZN (INVX0)                              0.16      4.83 f
+  CDM/U49/Q (AND2X2)                               0.25      5.08 f
+  CDM/U50/ZN (INVX0)                               0.09      5.17 r
+  CDM/U649/Q (OR2X1)                               0.22      5.39 r
+  CDM/U666/ZN (INVX0)                              0.12      5.51 f
+  CDM/U242/QN (NAND2X1)                            0.12      5.63 r
+  CDM/U610/Q (AND4X1)                              0.42      6.05 r
+  CDM/U147/Q (AND2X2)                              0.28      6.33 r
+  CDM/U98/QN (NAND2X0)                             0.38      6.71 f
+  CDM/DDE/U52/ZN (INVX0)                           0.36      7.07 r
+  CDM/DDE/U237/ZN (INVX0)                          0.29      7.36 f
+  CDM/DDE/U527/ZN (INVX0)                          0.19      7.55 r
+  CDM/DDE/U304/ZN (INVX0)                          0.17      7.71 f
+  CDM/DDE/U164/ZN (INVX0)                          0.23      7.94 r
+  CDM/DDE/U529/ZN (INVX0)                          0.31      8.25 f
+  CDM/DDE/U109/ZN (INVX1)                          0.18      8.43 r
+  CDM/DDE/U703/Q (OR2X1)                           0.29      8.72 r
+  CDM/DDE/U208/ZN (INVX0)                          0.13      8.85 f
+  CDM/DDE/U291/ZN (INVX0)                          0.08      8.93 r
+  CDM/DDE/U209/Q (AND2X1)                          0.20      9.13 r
+  CDM/DDE/U279/QN (NAND2X0)                        0.28      9.41 f
+  CDM/DDE/U289/ZN (INVX0)                          0.19      9.61 r
+  CDM/DDE/U247/QN (NAND2X0)                        0.19      9.80 f
+  CDM/DDE/U246/QN (NOR2X0)                         0.19      9.99 r
+  CDM/DDE/U210/QN (NAND3X1)                        0.54     10.53 f
+  MDM_ModEje_mALU/U1538/Z (NBUFFX2)                0.24     10.77 f
+  MDM_ModEje_mALU/U732/ZN (INVX1)                  0.15     10.92 r
+  MDM_ModEje_mALU/U1665/ZN (INVX0)                 0.27     11.19 f
+  MDM_ModEje_mALU/U998/Q (AND2X2)                  0.33     11.52 f
+  MDM_ModEje_mALU/U1007/ZN (INVX1)                 0.18     11.69 r
+  MDM_ModEje_mALU/U181/QN (NAND3X2)                0.43     12.12 f
+  MDM_ModEje_mALU/U1730/QN (NAND2X1)               0.11     12.23 r
+  MDM_ModEje_mALU/U1746/QN (NAND2X1)               0.18     12.41 f
+  MDM_ModEje_mALU/U1783/Q (AND2X1)                 0.24     12.65 f
+  MDM_ModEje_mALU/U1784/ZN (INVX0)                 0.13     12.78 r
+  MDM_ModEje_mALU/U1785/Q (OA22X1)                 0.35     13.13 r
+  MDM_ModEje_mALU/U670/Q (OR2X1)                   0.21     13.34 r
+  MDM_ModEje_mALU/U952/ZN (INVX0)                  0.11     13.45 f
+  MDM_ModEje_mALU/U102/QN (NOR2X2)                 0.10     13.55 r
+  MDM_ModEje_mALU/U94/Q (AND4X1)                   0.37     13.92 r
+  MDM_ModEje_mALU/U95/ZN (INVX0)                   0.11     14.03 f
+  MDM_ModEje_mALU/U255/Q (OR2X2)                   0.23     14.26 f
+  MDM_ModEje_mALU/U1884/QN (NOR2X0)                0.13     14.38 r
+  MDM_ModEje_mALU/U1134/ZN (INVX0)                 0.14     14.53 f
+  MDM_ModEje_mALU/U1135/ZN (INVX0)                 0.09     14.61 r
+  MDM_ModEje_mALU/U1925/Q (AND2X1)                 0.24     14.86 r
+  MDM_ModEje_mALU/U1989/QN (NAND2X1)               0.15     15.00 f
+  MDM_ModEje_mALU/U1990/Q (OA21X1)                 0.32     15.33 f
+  MDM_ModEje_mALU/U1991/ZN (INVX0)                 0.28     15.61 r
+  MDM_ModEje_mALU/U1372/ZN (INVX1)                 0.31     15.92 f
+  MDM_ModEje_mALU/U595/Q (XNOR2X1)                 0.45     16.37 r
+  MDM_ModEje_mALU/U158/QN (OAI22X2)                0.40     16.77 f
+  MDM_ModEje_mALU/U2062/S (FADDX1)                 0.49     17.26 f
+  MDM_ModEje_mALU/U2063/S (FADDX1)                 0.47     17.73 f
+  MDM_ModEje_mALU/U295/ZN (INVX0)                  0.10     17.83 r
+  MDM_ModEje_mALU/U296/ZN (INVX0)                  0.09     17.92 f
+  MDM_ModEje_mALU/U2065/QN (NOR2X0)                0.13     18.05 r
+  MDM_ModEje_mALU/U2066/ZN (INVX0)                 0.14     18.18 f
+  MDM_ModEje_mALU/U265/QN (NAND2X0)                0.16     18.35 r
+  MDM_ModEje_mALU/U2067/QN (NOR2X0)                0.17     18.52 f
+  MDM_ModEje_mALU/U214/Q (AND2X1)                  0.23     18.75 f
+  MDM_ModEje_mALU/U215/QN (NOR2X1)                 0.15     18.90 r
+  MDM_ModEje_mALU/U236/ZN (INVX0)                  0.15     19.06 f
+  MDM_ModEje_mALU/U237/ZN (INVX0)                  0.12     19.18 r
+  MDM_ModEje_mALU/U814/QN (OAI21X1)                0.40     19.58 f
+  MDM_ModEje_mALU/U2522/ZN (INVX0)                 0.22     19.80 r
+  MDM_ModEje_mALU/U109/QN (OAI21X2)                0.44     20.24 f
+  MDM_ModEje_mALU/U2541/Q (XNOR2X1)                0.44     20.68 f
+  MDM_ModEje_mALU/U2542/Q (AND2X1)                 0.25     20.94 f
+  MDM_ModEje_mALU/U520/QN (NOR2X0)                 0.24     21.18 r
+  MDM_ModEje_mALU/U1647/QN (NAND2X0)               0.24     21.41 f
+  MDM_ModEje_mALU/U3092/Q (OR2X1)                  0.27     21.68 f
+  MDM_ModEje_mALU/U3093/ZN (INVX0)                 0.11     21.80 r
+  MDM_ModEje_mALU/U1029/Q (AND2X1)                 0.26     22.06 r
+  MDM_ModEje_mALU/U227/QN (NAND2X1)                0.13     22.19 f
+  MDM_ModEje_mALU/U1078/ZN (INVX0)                 0.11     22.30 r
+  MDM_ModEje_mALU/U1079/ZN (INVX0)                 0.16     22.46 f
+  MDM_ModEje_mALU/U211/Q (OR3X2)                   0.30     22.76 f
+  MDM_ModEje_mALU/U3621/Q (AND3X1)                 0.33     23.09 f
+  U1156/QN (AOI21X1)                               0.42     23.51 r
+  U146/Q (AND2X1)                                  0.20     23.71 r
+  U950/QN (NAND3X1)                                0.45     24.16 f
+  U2079/ZN (INVX0)                                 0.14     24.29 r
+  U2008/ZN (INVX0)                                 0.31     24.60 f
+  U1321/Q (MUX21X1)                                0.35     24.95 f
+  MDM_ModInt_BanInt_RegDS_Q_reg_14_/D (DFFNARX1)   0.00     24.95 f
+  data arrival time                                         24.95
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModInt_BanInt_RegDS_Q_reg_14_/CLK (DFFNARX1)
+                                                   0.00      0.50 f
+  clock uncertainty                               -0.05      0.45
+  library setup time                              -0.35      0.10
+  data required time                                         0.10
+  ------------------------------------------------------------------------
+  data required time                                         0.10
+  data arrival time                                        -24.95
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -24.85
+
+
+
+  Startpoint: MDM_ModEje_RegInst_Q_reg_41_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: MDM_ModEje_BanEje_RegSP_Q_reg_14_ (falling edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  MDM_ModEje_RegInst_Q_reg_41_/CLK (DFFARX2)       0.00      0.00 r
+  MDM_ModEje_RegInst_Q_reg_41_/QN (DFFARX2)        0.48      0.48 f
+  U668/ZN (INVX0)                                  0.44      0.93 r
+  U1261/ZN (INVX0)                                 0.33      1.25 f
+  U667/ZN (INVX0)                                  0.17      1.42 r
+  CDM/U126/QN (AOI22X1)                            0.44      1.87 f
+  CDM/U128/ZN (INVX0)                              0.22      2.08 r
+  CDM/U80/ZN (INVX0)                               0.24      2.32 f
+  CDM/U275/ZN (INVX0)                              0.10      2.42 r
+  CDM/U276/ZN (INVX0)                              0.18      2.60 f
+  CDM/U362/QN (NAND2X0)                            0.18      2.78 r
+  CDM/U68/ZN (INVX0)                               0.17      2.95 f
+  CDM/U70/ZN (INVX0)                               0.15      3.10 r
+  CDM/U854/ZN (INVX0)                              0.12      3.22 f
+  CDM/U456/QN (NAND2X0)                            0.16      3.38 r
+  CDM/U21/QN (NAND2X1)                             0.19      3.57 f
+  CDM/U383/QN (NOR4X1)                             0.37      3.94 r
+  CDM/U90/QN (NAND2X1)                             0.30      4.24 f
+  CDM/U445/ZN (INVX0)                              0.15      4.39 r
+  CDM/U87/ZN (INVX1)                               0.12      4.51 f
+  CDM/U440/ZN (INVX0)                              0.16      4.67 r
+  CDM/U153/ZN (INVX0)                              0.16      4.83 f
+  CDM/U49/Q (AND2X2)                               0.25      5.08 f
+  CDM/U50/ZN (INVX0)                               0.09      5.17 r
+  CDM/U649/Q (OR2X1)                               0.22      5.39 r
+  CDM/U666/ZN (INVX0)                              0.12      5.51 f
+  CDM/U242/QN (NAND2X1)                            0.12      5.63 r
+  CDM/U610/Q (AND4X1)                              0.42      6.05 r
+  CDM/U147/Q (AND2X2)                              0.28      6.33 r
+  CDM/U98/QN (NAND2X0)                             0.38      6.71 f
+  CDM/DDE/U52/ZN (INVX0)                           0.36      7.07 r
+  CDM/DDE/U237/ZN (INVX0)                          0.29      7.36 f
+  CDM/DDE/U527/ZN (INVX0)                          0.19      7.55 r
+  CDM/DDE/U304/ZN (INVX0)                          0.17      7.71 f
+  CDM/DDE/U164/ZN (INVX0)                          0.23      7.94 r
+  CDM/DDE/U529/ZN (INVX0)                          0.31      8.25 f
+  CDM/DDE/U109/ZN (INVX1)                          0.18      8.43 r
+  CDM/DDE/U703/Q (OR2X1)                           0.29      8.72 r
+  CDM/DDE/U208/ZN (INVX0)                          0.13      8.85 f
+  CDM/DDE/U291/ZN (INVX0)                          0.08      8.93 r
+  CDM/DDE/U209/Q (AND2X1)                          0.20      9.13 r
+  CDM/DDE/U279/QN (NAND2X0)                        0.28      9.41 f
+  CDM/DDE/U289/ZN (INVX0)                          0.19      9.61 r
+  CDM/DDE/U247/QN (NAND2X0)                        0.19      9.80 f
+  CDM/DDE/U246/QN (NOR2X0)                         0.19      9.99 r
+  CDM/DDE/U210/QN (NAND3X1)                        0.54     10.53 f
+  MDM_ModEje_mALU/U1538/Z (NBUFFX2)                0.24     10.77 f
+  MDM_ModEje_mALU/U732/ZN (INVX1)                  0.15     10.92 r
+  MDM_ModEje_mALU/U1665/ZN (INVX0)                 0.27     11.19 f
+  MDM_ModEje_mALU/U998/Q (AND2X2)                  0.33     11.52 f
+  MDM_ModEje_mALU/U1007/ZN (INVX1)                 0.18     11.69 r
+  MDM_ModEje_mALU/U181/QN (NAND3X2)                0.43     12.12 f
+  MDM_ModEje_mALU/U1730/QN (NAND2X1)               0.11     12.23 r
+  MDM_ModEje_mALU/U1746/QN (NAND2X1)               0.18     12.41 f
+  MDM_ModEje_mALU/U1783/Q (AND2X1)                 0.24     12.65 f
+  MDM_ModEje_mALU/U1784/ZN (INVX0)                 0.13     12.78 r
+  MDM_ModEje_mALU/U1785/Q (OA22X1)                 0.35     13.13 r
+  MDM_ModEje_mALU/U670/Q (OR2X1)                   0.21     13.34 r
+  MDM_ModEje_mALU/U952/ZN (INVX0)                  0.11     13.45 f
+  MDM_ModEje_mALU/U102/QN (NOR2X2)                 0.10     13.55 r
+  MDM_ModEje_mALU/U94/Q (AND4X1)                   0.37     13.92 r
+  MDM_ModEje_mALU/U95/ZN (INVX0)                   0.11     14.03 f
+  MDM_ModEje_mALU/U255/Q (OR2X2)                   0.23     14.26 f
+  MDM_ModEje_mALU/U1884/QN (NOR2X0)                0.13     14.38 r
+  MDM_ModEje_mALU/U1134/ZN (INVX0)                 0.14     14.53 f
+  MDM_ModEje_mALU/U1135/ZN (INVX0)                 0.09     14.61 r
+  MDM_ModEje_mALU/U1925/Q (AND2X1)                 0.24     14.86 r
+  MDM_ModEje_mALU/U1989/QN (NAND2X1)               0.15     15.00 f
+  MDM_ModEje_mALU/U1990/Q (OA21X1)                 0.32     15.33 f
+  MDM_ModEje_mALU/U1991/ZN (INVX0)                 0.28     15.61 r
+  MDM_ModEje_mALU/U1372/ZN (INVX1)                 0.31     15.92 f
+  MDM_ModEje_mALU/U595/Q (XNOR2X1)                 0.45     16.37 r
+  MDM_ModEje_mALU/U158/QN (OAI22X2)                0.40     16.77 f
+  MDM_ModEje_mALU/U2062/S (FADDX1)                 0.49     17.26 f
+  MDM_ModEje_mALU/U2063/S (FADDX1)                 0.47     17.73 f
+  MDM_ModEje_mALU/U295/ZN (INVX0)                  0.10     17.83 r
+  MDM_ModEje_mALU/U296/ZN (INVX0)                  0.09     17.92 f
+  MDM_ModEje_mALU/U2065/QN (NOR2X0)                0.13     18.05 r
+  MDM_ModEje_mALU/U2066/ZN (INVX0)                 0.14     18.18 f
+  MDM_ModEje_mALU/U265/QN (NAND2X0)                0.16     18.35 r
+  MDM_ModEje_mALU/U2067/QN (NOR2X0)                0.17     18.52 f
+  MDM_ModEje_mALU/U214/Q (AND2X1)                  0.23     18.75 f
+  MDM_ModEje_mALU/U215/QN (NOR2X1)                 0.15     18.90 r
+  MDM_ModEje_mALU/U236/ZN (INVX0)                  0.15     19.06 f
+  MDM_ModEje_mALU/U237/ZN (INVX0)                  0.12     19.18 r
+  MDM_ModEje_mALU/U814/QN (OAI21X1)                0.40     19.58 f
+  MDM_ModEje_mALU/U2522/ZN (INVX0)                 0.22     19.80 r
+  MDM_ModEje_mALU/U109/QN (OAI21X2)                0.44     20.24 f
+  MDM_ModEje_mALU/U2541/Q (XNOR2X1)                0.44     20.68 f
+  MDM_ModEje_mALU/U2542/Q (AND2X1)                 0.25     20.94 f
+  MDM_ModEje_mALU/U520/QN (NOR2X0)                 0.24     21.18 r
+  MDM_ModEje_mALU/U1647/QN (NAND2X0)               0.24     21.41 f
+  MDM_ModEje_mALU/U3092/Q (OR2X1)                  0.27     21.68 f
+  MDM_ModEje_mALU/U3093/ZN (INVX0)                 0.11     21.80 r
+  MDM_ModEje_mALU/U1029/Q (AND2X1)                 0.26     22.06 r
+  MDM_ModEje_mALU/U227/QN (NAND2X1)                0.13     22.19 f
+  MDM_ModEje_mALU/U1078/ZN (INVX0)                 0.11     22.30 r
+  MDM_ModEje_mALU/U1079/ZN (INVX0)                 0.16     22.46 f
+  MDM_ModEje_mALU/U211/Q (OR3X2)                   0.30     22.76 f
+  MDM_ModEje_mALU/U3621/Q (AND3X1)                 0.33     23.09 f
+  U1156/QN (AOI21X1)                               0.42     23.51 r
+  U146/Q (AND2X1)                                  0.20     23.71 r
+  U950/QN (NAND3X1)                                0.45     24.16 f
+  U2079/ZN (INVX0)                                 0.14     24.29 r
+  U2008/ZN (INVX0)                                 0.31     24.60 f
+  U1315/Q (MUX21X1)                                0.34     24.94 f
+  MDM_ModEje_BanEje_RegSP_Q_reg_14_/D (DFFNARX1)   0.00     24.94 f
+  data arrival time                                         24.94
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModEje_BanEje_RegSP_Q_reg_14_/CLK (DFFNARX1)
+                                                   0.00      0.50 f
+  clock uncertainty                               -0.05      0.45
+  library setup time                              -0.34      0.11
+  data required time                                         0.11
+  ------------------------------------------------------------------------
+  data required time                                         0.11
+  data arrival time                                        -24.94
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -24.84
+
+
+
+  Startpoint: MDM_ModEje_RegInst_Q_reg_41_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: MDM_ModEje_BanEje_RegDH_Q_reg_7_ (falling edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  MDM_ModEje_RegInst_Q_reg_41_/CLK (DFFARX2)       0.00      0.00 r
+  MDM_ModEje_RegInst_Q_reg_41_/QN (DFFARX2)        0.48      0.48 f
+  U668/ZN (INVX0)                                  0.44      0.93 r
+  U1261/ZN (INVX0)                                 0.33      1.25 f
+  U667/ZN (INVX0)                                  0.17      1.42 r
+  CDM/U126/QN (AOI22X1)                            0.44      1.87 f
+  CDM/U128/ZN (INVX0)                              0.22      2.08 r
+  CDM/U80/ZN (INVX0)                               0.24      2.32 f
+  CDM/U275/ZN (INVX0)                              0.10      2.42 r
+  CDM/U276/ZN (INVX0)                              0.18      2.60 f
+  CDM/U362/QN (NAND2X0)                            0.18      2.78 r
+  CDM/U68/ZN (INVX0)                               0.17      2.95 f
+  CDM/U70/ZN (INVX0)                               0.15      3.10 r
+  CDM/U854/ZN (INVX0)                              0.12      3.22 f
+  CDM/U456/QN (NAND2X0)                            0.16      3.38 r
+  CDM/U21/QN (NAND2X1)                             0.19      3.57 f
+  CDM/U383/QN (NOR4X1)                             0.37      3.94 r
+  CDM/U90/QN (NAND2X1)                             0.30      4.24 f
+  CDM/U445/ZN (INVX0)                              0.15      4.39 r
+  CDM/U87/ZN (INVX1)                               0.12      4.51 f
+  CDM/U440/ZN (INVX0)                              0.16      4.67 r
+  CDM/U153/ZN (INVX0)                              0.16      4.83 f
+  CDM/U49/Q (AND2X2)                               0.25      5.08 f
+  CDM/U50/ZN (INVX0)                               0.09      5.17 r
+  CDM/U649/Q (OR2X1)                               0.22      5.39 r
+  CDM/U666/ZN (INVX0)                              0.12      5.51 f
+  CDM/U242/QN (NAND2X1)                            0.12      5.63 r
+  CDM/U610/Q (AND4X1)                              0.42      6.05 r
+  CDM/U147/Q (AND2X2)                              0.28      6.33 r
+  CDM/U98/QN (NAND2X0)                             0.38      6.71 f
+  CDM/DDE/U52/ZN (INVX0)                           0.36      7.07 r
+  CDM/DDE/U237/ZN (INVX0)                          0.29      7.36 f
+  CDM/DDE/U527/ZN (INVX0)                          0.19      7.55 r
+  CDM/DDE/U304/ZN (INVX0)                          0.17      7.71 f
+  CDM/DDE/U164/ZN (INVX0)                          0.23      7.94 r
+  CDM/DDE/U529/ZN (INVX0)                          0.31      8.25 f
+  CDM/DDE/U109/ZN (INVX1)                          0.18      8.43 r
+  CDM/DDE/U703/Q (OR2X1)                           0.29      8.72 r
+  CDM/DDE/U208/ZN (INVX0)                          0.13      8.85 f
+  CDM/DDE/U291/ZN (INVX0)                          0.08      8.93 r
+  CDM/DDE/U209/Q (AND2X1)                          0.20      9.13 r
+  CDM/DDE/U279/QN (NAND2X0)                        0.28      9.41 f
+  CDM/DDE/U289/ZN (INVX0)                          0.19      9.61 r
+  CDM/DDE/U247/QN (NAND2X0)                        0.19      9.80 f
+  CDM/DDE/U246/QN (NOR2X0)                         0.19      9.99 r
+  CDM/DDE/U210/QN (NAND3X1)                        0.54     10.53 f
+  MDM_ModEje_mALU/U1538/Z (NBUFFX2)                0.24     10.77 f
+  MDM_ModEje_mALU/U732/ZN (INVX1)                  0.15     10.92 r
+  MDM_ModEje_mALU/U1665/ZN (INVX0)                 0.27     11.19 f
+  MDM_ModEje_mALU/U998/Q (AND2X2)                  0.33     11.52 f
+  MDM_ModEje_mALU/U1007/ZN (INVX1)                 0.18     11.69 r
+  MDM_ModEje_mALU/U181/QN (NAND3X2)                0.43     12.12 f
+  MDM_ModEje_mALU/U1730/QN (NAND2X1)               0.11     12.23 r
+  MDM_ModEje_mALU/U1746/QN (NAND2X1)               0.18     12.41 f
+  MDM_ModEje_mALU/U1783/Q (AND2X1)                 0.24     12.65 f
+  MDM_ModEje_mALU/U1784/ZN (INVX0)                 0.13     12.78 r
+  MDM_ModEje_mALU/U1785/Q (OA22X1)                 0.35     13.13 r
+  MDM_ModEje_mALU/U670/Q (OR2X1)                   0.21     13.34 r
+  MDM_ModEje_mALU/U952/ZN (INVX0)                  0.11     13.45 f
+  MDM_ModEje_mALU/U102/QN (NOR2X2)                 0.10     13.55 r
+  MDM_ModEje_mALU/U94/Q (AND4X1)                   0.37     13.92 r
+  MDM_ModEje_mALU/U95/ZN (INVX0)                   0.11     14.03 f
+  MDM_ModEje_mALU/U255/Q (OR2X2)                   0.23     14.26 f
+  MDM_ModEje_mALU/U1884/QN (NOR2X0)                0.13     14.38 r
+  MDM_ModEje_mALU/U1134/ZN (INVX0)                 0.14     14.53 f
+  MDM_ModEje_mALU/U1135/ZN (INVX0)                 0.09     14.61 r
+  MDM_ModEje_mALU/U1925/Q (AND2X1)                 0.24     14.86 r
+  MDM_ModEje_mALU/U1989/QN (NAND2X1)               0.15     15.00 f
+  MDM_ModEje_mALU/U1990/Q (OA21X1)                 0.32     15.33 f
+  MDM_ModEje_mALU/U1991/ZN (INVX0)                 0.28     15.61 r
+  MDM_ModEje_mALU/U1372/ZN (INVX1)                 0.31     15.92 f
+  MDM_ModEje_mALU/U595/Q (XNOR2X1)                 0.45     16.37 r
+  MDM_ModEje_mALU/U158/QN (OAI22X2)                0.40     16.77 f
+  MDM_ModEje_mALU/U2062/S (FADDX1)                 0.49     17.26 f
+  MDM_ModEje_mALU/U2063/S (FADDX1)                 0.47     17.73 f
+  MDM_ModEje_mALU/U295/ZN (INVX0)                  0.10     17.83 r
+  MDM_ModEje_mALU/U296/ZN (INVX0)                  0.09     17.92 f
+  MDM_ModEje_mALU/U2065/QN (NOR2X0)                0.13     18.05 r
+  MDM_ModEje_mALU/U2066/ZN (INVX0)                 0.14     18.18 f
+  MDM_ModEje_mALU/U265/QN (NAND2X0)                0.16     18.35 r
+  MDM_ModEje_mALU/U2067/QN (NOR2X0)                0.17     18.52 f
+  MDM_ModEje_mALU/U214/Q (AND2X1)                  0.23     18.75 f
+  MDM_ModEje_mALU/U215/QN (NOR2X1)                 0.15     18.90 r
+  MDM_ModEje_mALU/U236/ZN (INVX0)                  0.15     19.06 f
+  MDM_ModEje_mALU/U237/ZN (INVX0)                  0.12     19.18 r
+  MDM_ModEje_mALU/U814/QN (OAI21X1)                0.40     19.58 f
+  MDM_ModEje_mALU/U2522/ZN (INVX0)                 0.22     19.80 r
+  MDM_ModEje_mALU/U109/QN (OAI21X2)                0.44     20.24 f
+  MDM_ModEje_mALU/U2541/Q (XNOR2X1)                0.44     20.68 f
+  MDM_ModEje_mALU/U2542/Q (AND2X1)                 0.25     20.94 f
+  MDM_ModEje_mALU/U520/QN (NOR2X0)                 0.24     21.18 r
+  MDM_ModEje_mALU/U1647/QN (NAND2X0)               0.24     21.41 f
+  MDM_ModEje_mALU/U3092/Q (OR2X1)                  0.27     21.68 f
+  MDM_ModEje_mALU/U3093/ZN (INVX0)                 0.11     21.80 r
+  MDM_ModEje_mALU/U1029/Q (AND2X1)                 0.26     22.06 r
+  MDM_ModEje_mALU/U227/QN (NAND2X1)                0.13     22.19 f
+  MDM_ModEje_mALU/U1078/ZN (INVX0)                 0.11     22.30 r
+  MDM_ModEje_mALU/U1079/ZN (INVX0)                 0.16     22.46 f
+  MDM_ModEje_mALU/U13/Q (OR3X2)                    0.30     22.76 f
+  MDM_ModEje_mALU/U3104/Q (MUX21X1)                0.26     23.02 f
+  MDM_ModEje_mALU/U3105/Q (OA21X1)                 0.25     23.27 f
+  U1846/ZN (INVX0)                                 0.10     23.36 r
+  U1337/Q (AND2X1)                                 0.22     23.58 r
+  U1326/Q (AND2X1)                                 0.24     23.82 r
+  U735/Q (AND2X1)                                  0.23     24.05 r
+  U3307/QN (NAND2X0)                               0.17     24.21 f
+  U583/Q (AND3X1)                                  0.41     24.62 f
+  U57/Q (MUX21X1)                                  0.31     24.93 f
+  MDM_ModEje_BanEje_RegDH_Q_reg_7_/D (DFFNARX1)    0.00     24.93 f
+  data arrival time                                         24.93
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModEje_BanEje_RegDH_Q_reg_7_/CLK (DFFNARX1)
+                                                   0.00      0.50 f
+  clock uncertainty                               -0.05      0.45
+  library setup time                              -0.34      0.11
+  data required time                                         0.11
+  ------------------------------------------------------------------------
+  data required time                                         0.11
+  data arrival time                                        -24.93
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -24.83
+
+
+
+  Startpoint: MDM_ModEje_RegInst_Q_reg_41_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: MDM_ModInt_DIO_RegSal2_Q_reg_14_ (falling edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  MDM_ModEje_RegInst_Q_reg_41_/CLK (DFFARX2)       0.00      0.00 r
+  MDM_ModEje_RegInst_Q_reg_41_/QN (DFFARX2)        0.48      0.48 f
+  U668/ZN (INVX0)                                  0.44      0.93 r
+  U1261/ZN (INVX0)                                 0.33      1.25 f
+  U667/ZN (INVX0)                                  0.17      1.42 r
+  CDM/U126/QN (AOI22X1)                            0.44      1.87 f
+  CDM/U128/ZN (INVX0)                              0.22      2.08 r
+  CDM/U80/ZN (INVX0)                               0.24      2.32 f
+  CDM/U275/ZN (INVX0)                              0.10      2.42 r
+  CDM/U276/ZN (INVX0)                              0.18      2.60 f
+  CDM/U362/QN (NAND2X0)                            0.18      2.78 r
+  CDM/U68/ZN (INVX0)                               0.17      2.95 f
+  CDM/U70/ZN (INVX0)                               0.15      3.10 r
+  CDM/U854/ZN (INVX0)                              0.12      3.22 f
+  CDM/U456/QN (NAND2X0)                            0.16      3.38 r
+  CDM/U21/QN (NAND2X1)                             0.19      3.57 f
+  CDM/U383/QN (NOR4X1)                             0.37      3.94 r
+  CDM/U90/QN (NAND2X1)                             0.30      4.24 f
+  CDM/U445/ZN (INVX0)                              0.15      4.39 r
+  CDM/U87/ZN (INVX1)                               0.12      4.51 f
+  CDM/U440/ZN (INVX0)                              0.16      4.67 r
+  CDM/U153/ZN (INVX0)                              0.16      4.83 f
+  CDM/U49/Q (AND2X2)                               0.25      5.08 f
+  CDM/U50/ZN (INVX0)                               0.09      5.17 r
+  CDM/U649/Q (OR2X1)                               0.22      5.39 r
+  CDM/U666/ZN (INVX0)                              0.12      5.51 f
+  CDM/U242/QN (NAND2X1)                            0.12      5.63 r
+  CDM/U610/Q (AND4X1)                              0.42      6.05 r
+  CDM/U147/Q (AND2X2)                              0.28      6.33 r
+  CDM/U98/QN (NAND2X0)                             0.38      6.71 f
+  CDM/DDE/U52/ZN (INVX0)                           0.36      7.07 r
+  CDM/DDE/U237/ZN (INVX0)                          0.29      7.36 f
+  CDM/DDE/U527/ZN (INVX0)                          0.19      7.55 r
+  CDM/DDE/U304/ZN (INVX0)                          0.17      7.71 f
+  CDM/DDE/U164/ZN (INVX0)                          0.23      7.94 r
+  CDM/DDE/U529/ZN (INVX0)                          0.31      8.25 f
+  CDM/DDE/U109/ZN (INVX1)                          0.18      8.43 r
+  CDM/DDE/U703/Q (OR2X1)                           0.29      8.72 r
+  CDM/DDE/U208/ZN (INVX0)                          0.13      8.85 f
+  CDM/DDE/U291/ZN (INVX0)                          0.08      8.93 r
+  CDM/DDE/U209/Q (AND2X1)                          0.20      9.13 r
+  CDM/DDE/U279/QN (NAND2X0)                        0.28      9.41 f
+  CDM/DDE/U289/ZN (INVX0)                          0.19      9.61 r
+  CDM/DDE/U247/QN (NAND2X0)                        0.19      9.80 f
+  CDM/DDE/U246/QN (NOR2X0)                         0.19      9.99 r
+  CDM/DDE/U210/QN (NAND3X1)                        0.54     10.53 f
+  MDM_ModEje_mALU/U1538/Z (NBUFFX2)                0.24     10.77 f
+  MDM_ModEje_mALU/U732/ZN (INVX1)                  0.15     10.92 r
+  MDM_ModEje_mALU/U1665/ZN (INVX0)                 0.27     11.19 f
+  MDM_ModEje_mALU/U998/Q (AND2X2)                  0.33     11.52 f
+  MDM_ModEje_mALU/U1007/ZN (INVX1)                 0.18     11.69 r
+  MDM_ModEje_mALU/U181/QN (NAND3X2)                0.43     12.12 f
+  MDM_ModEje_mALU/U1730/QN (NAND2X1)               0.11     12.23 r
+  MDM_ModEje_mALU/U1746/QN (NAND2X1)               0.18     12.41 f
+  MDM_ModEje_mALU/U1783/Q (AND2X1)                 0.24     12.65 f
+  MDM_ModEje_mALU/U1784/ZN (INVX0)                 0.13     12.78 r
+  MDM_ModEje_mALU/U1785/Q (OA22X1)                 0.35     13.13 r
+  MDM_ModEje_mALU/U670/Q (OR2X1)                   0.21     13.34 r
+  MDM_ModEje_mALU/U952/ZN (INVX0)                  0.11     13.45 f
+  MDM_ModEje_mALU/U102/QN (NOR2X2)                 0.10     13.55 r
+  MDM_ModEje_mALU/U94/Q (AND4X1)                   0.37     13.92 r
+  MDM_ModEje_mALU/U95/ZN (INVX0)                   0.11     14.03 f
+  MDM_ModEje_mALU/U255/Q (OR2X2)                   0.23     14.26 f
+  MDM_ModEje_mALU/U1884/QN (NOR2X0)                0.13     14.38 r
+  MDM_ModEje_mALU/U1134/ZN (INVX0)                 0.14     14.53 f
+  MDM_ModEje_mALU/U1135/ZN (INVX0)                 0.09     14.61 r
+  MDM_ModEje_mALU/U1925/Q (AND2X1)                 0.24     14.86 r
+  MDM_ModEje_mALU/U1989/QN (NAND2X1)               0.15     15.00 f
+  MDM_ModEje_mALU/U1990/Q (OA21X1)                 0.32     15.33 f
+  MDM_ModEje_mALU/U1991/ZN (INVX0)                 0.28     15.61 r
+  MDM_ModEje_mALU/U1372/ZN (INVX1)                 0.31     15.92 f
+  MDM_ModEje_mALU/U595/Q (XNOR2X1)                 0.45     16.37 r
+  MDM_ModEje_mALU/U158/QN (OAI22X2)                0.40     16.77 f
+  MDM_ModEje_mALU/U2062/S (FADDX1)                 0.49     17.26 f
+  MDM_ModEje_mALU/U2063/S (FADDX1)                 0.47     17.73 f
+  MDM_ModEje_mALU/U295/ZN (INVX0)                  0.10     17.83 r
+  MDM_ModEje_mALU/U296/ZN (INVX0)                  0.09     17.92 f
+  MDM_ModEje_mALU/U2065/QN (NOR2X0)                0.13     18.05 r
+  MDM_ModEje_mALU/U2066/ZN (INVX0)                 0.14     18.18 f
+  MDM_ModEje_mALU/U265/QN (NAND2X0)                0.16     18.35 r
+  MDM_ModEje_mALU/U2067/QN (NOR2X0)                0.17     18.52 f
+  MDM_ModEje_mALU/U214/Q (AND2X1)                  0.23     18.75 f
+  MDM_ModEje_mALU/U215/QN (NOR2X1)                 0.15     18.90 r
+  MDM_ModEje_mALU/U236/ZN (INVX0)                  0.15     19.06 f
+  MDM_ModEje_mALU/U237/ZN (INVX0)                  0.12     19.18 r
+  MDM_ModEje_mALU/U814/QN (OAI21X1)                0.40     19.58 f
+  MDM_ModEje_mALU/U2522/ZN (INVX0)                 0.22     19.80 r
+  MDM_ModEje_mALU/U109/QN (OAI21X2)                0.44     20.24 f
+  MDM_ModEje_mALU/U2541/Q (XNOR2X1)                0.44     20.68 f
+  MDM_ModEje_mALU/U2542/Q (AND2X1)                 0.25     20.94 f
+  MDM_ModEje_mALU/U520/QN (NOR2X0)                 0.24     21.18 r
+  MDM_ModEje_mALU/U1647/QN (NAND2X0)               0.24     21.41 f
+  MDM_ModEje_mALU/U3092/Q (OR2X1)                  0.27     21.68 f
+  MDM_ModEje_mALU/U3093/ZN (INVX0)                 0.11     21.80 r
+  MDM_ModEje_mALU/U1029/Q (AND2X1)                 0.26     22.06 r
+  MDM_ModEje_mALU/U227/QN (NAND2X1)                0.13     22.19 f
+  MDM_ModEje_mALU/U1078/ZN (INVX0)                 0.11     22.30 r
+  MDM_ModEje_mALU/U1079/ZN (INVX0)                 0.16     22.46 f
+  MDM_ModEje_mALU/U211/Q (OR3X2)                   0.30     22.76 f
+  MDM_ModEje_mALU/U3621/Q (AND3X1)                 0.33     23.09 f
+  U1156/QN (AOI21X1)                               0.42     23.51 r
+  U152/Q (AND2X1)                                  0.19     23.70 r
+  U1072/QN (NAND3X1)                               0.38     24.08 f
+  U2021/ZN (INVX0)                                 0.14     24.22 r
+  U1994/ZN (INVX0)                                 0.31     24.53 f
+  U1125/Q (MUX21X2)                                0.39     24.92 f
+  MDM_ModInt_DIO_RegSal2_Q_reg_14_/D (DFFNARX1)    0.00     24.92 f
+  data arrival time                                         24.92
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModInt_DIO_RegSal2_Q_reg_14_/CLK (DFFNARX1)
+                                                   0.00      0.50 f
+  clock uncertainty                               -0.05      0.45
+  library setup time                              -0.34      0.11
+  data required time                                         0.11
+  ------------------------------------------------------------------------
+  data required time                                         0.11
+  data arrival time                                        -24.92
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -24.81
+
+
+
+  Startpoint: MDM_ModEje_RegInst_Q_reg_41_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: MDM_ModEje_mALU/REGF9_Q_reg (falling edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  MDM_ModEje_RegInst_Q_reg_41_/CLK (DFFARX2)       0.00      0.00 r
+  MDM_ModEje_RegInst_Q_reg_41_/QN (DFFARX2)        0.48      0.48 f
+  U668/ZN (INVX0)                                  0.44      0.93 r
+  U1261/ZN (INVX0)                                 0.33      1.25 f
+  U667/ZN (INVX0)                                  0.17      1.42 r
+  CDM/U126/QN (AOI22X1)                            0.44      1.87 f
+  CDM/U128/ZN (INVX0)                              0.22      2.08 r
+  CDM/U80/ZN (INVX0)                               0.24      2.32 f
+  CDM/U275/ZN (INVX0)                              0.10      2.42 r
+  CDM/U276/ZN (INVX0)                              0.18      2.60 f
+  CDM/U362/QN (NAND2X0)                            0.18      2.78 r
+  CDM/U68/ZN (INVX0)                               0.17      2.95 f
+  CDM/U70/ZN (INVX0)                               0.15      3.10 r
+  CDM/U854/ZN (INVX0)                              0.12      3.22 f
+  CDM/U456/QN (NAND2X0)                            0.16      3.38 r
+  CDM/U21/QN (NAND2X1)                             0.19      3.57 f
+  CDM/U383/QN (NOR4X1)                             0.37      3.94 r
+  CDM/U90/QN (NAND2X1)                             0.30      4.24 f
+  CDM/U445/ZN (INVX0)                              0.15      4.39 r
+  CDM/U87/ZN (INVX1)                               0.12      4.51 f
+  CDM/U440/ZN (INVX0)                              0.16      4.67 r
+  CDM/U153/ZN (INVX0)                              0.16      4.83 f
+  CDM/U49/Q (AND2X2)                               0.25      5.08 f
+  CDM/U50/ZN (INVX0)                               0.09      5.17 r
+  CDM/U649/Q (OR2X1)                               0.22      5.39 r
+  CDM/U666/ZN (INVX0)                              0.12      5.51 f
+  CDM/U242/QN (NAND2X1)                            0.12      5.63 r
+  CDM/U610/Q (AND4X1)                              0.42      6.05 r
+  CDM/U147/Q (AND2X2)                              0.28      6.33 r
+  CDM/U98/QN (NAND2X0)                             0.38      6.71 f
+  CDM/DDE/U52/ZN (INVX0)                           0.36      7.07 r
+  CDM/DDE/U237/ZN (INVX0)                          0.29      7.36 f
+  CDM/DDE/U527/ZN (INVX0)                          0.19      7.55 r
+  CDM/DDE/U304/ZN (INVX0)                          0.17      7.71 f
+  CDM/DDE/U164/ZN (INVX0)                          0.23      7.94 r
+  CDM/DDE/U529/ZN (INVX0)                          0.31      8.25 f
+  CDM/DDE/U109/ZN (INVX1)                          0.18      8.43 r
+  CDM/DDE/U703/Q (OR2X1)                           0.29      8.72 r
+  CDM/DDE/U208/ZN (INVX0)                          0.13      8.85 f
+  CDM/DDE/U291/ZN (INVX0)                          0.08      8.93 r
+  CDM/DDE/U209/Q (AND2X1)                          0.20      9.13 r
+  CDM/DDE/U279/QN (NAND2X0)                        0.28      9.41 f
+  CDM/DDE/U289/ZN (INVX0)                          0.19      9.61 r
+  CDM/DDE/U247/QN (NAND2X0)                        0.19      9.80 f
+  CDM/DDE/U246/QN (NOR2X0)                         0.19      9.99 r
+  CDM/DDE/U210/QN (NAND3X1)                        0.54     10.53 f
+  MDM_ModEje_mALU/U1538/Z (NBUFFX2)                0.24     10.77 f
+  MDM_ModEje_mALU/U732/ZN (INVX1)                  0.15     10.92 r
+  MDM_ModEje_mALU/U1665/ZN (INVX0)                 0.27     11.19 f
+  MDM_ModEje_mALU/U998/Q (AND2X2)                  0.33     11.52 f
+  MDM_ModEje_mALU/U1007/ZN (INVX1)                 0.18     11.69 r
+  MDM_ModEje_mALU/U181/QN (NAND3X2)                0.43     12.12 f
+  MDM_ModEje_mALU/U1730/QN (NAND2X1)               0.11     12.23 r
+  MDM_ModEje_mALU/U1746/QN (NAND2X1)               0.18     12.41 f
+  MDM_ModEje_mALU/U1783/Q (AND2X1)                 0.24     12.65 f
+  MDM_ModEje_mALU/U1784/ZN (INVX0)                 0.13     12.78 r
+  MDM_ModEje_mALU/U1785/Q (OA22X1)                 0.35     13.13 r
+  MDM_ModEje_mALU/U670/Q (OR2X1)                   0.21     13.34 r
+  MDM_ModEje_mALU/U952/ZN (INVX0)                  0.11     13.45 f
+  MDM_ModEje_mALU/U102/QN (NOR2X2)                 0.10     13.55 r
+  MDM_ModEje_mALU/U94/Q (AND4X1)                   0.37     13.92 r
+  MDM_ModEje_mALU/U95/ZN (INVX0)                   0.11     14.03 f
+  MDM_ModEje_mALU/U255/Q (OR2X2)                   0.23     14.26 f
+  MDM_ModEje_mALU/U1884/QN (NOR2X0)                0.13     14.38 r
+  MDM_ModEje_mALU/U1134/ZN (INVX0)                 0.14     14.53 f
+  MDM_ModEje_mALU/U1135/ZN (INVX0)                 0.09     14.61 r
+  MDM_ModEje_mALU/U1925/Q (AND2X1)                 0.24     14.86 r
+  MDM_ModEje_mALU/U1989/QN (NAND2X1)               0.15     15.00 f
+  MDM_ModEje_mALU/U1990/Q (OA21X1)                 0.32     15.33 f
+  MDM_ModEje_mALU/U1991/ZN (INVX0)                 0.28     15.61 r
+  MDM_ModEje_mALU/U1372/ZN (INVX1)                 0.31     15.92 f
+  MDM_ModEje_mALU/U595/Q (XNOR2X1)                 0.45     16.37 r
+  MDM_ModEje_mALU/U158/QN (OAI22X2)                0.40     16.77 f
+  MDM_ModEje_mALU/U2062/S (FADDX1)                 0.49     17.26 f
+  MDM_ModEje_mALU/U2063/S (FADDX1)                 0.47     17.73 f
+  MDM_ModEje_mALU/U295/ZN (INVX0)                  0.10     17.83 r
+  MDM_ModEje_mALU/U296/ZN (INVX0)                  0.09     17.92 f
+  MDM_ModEje_mALU/U2065/QN (NOR2X0)                0.13     18.05 r
+  MDM_ModEje_mALU/U2066/ZN (INVX0)                 0.14     18.18 f
+  MDM_ModEje_mALU/U265/QN (NAND2X0)                0.16     18.35 r
+  MDM_ModEje_mALU/U2067/QN (NOR2X0)                0.17     18.52 f
+  MDM_ModEje_mALU/U214/Q (AND2X1)                  0.23     18.75 f
+  MDM_ModEje_mALU/U215/QN (NOR2X1)                 0.15     18.90 r
+  MDM_ModEje_mALU/U236/ZN (INVX0)                  0.15     19.06 f
+  MDM_ModEje_mALU/U237/ZN (INVX0)                  0.12     19.18 r
+  MDM_ModEje_mALU/U814/QN (OAI21X1)                0.40     19.58 f
+  MDM_ModEje_mALU/U2522/ZN (INVX0)                 0.22     19.80 r
+  MDM_ModEje_mALU/U109/QN (OAI21X2)                0.44     20.24 f
+  MDM_ModEje_mALU/U2541/Q (XNOR2X1)                0.44     20.68 f
+  MDM_ModEje_mALU/U2542/Q (AND2X1)                 0.25     20.94 f
+  MDM_ModEje_mALU/U520/QN (NOR2X0)                 0.24     21.18 r
+  MDM_ModEje_mALU/U1647/QN (NAND2X0)               0.24     21.41 f
+  MDM_ModEje_mALU/U3092/Q (OR2X1)                  0.27     21.68 f
+  MDM_ModEje_mALU/U3093/ZN (INVX0)                 0.11     21.80 r
+  MDM_ModEje_mALU/U346/ZN (INVX0)                  0.12     21.92 f
+  MDM_ModEje_mALU/U341/QN (NOR2X0)                 0.14     22.06 r
+  MDM_ModEje_mALU/U1325/ZN (INVX0)                 0.13     22.19 f
+  MDM_ModEje_mALU/U21/Q (OR2X1)                    0.21     22.41 f
+  MDM_ModEje_mALU/U337/ZN (INVX0)                  0.08     22.49 r
+  MDM_ModEje_mALU/U338/ZN (INVX0)                  0.08     22.56 f
+  MDM_ModEje_mALU/U3606/Q (OA22X1)                 0.29     22.85 f
+  U2572/QN (NAND2X0)                               0.12     22.97 r
+  U3133/Q (AND3X1)                                 0.35     23.32 r
+  U3135/Q (AND2X1)                                 0.24     23.57 r
+  U1355/Q (AND2X1)                                 0.30     23.86 r
+  U3152/ZN (INVX0)                                 0.22     24.08 f
+  MDM_ModEje_mALU/U1076/ZN (INVX0)                 0.17     24.25 r
+  MDM_ModEje_mALU/U1077/ZN (INVX0)                 0.23     24.48 f
+  MDM_ModEje_mALU/U3357/Z (NBUFFX2)                0.24     24.73 f
+  MDM_ModEje_mALU/U1539/QN (NAND2X0)               0.11     24.84 r
+  MDM_ModEje_mALU/U1660/QN (NAND2X0)               0.15     24.98 f
+  MDM_ModEje_mALU/REGF9_Q_reg/D (DFFNASX1)         0.00     24.98 f
+  data arrival time                                         24.98
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModEje_mALU/REGF9_Q_reg/CLK (DFFNASX1)       0.00      0.50 f
+  clock uncertainty                               -0.05      0.45
+  library setup time                              -0.28      0.17
+  data required time                                         0.17
+  ------------------------------------------------------------------------
+  data required time                                         0.17
+  data arrival time                                        -24.98
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -24.81
+
+
+
+  Startpoint: MDM_ModEje_RegInst_Q_reg_41_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: MDM_ModEje_BanEje_RegCH_Q_reg_7_ (falling edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  MDM_ModEje_RegInst_Q_reg_41_/CLK (DFFARX2)       0.00      0.00 r
+  MDM_ModEje_RegInst_Q_reg_41_/QN (DFFARX2)        0.48      0.48 f
+  U668/ZN (INVX0)                                  0.44      0.93 r
+  U1261/ZN (INVX0)                                 0.33      1.25 f
+  U667/ZN (INVX0)                                  0.17      1.42 r
+  CDM/U126/QN (AOI22X1)                            0.44      1.87 f
+  CDM/U128/ZN (INVX0)                              0.22      2.08 r
+  CDM/U80/ZN (INVX0)                               0.24      2.32 f
+  CDM/U275/ZN (INVX0)                              0.10      2.42 r
+  CDM/U276/ZN (INVX0)                              0.18      2.60 f
+  CDM/U362/QN (NAND2X0)                            0.18      2.78 r
+  CDM/U68/ZN (INVX0)                               0.17      2.95 f
+  CDM/U70/ZN (INVX0)                               0.15      3.10 r
+  CDM/U854/ZN (INVX0)                              0.12      3.22 f
+  CDM/U456/QN (NAND2X0)                            0.16      3.38 r
+  CDM/U21/QN (NAND2X1)                             0.19      3.57 f
+  CDM/U383/QN (NOR4X1)                             0.37      3.94 r
+  CDM/U90/QN (NAND2X1)                             0.30      4.24 f
+  CDM/U445/ZN (INVX0)                              0.15      4.39 r
+  CDM/U87/ZN (INVX1)                               0.12      4.51 f
+  CDM/U440/ZN (INVX0)                              0.16      4.67 r
+  CDM/U153/ZN (INVX0)                              0.16      4.83 f
+  CDM/U49/Q (AND2X2)                               0.25      5.08 f
+  CDM/U50/ZN (INVX0)                               0.09      5.17 r
+  CDM/U649/Q (OR2X1)                               0.22      5.39 r
+  CDM/U666/ZN (INVX0)                              0.12      5.51 f
+  CDM/U242/QN (NAND2X1)                            0.12      5.63 r
+  CDM/U610/Q (AND4X1)                              0.42      6.05 r
+  CDM/U147/Q (AND2X2)                              0.28      6.33 r
+  CDM/U98/QN (NAND2X0)                             0.38      6.71 f
+  CDM/DDE/U52/ZN (INVX0)                           0.36      7.07 r
+  CDM/DDE/U237/ZN (INVX0)                          0.29      7.36 f
+  CDM/DDE/U527/ZN (INVX0)                          0.19      7.55 r
+  CDM/DDE/U304/ZN (INVX0)                          0.17      7.71 f
+  CDM/DDE/U164/ZN (INVX0)                          0.23      7.94 r
+  CDM/DDE/U529/ZN (INVX0)                          0.31      8.25 f
+  CDM/DDE/U109/ZN (INVX1)                          0.18      8.43 r
+  CDM/DDE/U703/Q (OR2X1)                           0.29      8.72 r
+  CDM/DDE/U208/ZN (INVX0)                          0.13      8.85 f
+  CDM/DDE/U291/ZN (INVX0)                          0.08      8.93 r
+  CDM/DDE/U209/Q (AND2X1)                          0.20      9.13 r
+  CDM/DDE/U279/QN (NAND2X0)                        0.28      9.41 f
+  CDM/DDE/U289/ZN (INVX0)                          0.19      9.61 r
+  CDM/DDE/U247/QN (NAND2X0)                        0.19      9.80 f
+  CDM/DDE/U246/QN (NOR2X0)                         0.19      9.99 r
+  CDM/DDE/U210/QN (NAND3X1)                        0.54     10.53 f
+  MDM_ModEje_mALU/U1538/Z (NBUFFX2)                0.24     10.77 f
+  MDM_ModEje_mALU/U732/ZN (INVX1)                  0.15     10.92 r
+  MDM_ModEje_mALU/U1665/ZN (INVX0)                 0.27     11.19 f
+  MDM_ModEje_mALU/U998/Q (AND2X2)                  0.33     11.52 f
+  MDM_ModEje_mALU/U1007/ZN (INVX1)                 0.18     11.69 r
+  MDM_ModEje_mALU/U181/QN (NAND3X2)                0.43     12.12 f
+  MDM_ModEje_mALU/U1730/QN (NAND2X1)               0.11     12.23 r
+  MDM_ModEje_mALU/U1746/QN (NAND2X1)               0.18     12.41 f
+  MDM_ModEje_mALU/U1783/Q (AND2X1)                 0.24     12.65 f
+  MDM_ModEje_mALU/U1784/ZN (INVX0)                 0.13     12.78 r
+  MDM_ModEje_mALU/U1785/Q (OA22X1)                 0.35     13.13 r
+  MDM_ModEje_mALU/U670/Q (OR2X1)                   0.21     13.34 r
+  MDM_ModEje_mALU/U952/ZN (INVX0)                  0.11     13.45 f
+  MDM_ModEje_mALU/U102/QN (NOR2X2)                 0.10     13.55 r
+  MDM_ModEje_mALU/U94/Q (AND4X1)                   0.37     13.92 r
+  MDM_ModEje_mALU/U95/ZN (INVX0)                   0.11     14.03 f
+  MDM_ModEje_mALU/U255/Q (OR2X2)                   0.23     14.26 f
+  MDM_ModEje_mALU/U1884/QN (NOR2X0)                0.13     14.38 r
+  MDM_ModEje_mALU/U1134/ZN (INVX0)                 0.14     14.53 f
+  MDM_ModEje_mALU/U1135/ZN (INVX0)                 0.09     14.61 r
+  MDM_ModEje_mALU/U1925/Q (AND2X1)                 0.24     14.86 r
+  MDM_ModEje_mALU/U1989/QN (NAND2X1)               0.15     15.00 f
+  MDM_ModEje_mALU/U1990/Q (OA21X1)                 0.32     15.33 f
+  MDM_ModEje_mALU/U1991/ZN (INVX0)                 0.28     15.61 r
+  MDM_ModEje_mALU/U1372/ZN (INVX1)                 0.31     15.92 f
+  MDM_ModEje_mALU/U595/Q (XNOR2X1)                 0.45     16.37 r
+  MDM_ModEje_mALU/U158/QN (OAI22X2)                0.40     16.77 f
+  MDM_ModEje_mALU/U2062/S (FADDX1)                 0.49     17.26 f
+  MDM_ModEje_mALU/U2063/S (FADDX1)                 0.47     17.73 f
+  MDM_ModEje_mALU/U295/ZN (INVX0)                  0.10     17.83 r
+  MDM_ModEje_mALU/U296/ZN (INVX0)                  0.09     17.92 f
+  MDM_ModEje_mALU/U2065/QN (NOR2X0)                0.13     18.05 r
+  MDM_ModEje_mALU/U2066/ZN (INVX0)                 0.14     18.18 f
+  MDM_ModEje_mALU/U265/QN (NAND2X0)                0.16     18.35 r
+  MDM_ModEje_mALU/U2067/QN (NOR2X0)                0.17     18.52 f
+  MDM_ModEje_mALU/U214/Q (AND2X1)                  0.23     18.75 f
+  MDM_ModEje_mALU/U215/QN (NOR2X1)                 0.15     18.90 r
+  MDM_ModEje_mALU/U236/ZN (INVX0)                  0.15     19.06 f
+  MDM_ModEje_mALU/U237/ZN (INVX0)                  0.12     19.18 r
+  MDM_ModEje_mALU/U814/QN (OAI21X1)                0.40     19.58 f
+  MDM_ModEje_mALU/U2522/ZN (INVX0)                 0.22     19.80 r
+  MDM_ModEje_mALU/U109/QN (OAI21X2)                0.44     20.24 f
+  MDM_ModEje_mALU/U2541/Q (XNOR2X1)                0.44     20.68 f
+  MDM_ModEje_mALU/U2542/Q (AND2X1)                 0.25     20.94 f
+  MDM_ModEje_mALU/U520/QN (NOR2X0)                 0.24     21.18 r
+  MDM_ModEje_mALU/U1647/QN (NAND2X0)               0.24     21.41 f
+  MDM_ModEje_mALU/U3092/Q (OR2X1)                  0.27     21.68 f
+  MDM_ModEje_mALU/U3093/ZN (INVX0)                 0.11     21.80 r
+  MDM_ModEje_mALU/U1029/Q (AND2X1)                 0.26     22.06 r
+  MDM_ModEje_mALU/U227/QN (NAND2X1)                0.13     22.19 f
+  MDM_ModEje_mALU/U1078/ZN (INVX0)                 0.11     22.30 r
+  MDM_ModEje_mALU/U1079/ZN (INVX0)                 0.16     22.46 f
+  MDM_ModEje_mALU/U13/Q (OR3X2)                    0.30     22.76 f
+  MDM_ModEje_mALU/U3104/Q (MUX21X1)                0.26     23.02 f
+  MDM_ModEje_mALU/U3105/Q (OA21X1)                 0.25     23.27 f
+  U1846/ZN (INVX0)                                 0.10     23.36 r
+  U1337/Q (AND2X1)                                 0.22     23.58 r
+  U1326/Q (AND2X1)                                 0.24     23.82 r
+  U735/Q (AND2X1)                                  0.23     24.05 r
+  U3307/QN (NAND2X0)                               0.17     24.21 f
+  U3310/Q (AND3X1)                                 0.37     24.59 f
+  U55/Q (MUX21X1)                                  0.32     24.91 f
+  MDM_ModEje_BanEje_RegCH_Q_reg_7_/D (DFFNARX1)    0.00     24.91 f
+  data arrival time                                         24.91
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModEje_BanEje_RegCH_Q_reg_7_/CLK (DFFNARX1)
+                                                   0.00      0.50 f
+  clock uncertainty                               -0.05      0.45
+  library setup time                              -0.35      0.10
+  data required time                                         0.10
+  ------------------------------------------------------------------------
+  data required time                                         0.10
+  data arrival time                                        -24.91
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -24.81
+
+
+
+  Startpoint: MDM_ModEje_RegInst_Q_reg_41_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: MDM_ModEje_mALU/REGB_Q_reg_9_ (falling edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  MDM_ModEje_RegInst_Q_reg_41_/CLK (DFFARX2)       0.00      0.00 r
+  MDM_ModEje_RegInst_Q_reg_41_/QN (DFFARX2)        0.48      0.48 f
+  U668/ZN (INVX0)                                  0.44      0.93 r
+  U1261/ZN (INVX0)                                 0.33      1.25 f
+  U667/ZN (INVX0)                                  0.17      1.42 r
+  CDM/U126/QN (AOI22X1)                            0.44      1.87 f
+  CDM/U128/ZN (INVX0)                              0.22      2.08 r
+  CDM/U80/ZN (INVX0)                               0.24      2.32 f
+  CDM/U275/ZN (INVX0)                              0.10      2.42 r
+  CDM/U276/ZN (INVX0)                              0.18      2.60 f
+  CDM/U362/QN (NAND2X0)                            0.18      2.78 r
+  CDM/U68/ZN (INVX0)                               0.17      2.95 f
+  CDM/U70/ZN (INVX0)                               0.15      3.10 r
+  CDM/U854/ZN (INVX0)                              0.12      3.22 f
+  CDM/U456/QN (NAND2X0)                            0.16      3.38 r
+  CDM/U21/QN (NAND2X1)                             0.19      3.57 f
+  CDM/U383/QN (NOR4X1)                             0.37      3.94 r
+  CDM/U90/QN (NAND2X1)                             0.30      4.24 f
+  CDM/U445/ZN (INVX0)                              0.15      4.39 r
+  CDM/U87/ZN (INVX1)                               0.12      4.51 f
+  CDM/U440/ZN (INVX0)                              0.16      4.67 r
+  CDM/U153/ZN (INVX0)                              0.16      4.83 f
+  CDM/U49/Q (AND2X2)                               0.25      5.08 f
+  CDM/U50/ZN (INVX0)                               0.09      5.17 r
+  CDM/U649/Q (OR2X1)                               0.22      5.39 r
+  CDM/U666/ZN (INVX0)                              0.12      5.51 f
+  CDM/U242/QN (NAND2X1)                            0.12      5.63 r
+  CDM/U610/Q (AND4X1)                              0.42      6.05 r
+  CDM/U147/Q (AND2X2)                              0.28      6.33 r
+  CDM/U98/QN (NAND2X0)                             0.38      6.71 f
+  CDM/DDE/U52/ZN (INVX0)                           0.36      7.07 r
+  CDM/DDE/U237/ZN (INVX0)                          0.29      7.36 f
+  CDM/DDE/U527/ZN (INVX0)                          0.19      7.55 r
+  CDM/DDE/U304/ZN (INVX0)                          0.17      7.71 f
+  CDM/DDE/U164/ZN (INVX0)                          0.23      7.94 r
+  CDM/DDE/U529/ZN (INVX0)                          0.31      8.25 f
+  CDM/DDE/U109/ZN (INVX1)                          0.18      8.43 r
+  CDM/DDE/U703/Q (OR2X1)                           0.29      8.72 r
+  CDM/DDE/U208/ZN (INVX0)                          0.13      8.85 f
+  CDM/DDE/U291/ZN (INVX0)                          0.08      8.93 r
+  CDM/DDE/U209/Q (AND2X1)                          0.20      9.13 r
+  CDM/DDE/U279/QN (NAND2X0)                        0.28      9.41 f
+  CDM/DDE/U289/ZN (INVX0)                          0.19      9.61 r
+  CDM/DDE/U247/QN (NAND2X0)                        0.19      9.80 f
+  CDM/DDE/U246/QN (NOR2X0)                         0.19      9.99 r
+  CDM/DDE/U210/QN (NAND3X1)                        0.54     10.53 f
+  MDM_ModEje_mALU/U1538/Z (NBUFFX2)                0.24     10.77 f
+  MDM_ModEje_mALU/U732/ZN (INVX1)                  0.15     10.92 r
+  MDM_ModEje_mALU/U1665/ZN (INVX0)                 0.27     11.19 f
+  MDM_ModEje_mALU/U998/Q (AND2X2)                  0.33     11.52 f
+  MDM_ModEje_mALU/U1007/ZN (INVX1)                 0.18     11.69 r
+  MDM_ModEje_mALU/U181/QN (NAND3X2)                0.43     12.12 f
+  MDM_ModEje_mALU/U1730/QN (NAND2X1)               0.11     12.23 r
+  MDM_ModEje_mALU/U1746/QN (NAND2X1)               0.18     12.41 f
+  MDM_ModEje_mALU/U1783/Q (AND2X1)                 0.24     12.65 f
+  MDM_ModEje_mALU/U1784/ZN (INVX0)                 0.13     12.78 r
+  MDM_ModEje_mALU/U1785/Q (OA22X1)                 0.35     13.13 r
+  MDM_ModEje_mALU/U670/Q (OR2X1)                   0.21     13.34 r
+  MDM_ModEje_mALU/U952/ZN (INVX0)                  0.11     13.45 f
+  MDM_ModEje_mALU/U102/QN (NOR2X2)                 0.10     13.55 r
+  MDM_ModEje_mALU/U94/Q (AND4X1)                   0.37     13.92 r
+  MDM_ModEje_mALU/U95/ZN (INVX0)                   0.11     14.03 f
+  MDM_ModEje_mALU/U255/Q (OR2X2)                   0.23     14.26 f
+  MDM_ModEje_mALU/U1884/QN (NOR2X0)                0.13     14.38 r
+  MDM_ModEje_mALU/U1134/ZN (INVX0)                 0.14     14.53 f
+  MDM_ModEje_mALU/U1135/ZN (INVX0)                 0.09     14.61 r
+  MDM_ModEje_mALU/U1925/Q (AND2X1)                 0.24     14.86 r
+  MDM_ModEje_mALU/U1989/QN (NAND2X1)               0.15     15.00 f
+  MDM_ModEje_mALU/U1990/Q (OA21X1)                 0.32     15.33 f
+  MDM_ModEje_mALU/U1991/ZN (INVX0)                 0.28     15.61 r
+  MDM_ModEje_mALU/U1372/ZN (INVX1)                 0.31     15.92 f
+  MDM_ModEje_mALU/U595/Q (XNOR2X1)                 0.45     16.37 r
+  MDM_ModEje_mALU/U158/QN (OAI22X2)                0.40     16.77 f
+  MDM_ModEje_mALU/U2062/S (FADDX1)                 0.49     17.26 f
+  MDM_ModEje_mALU/U2063/S (FADDX1)                 0.47     17.73 f
+  MDM_ModEje_mALU/U295/ZN (INVX0)                  0.10     17.83 r
+  MDM_ModEje_mALU/U296/ZN (INVX0)                  0.09     17.92 f
+  MDM_ModEje_mALU/U2065/QN (NOR2X0)                0.13     18.05 r
+  MDM_ModEje_mALU/U2066/ZN (INVX0)                 0.14     18.18 f
+  MDM_ModEje_mALU/U265/QN (NAND2X0)                0.16     18.35 r
+  MDM_ModEje_mALU/U2067/QN (NOR2X0)                0.17     18.52 f
+  MDM_ModEje_mALU/U214/Q (AND2X1)                  0.23     18.75 f
+  MDM_ModEje_mALU/U215/QN (NOR2X1)                 0.15     18.90 r
+  MDM_ModEje_mALU/U236/ZN (INVX0)                  0.15     19.06 f
+  MDM_ModEje_mALU/U237/ZN (INVX0)                  0.12     19.18 r
+  MDM_ModEje_mALU/U814/QN (OAI21X1)                0.40     19.58 f
+  MDM_ModEje_mALU/U2522/ZN (INVX0)                 0.22     19.80 r
+  MDM_ModEje_mALU/U109/QN (OAI21X2)                0.44     20.24 f
+  MDM_ModEje_mALU/U2541/Q (XNOR2X1)                0.44     20.68 f
+  MDM_ModEje_mALU/U2542/Q (AND2X1)                 0.25     20.94 f
+  MDM_ModEje_mALU/U520/QN (NOR2X0)                 0.24     21.18 r
+  MDM_ModEje_mALU/U1647/QN (NAND2X0)               0.24     21.41 f
+  MDM_ModEje_mALU/U3092/Q (OR2X1)                  0.27     21.68 f
+  MDM_ModEje_mALU/U3093/ZN (INVX0)                 0.11     21.80 r
+  MDM_ModEje_mALU/U346/ZN (INVX0)                  0.12     21.92 f
+  MDM_ModEje_mALU/U341/QN (NOR2X0)                 0.14     22.06 r
+  MDM_ModEje_mALU/U1325/ZN (INVX0)                 0.13     22.19 f
+  MDM_ModEje_mALU/U21/Q (OR2X1)                    0.21     22.41 f
+  MDM_ModEje_mALU/U337/ZN (INVX0)                  0.08     22.49 r
+  MDM_ModEje_mALU/U338/ZN (INVX0)                  0.08     22.56 f
+  MDM_ModEje_mALU/U3606/Q (OA22X1)                 0.29     22.85 f
+  U2572/QN (NAND2X0)                               0.12     22.97 r
+  U3133/Q (AND3X1)                                 0.35     23.32 r
+  U3135/Q (AND2X1)                                 0.24     23.57 r
+  U1355/Q (AND2X1)                                 0.30     23.86 r
+  U3152/ZN (INVX0)                                 0.22     24.08 f
+  MDM_ModEje_mALU/U1076/ZN (INVX0)                 0.17     24.25 r
+  MDM_ModEje_mALU/U1077/ZN (INVX0)                 0.23     24.48 f
+  MDM_ModEje_mALU/U3357/Z (NBUFFX2)                0.24     24.73 f
+  MDM_ModEje_mALU/U3525/Q (MUX21X1)                0.26     24.99 f
+  MDM_ModEje_mALU/REGB_Q_reg_9_/D (DFFNARX2)       0.00     24.99 f
+  data arrival time                                         24.99
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModEje_mALU/REGB_Q_reg_9_/CLK (DFFNARX2)     0.00      0.50 f
+  clock uncertainty                               -0.05      0.45
+  library setup time                              -0.27      0.18
+  data required time                                         0.18
+  ------------------------------------------------------------------------
+  data required time                                         0.18
+  data arrival time                                        -24.99
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -24.80
+
+
+
+  Startpoint: MDM_ModEje_RegInst_Q_reg_41_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: MDM_ModInt_regIP_REGIP_Q_reg_10_ (falling edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  MDM_ModEje_RegInst_Q_reg_41_/CLK (DFFARX2)       0.00      0.00 r
+  MDM_ModEje_RegInst_Q_reg_41_/QN (DFFARX2)        0.48      0.48 f
+  U668/ZN (INVX0)                                  0.44      0.93 r
+  U1261/ZN (INVX0)                                 0.33      1.25 f
+  U667/ZN (INVX0)                                  0.17      1.42 r
+  CDM/U126/QN (AOI22X1)                            0.44      1.87 f
+  CDM/U128/ZN (INVX0)                              0.22      2.08 r
+  CDM/U80/ZN (INVX0)                               0.24      2.32 f
+  CDM/U275/ZN (INVX0)                              0.10      2.42 r
+  CDM/U276/ZN (INVX0)                              0.18      2.60 f
+  CDM/U362/QN (NAND2X0)                            0.18      2.78 r
+  CDM/U68/ZN (INVX0)                               0.17      2.95 f
+  CDM/U70/ZN (INVX0)                               0.15      3.10 r
+  CDM/U854/ZN (INVX0)                              0.12      3.22 f
+  CDM/U456/QN (NAND2X0)                            0.16      3.38 r
+  CDM/U21/QN (NAND2X1)                             0.19      3.57 f
+  CDM/U383/QN (NOR4X1)                             0.37      3.94 r
+  CDM/U90/QN (NAND2X1)                             0.30      4.24 f
+  CDM/U445/ZN (INVX0)                              0.15      4.39 r
+  CDM/U87/ZN (INVX1)                               0.12      4.51 f
+  CDM/U440/ZN (INVX0)                              0.16      4.67 r
+  CDM/U153/ZN (INVX0)                              0.16      4.83 f
+  CDM/U49/Q (AND2X2)                               0.25      5.08 f
+  CDM/U50/ZN (INVX0)                               0.09      5.17 r
+  CDM/U649/Q (OR2X1)                               0.22      5.39 r
+  CDM/U666/ZN (INVX0)                              0.12      5.51 f
+  CDM/U242/QN (NAND2X1)                            0.12      5.63 r
+  CDM/U610/Q (AND4X1)                              0.42      6.05 r
+  CDM/U147/Q (AND2X2)                              0.28      6.33 r
+  CDM/U98/QN (NAND2X0)                             0.38      6.71 f
+  CDM/DDE/U52/ZN (INVX0)                           0.36      7.07 r
+  CDM/DDE/U237/ZN (INVX0)                          0.29      7.36 f
+  CDM/DDE/U527/ZN (INVX0)                          0.19      7.55 r
+  CDM/DDE/U304/ZN (INVX0)                          0.17      7.71 f
+  CDM/DDE/U164/ZN (INVX0)                          0.23      7.94 r
+  CDM/DDE/U529/ZN (INVX0)                          0.31      8.25 f
+  CDM/DDE/U109/ZN (INVX1)                          0.18      8.43 r
+  CDM/DDE/U703/Q (OR2X1)                           0.29      8.72 r
+  CDM/DDE/U208/ZN (INVX0)                          0.13      8.85 f
+  CDM/DDE/U291/ZN (INVX0)                          0.08      8.93 r
+  CDM/DDE/U209/Q (AND2X1)                          0.20      9.13 r
+  CDM/DDE/U279/QN (NAND2X0)                        0.28      9.41 f
+  CDM/DDE/U289/ZN (INVX0)                          0.19      9.61 r
+  CDM/DDE/U247/QN (NAND2X0)                        0.19      9.80 f
+  CDM/DDE/U246/QN (NOR2X0)                         0.19      9.99 r
+  CDM/DDE/U210/QN (NAND3X1)                        0.54     10.53 f
+  MDM_ModEje_mALU/U1538/Z (NBUFFX2)                0.24     10.77 f
+  MDM_ModEje_mALU/U732/ZN (INVX1)                  0.15     10.92 r
+  MDM_ModEje_mALU/U1665/ZN (INVX0)                 0.27     11.19 f
+  MDM_ModEje_mALU/U998/Q (AND2X2)                  0.33     11.52 f
+  MDM_ModEje_mALU/U1007/ZN (INVX1)                 0.18     11.69 r
+  MDM_ModEje_mALU/U181/QN (NAND3X2)                0.43     12.12 f
+  MDM_ModEje_mALU/U1730/QN (NAND2X1)               0.11     12.23 r
+  MDM_ModEje_mALU/U1746/QN (NAND2X1)               0.18     12.41 f
+  MDM_ModEje_mALU/U1783/Q (AND2X1)                 0.24     12.65 f
+  MDM_ModEje_mALU/U1784/ZN (INVX0)                 0.13     12.78 r
+  MDM_ModEje_mALU/U1785/Q (OA22X1)                 0.35     13.13 r
+  MDM_ModEje_mALU/U670/Q (OR2X1)                   0.21     13.34 r
+  MDM_ModEje_mALU/U952/ZN (INVX0)                  0.11     13.45 f
+  MDM_ModEje_mALU/U102/QN (NOR2X2)                 0.10     13.55 r
+  MDM_ModEje_mALU/U94/Q (AND4X1)                   0.37     13.92 r
+  MDM_ModEje_mALU/U95/ZN (INVX0)                   0.11     14.03 f
+  MDM_ModEje_mALU/U255/Q (OR2X2)                   0.23     14.26 f
+  MDM_ModEje_mALU/U1884/QN (NOR2X0)                0.13     14.38 r
+  MDM_ModEje_mALU/U1134/ZN (INVX0)                 0.14     14.53 f
+  MDM_ModEje_mALU/U1135/ZN (INVX0)                 0.09     14.61 r
+  MDM_ModEje_mALU/U1925/Q (AND2X1)                 0.24     14.86 r
+  MDM_ModEje_mALU/U1989/QN (NAND2X1)               0.15     15.00 f
+  MDM_ModEje_mALU/U1990/Q (OA21X1)                 0.32     15.33 f
+  MDM_ModEje_mALU/U1991/ZN (INVX0)                 0.28     15.61 r
+  MDM_ModEje_mALU/U1372/ZN (INVX1)                 0.31     15.92 f
+  MDM_ModEje_mALU/U595/Q (XNOR2X1)                 0.45     16.37 r
+  MDM_ModEje_mALU/U158/QN (OAI22X2)                0.40     16.77 f
+  MDM_ModEje_mALU/U2062/S (FADDX1)                 0.49     17.26 f
+  MDM_ModEje_mALU/U2063/S (FADDX1)                 0.47     17.73 f
+  MDM_ModEje_mALU/U295/ZN (INVX0)                  0.10     17.83 r
+  MDM_ModEje_mALU/U296/ZN (INVX0)                  0.09     17.92 f
+  MDM_ModEje_mALU/U2065/QN (NOR2X0)                0.13     18.05 r
+  MDM_ModEje_mALU/U2066/ZN (INVX0)                 0.14     18.18 f
+  MDM_ModEje_mALU/U265/QN (NAND2X0)                0.16     18.35 r
+  MDM_ModEje_mALU/U2067/QN (NOR2X0)                0.17     18.52 f
+  MDM_ModEje_mALU/U214/Q (AND2X1)                  0.23     18.75 f
+  MDM_ModEje_mALU/U215/QN (NOR2X1)                 0.15     18.90 r
+  MDM_ModEje_mALU/U236/ZN (INVX0)                  0.15     19.06 f
+  MDM_ModEje_mALU/U237/ZN (INVX0)                  0.12     19.18 r
+  MDM_ModEje_mALU/U814/QN (OAI21X1)                0.40     19.58 f
+  MDM_ModEje_mALU/U2522/ZN (INVX0)                 0.22     19.80 r
+  MDM_ModEje_mALU/U109/QN (OAI21X2)                0.44     20.24 f
+  MDM_ModEje_mALU/U2541/Q (XNOR2X1)                0.44     20.68 f
+  MDM_ModEje_mALU/U2542/Q (AND2X1)                 0.25     20.94 f
+  MDM_ModEje_mALU/U520/QN (NOR2X0)                 0.24     21.18 r
+  MDM_ModEje_mALU/U1647/QN (NAND2X0)               0.24     21.41 f
+  MDM_ModEje_mALU/U3092/Q (OR2X1)                  0.27     21.68 f
+  MDM_ModEje_mALU/U3093/ZN (INVX0)                 0.11     21.80 r
+  MDM_ModEje_mALU/U1029/Q (AND2X1)                 0.26     22.06 r
+  MDM_ModEje_mALU/U1545/ZN (INVX0)                 0.10     22.17 f
+  MDM_ModEje_mALU/U335/ZN (INVX0)                  0.10     22.26 r
+  MDM_ModEje_mALU/U334/ZN (INVX0)                  0.11     22.37 f
+  MDM_ModEje_mALU/U3582/Q (OA22X1)                 0.27     22.64 f
+  MDM_ModEje_mALU/U3583/Q (AND2X1)                 0.23     22.87 f
+  U2185/QN (NAND2X0)                               0.12     22.98 r
+  U1669/QN (NAND2X0)                               0.19     23.18 f
+  U3149/QN (AOI21X1)                               0.29     23.47 r
+  U3150/Q (AND2X1)                                 0.26     23.72 r
+  U3312/ZN (INVX0)                                 0.16     23.88 f
+  U2051/ZN (INVX0)                                 0.24     24.13 r
+  U3317/ZN (INVX0)                                 0.41     24.53 f
+  U1324/Q (MUX21X1)                                0.36     24.90 f
+  MDM_ModInt_regIP_REGIP_Q_reg_10_/D (DFFNARX1)    0.00     24.90 f
+  data arrival time                                         24.90
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModInt_regIP_REGIP_Q_reg_10_/CLK (DFFNARX1)
+                                                   0.00      0.50 f
+  clock uncertainty                               -0.05      0.45
+  library setup time                              -0.35      0.10
+  data required time                                         0.10
+  ------------------------------------------------------------------------
+  data required time                                         0.10
+  data arrival time                                        -24.90
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -24.80
+
+
+
+  Startpoint: MDM_ModEje_RegInst_Q_reg_41_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: MDM_ModEje_BanEje_RegSP_Q_reg_10_ (falling edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  MDM_ModEje_RegInst_Q_reg_41_/CLK (DFFARX2)       0.00      0.00 r
+  MDM_ModEje_RegInst_Q_reg_41_/QN (DFFARX2)        0.48      0.48 f
+  U668/ZN (INVX0)                                  0.44      0.93 r
+  U1261/ZN (INVX0)                                 0.33      1.25 f
+  U667/ZN (INVX0)                                  0.17      1.42 r
+  CDM/U126/QN (AOI22X1)                            0.44      1.87 f
+  CDM/U128/ZN (INVX0)                              0.22      2.08 r
+  CDM/U80/ZN (INVX0)                               0.24      2.32 f
+  CDM/U275/ZN (INVX0)                              0.10      2.42 r
+  CDM/U276/ZN (INVX0)                              0.18      2.60 f
+  CDM/U362/QN (NAND2X0)                            0.18      2.78 r
+  CDM/U68/ZN (INVX0)                               0.17      2.95 f
+  CDM/U70/ZN (INVX0)                               0.15      3.10 r
+  CDM/U854/ZN (INVX0)                              0.12      3.22 f
+  CDM/U456/QN (NAND2X0)                            0.16      3.38 r
+  CDM/U21/QN (NAND2X1)                             0.19      3.57 f
+  CDM/U383/QN (NOR4X1)                             0.37      3.94 r
+  CDM/U90/QN (NAND2X1)                             0.30      4.24 f
+  CDM/U445/ZN (INVX0)                              0.15      4.39 r
+  CDM/U87/ZN (INVX1)                               0.12      4.51 f
+  CDM/U440/ZN (INVX0)                              0.16      4.67 r
+  CDM/U153/ZN (INVX0)                              0.16      4.83 f
+  CDM/U49/Q (AND2X2)                               0.25      5.08 f
+  CDM/U50/ZN (INVX0)                               0.09      5.17 r
+  CDM/U649/Q (OR2X1)                               0.22      5.39 r
+  CDM/U666/ZN (INVX0)                              0.12      5.51 f
+  CDM/U242/QN (NAND2X1)                            0.12      5.63 r
+  CDM/U610/Q (AND4X1)                              0.42      6.05 r
+  CDM/U147/Q (AND2X2)                              0.28      6.33 r
+  CDM/U98/QN (NAND2X0)                             0.38      6.71 f
+  CDM/DDE/U52/ZN (INVX0)                           0.36      7.07 r
+  CDM/DDE/U237/ZN (INVX0)                          0.29      7.36 f
+  CDM/DDE/U527/ZN (INVX0)                          0.19      7.55 r
+  CDM/DDE/U304/ZN (INVX0)                          0.17      7.71 f
+  CDM/DDE/U164/ZN (INVX0)                          0.23      7.94 r
+  CDM/DDE/U529/ZN (INVX0)                          0.31      8.25 f
+  CDM/DDE/U109/ZN (INVX1)                          0.18      8.43 r
+  CDM/DDE/U703/Q (OR2X1)                           0.29      8.72 r
+  CDM/DDE/U208/ZN (INVX0)                          0.13      8.85 f
+  CDM/DDE/U291/ZN (INVX0)                          0.08      8.93 r
+  CDM/DDE/U209/Q (AND2X1)                          0.20      9.13 r
+  CDM/DDE/U279/QN (NAND2X0)                        0.28      9.41 f
+  CDM/DDE/U289/ZN (INVX0)                          0.19      9.61 r
+  CDM/DDE/U247/QN (NAND2X0)                        0.19      9.80 f
+  CDM/DDE/U246/QN (NOR2X0)                         0.19      9.99 r
+  CDM/DDE/U210/QN (NAND3X1)                        0.54     10.53 f
+  MDM_ModEje_mALU/U1538/Z (NBUFFX2)                0.24     10.77 f
+  MDM_ModEje_mALU/U732/ZN (INVX1)                  0.15     10.92 r
+  MDM_ModEje_mALU/U1665/ZN (INVX0)                 0.27     11.19 f
+  MDM_ModEje_mALU/U998/Q (AND2X2)                  0.33     11.52 f
+  MDM_ModEje_mALU/U1007/ZN (INVX1)                 0.18     11.69 r
+  MDM_ModEje_mALU/U181/QN (NAND3X2)                0.43     12.12 f
+  MDM_ModEje_mALU/U1730/QN (NAND2X1)               0.11     12.23 r
+  MDM_ModEje_mALU/U1746/QN (NAND2X1)               0.18     12.41 f
+  MDM_ModEje_mALU/U1783/Q (AND2X1)                 0.24     12.65 f
+  MDM_ModEje_mALU/U1784/ZN (INVX0)                 0.13     12.78 r
+  MDM_ModEje_mALU/U1785/Q (OA22X1)                 0.35     13.13 r
+  MDM_ModEje_mALU/U670/Q (OR2X1)                   0.21     13.34 r
+  MDM_ModEje_mALU/U952/ZN (INVX0)                  0.11     13.45 f
+  MDM_ModEje_mALU/U102/QN (NOR2X2)                 0.10     13.55 r
+  MDM_ModEje_mALU/U94/Q (AND4X1)                   0.37     13.92 r
+  MDM_ModEje_mALU/U95/ZN (INVX0)                   0.11     14.03 f
+  MDM_ModEje_mALU/U255/Q (OR2X2)                   0.23     14.26 f
+  MDM_ModEje_mALU/U1884/QN (NOR2X0)                0.13     14.38 r
+  MDM_ModEje_mALU/U1134/ZN (INVX0)                 0.14     14.53 f
+  MDM_ModEje_mALU/U1135/ZN (INVX0)                 0.09     14.61 r
+  MDM_ModEje_mALU/U1925/Q (AND2X1)                 0.24     14.86 r
+  MDM_ModEje_mALU/U1989/QN (NAND2X1)               0.15     15.00 f
+  MDM_ModEje_mALU/U1990/Q (OA21X1)                 0.32     15.33 f
+  MDM_ModEje_mALU/U1991/ZN (INVX0)                 0.28     15.61 r
+  MDM_ModEje_mALU/U1372/ZN (INVX1)                 0.31     15.92 f
+  MDM_ModEje_mALU/U595/Q (XNOR2X1)                 0.45     16.37 r
+  MDM_ModEje_mALU/U158/QN (OAI22X2)                0.40     16.77 f
+  MDM_ModEje_mALU/U2062/S (FADDX1)                 0.49     17.26 f
+  MDM_ModEje_mALU/U2063/S (FADDX1)                 0.47     17.73 f
+  MDM_ModEje_mALU/U295/ZN (INVX0)                  0.10     17.83 r
+  MDM_ModEje_mALU/U296/ZN (INVX0)                  0.09     17.92 f
+  MDM_ModEje_mALU/U2065/QN (NOR2X0)                0.13     18.05 r
+  MDM_ModEje_mALU/U2066/ZN (INVX0)                 0.14     18.18 f
+  MDM_ModEje_mALU/U265/QN (NAND2X0)                0.16     18.35 r
+  MDM_ModEje_mALU/U2067/QN (NOR2X0)                0.17     18.52 f
+  MDM_ModEje_mALU/U214/Q (AND2X1)                  0.23     18.75 f
+  MDM_ModEje_mALU/U215/QN (NOR2X1)                 0.15     18.90 r
+  MDM_ModEje_mALU/U236/ZN (INVX0)                  0.15     19.06 f
+  MDM_ModEje_mALU/U237/ZN (INVX0)                  0.12     19.18 r
+  MDM_ModEje_mALU/U814/QN (OAI21X1)                0.40     19.58 f
+  MDM_ModEje_mALU/U2522/ZN (INVX0)                 0.22     19.80 r
+  MDM_ModEje_mALU/U109/QN (OAI21X2)                0.44     20.24 f
+  MDM_ModEje_mALU/U2541/Q (XNOR2X1)                0.44     20.68 f
+  MDM_ModEje_mALU/U2542/Q (AND2X1)                 0.25     20.94 f
+  MDM_ModEje_mALU/U520/QN (NOR2X0)                 0.24     21.18 r
+  MDM_ModEje_mALU/U1647/QN (NAND2X0)               0.24     21.41 f
+  MDM_ModEje_mALU/U3092/Q (OR2X1)                  0.27     21.68 f
+  MDM_ModEje_mALU/U3093/ZN (INVX0)                 0.11     21.80 r
+  MDM_ModEje_mALU/U1029/Q (AND2X1)                 0.26     22.06 r
+  MDM_ModEje_mALU/U1545/ZN (INVX0)                 0.10     22.17 f
+  MDM_ModEje_mALU/U335/ZN (INVX0)                  0.10     22.26 r
+  MDM_ModEje_mALU/U334/ZN (INVX0)                  0.11     22.37 f
+  MDM_ModEje_mALU/U3582/Q (OA22X1)                 0.27     22.64 f
+  MDM_ModEje_mALU/U3583/Q (AND2X1)                 0.23     22.87 f
+  U2185/QN (NAND2X0)                               0.12     22.98 r
+  U1669/QN (NAND2X0)                               0.19     23.18 f
+  U3149/QN (AOI21X1)                               0.29     23.47 r
+  U3150/Q (AND2X1)                                 0.26     23.72 r
+  U3312/ZN (INVX0)                                 0.16     23.88 f
+  U2051/ZN (INVX0)                                 0.24     24.13 r
+  U2052/ZN (INVX0)                                 0.42     24.54 f
+  U1323/Q (MUX21X1)                                0.36     24.90 f
+  MDM_ModEje_BanEje_RegSP_Q_reg_10_/D (DFFNARX1)   0.00     24.90 f
+  data arrival time                                         24.90
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModEje_BanEje_RegSP_Q_reg_10_/CLK (DFFNARX1)
+                                                   0.00      0.50 f
+  clock uncertainty                               -0.05      0.45
+  library setup time                              -0.35      0.10
+  data required time                                         0.10
+  ------------------------------------------------------------------------
+  data required time                                         0.10
+  data arrival time                                        -24.90
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -24.80
+
+
+
+  Startpoint: MDM_ModEje_RegInst_Q_reg_41_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: MDM_ModInt_DIO_RegSal_Q_reg_15_ (falling edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  MDM_ModEje_RegInst_Q_reg_41_/CLK (DFFARX2)       0.00      0.00 r
+  MDM_ModEje_RegInst_Q_reg_41_/QN (DFFARX2)        0.48      0.48 f
+  U668/ZN (INVX0)                                  0.44      0.93 r
+  U1261/ZN (INVX0)                                 0.33      1.25 f
+  U667/ZN (INVX0)                                  0.17      1.42 r
+  CDM/U126/QN (AOI22X1)                            0.44      1.87 f
+  CDM/U128/ZN (INVX0)                              0.22      2.08 r
+  CDM/U80/ZN (INVX0)                               0.24      2.32 f
+  CDM/U275/ZN (INVX0)                              0.10      2.42 r
+  CDM/U276/ZN (INVX0)                              0.18      2.60 f
+  CDM/U362/QN (NAND2X0)                            0.18      2.78 r
+  CDM/U68/ZN (INVX0)                               0.17      2.95 f
+  CDM/U70/ZN (INVX0)                               0.15      3.10 r
+  CDM/U854/ZN (INVX0)                              0.12      3.22 f
+  CDM/U456/QN (NAND2X0)                            0.16      3.38 r
+  CDM/U21/QN (NAND2X1)                             0.19      3.57 f
+  CDM/U383/QN (NOR4X1)                             0.37      3.94 r
+  CDM/U90/QN (NAND2X1)                             0.30      4.24 f
+  CDM/U445/ZN (INVX0)                              0.15      4.39 r
+  CDM/U87/ZN (INVX1)                               0.12      4.51 f
+  CDM/U440/ZN (INVX0)                              0.16      4.67 r
+  CDM/U153/ZN (INVX0)                              0.16      4.83 f
+  CDM/U49/Q (AND2X2)                               0.25      5.08 f
+  CDM/U50/ZN (INVX0)                               0.09      5.17 r
+  CDM/U649/Q (OR2X1)                               0.22      5.39 r
+  CDM/U666/ZN (INVX0)                              0.12      5.51 f
+  CDM/U242/QN (NAND2X1)                            0.12      5.63 r
+  CDM/U610/Q (AND4X1)                              0.42      6.05 r
+  CDM/U147/Q (AND2X2)                              0.28      6.33 r
+  CDM/U98/QN (NAND2X0)                             0.38      6.71 f
+  CDM/DDE/U52/ZN (INVX0)                           0.36      7.07 r
+  CDM/DDE/U237/ZN (INVX0)                          0.29      7.36 f
+  CDM/DDE/U527/ZN (INVX0)                          0.19      7.55 r
+  CDM/DDE/U304/ZN (INVX0)                          0.17      7.71 f
+  CDM/DDE/U164/ZN (INVX0)                          0.23      7.94 r
+  CDM/DDE/U529/ZN (INVX0)                          0.31      8.25 f
+  CDM/DDE/U109/ZN (INVX1)                          0.18      8.43 r
+  CDM/DDE/U703/Q (OR2X1)                           0.29      8.72 r
+  CDM/DDE/U208/ZN (INVX0)                          0.13      8.85 f
+  CDM/DDE/U291/ZN (INVX0)                          0.08      8.93 r
+  CDM/DDE/U209/Q (AND2X1)                          0.20      9.13 r
+  CDM/DDE/U279/QN (NAND2X0)                        0.28      9.41 f
+  CDM/DDE/U289/ZN (INVX0)                          0.19      9.61 r
+  CDM/DDE/U247/QN (NAND2X0)                        0.19      9.80 f
+  CDM/DDE/U246/QN (NOR2X0)                         0.19      9.99 r
+  CDM/DDE/U210/QN (NAND3X1)                        0.54     10.53 f
+  MDM_ModEje_mALU/U1538/Z (NBUFFX2)                0.24     10.77 f
+  MDM_ModEje_mALU/U732/ZN (INVX1)                  0.15     10.92 r
+  MDM_ModEje_mALU/U1665/ZN (INVX0)                 0.27     11.19 f
+  MDM_ModEje_mALU/U998/Q (AND2X2)                  0.33     11.52 f
+  MDM_ModEje_mALU/U1007/ZN (INVX1)                 0.18     11.69 r
+  MDM_ModEje_mALU/U181/QN (NAND3X2)                0.43     12.12 f
+  MDM_ModEje_mALU/U1730/QN (NAND2X1)               0.11     12.23 r
+  MDM_ModEje_mALU/U1746/QN (NAND2X1)               0.18     12.41 f
+  MDM_ModEje_mALU/U1783/Q (AND2X1)                 0.24     12.65 f
+  MDM_ModEje_mALU/U1784/ZN (INVX0)                 0.13     12.78 r
+  MDM_ModEje_mALU/U1785/Q (OA22X1)                 0.35     13.13 r
+  MDM_ModEje_mALU/U670/Q (OR2X1)                   0.21     13.34 r
+  MDM_ModEje_mALU/U952/ZN (INVX0)                  0.11     13.45 f
+  MDM_ModEje_mALU/U102/QN (NOR2X2)                 0.10     13.55 r
+  MDM_ModEje_mALU/U94/Q (AND4X1)                   0.37     13.92 r
+  MDM_ModEje_mALU/U95/ZN (INVX0)                   0.11     14.03 f
+  MDM_ModEje_mALU/U255/Q (OR2X2)                   0.23     14.26 f
+  MDM_ModEje_mALU/U1884/QN (NOR2X0)                0.13     14.38 r
+  MDM_ModEje_mALU/U1134/ZN (INVX0)                 0.14     14.53 f
+  MDM_ModEje_mALU/U1135/ZN (INVX0)                 0.09     14.61 r
+  MDM_ModEje_mALU/U1925/Q (AND2X1)                 0.24     14.86 r
+  MDM_ModEje_mALU/U1989/QN (NAND2X1)               0.15     15.00 f
+  MDM_ModEje_mALU/U1990/Q (OA21X1)                 0.32     15.33 f
+  MDM_ModEje_mALU/U1991/ZN (INVX0)                 0.28     15.61 r
+  MDM_ModEje_mALU/U1372/ZN (INVX1)                 0.31     15.92 f
+  MDM_ModEje_mALU/U595/Q (XNOR2X1)                 0.45     16.37 r
+  MDM_ModEje_mALU/U158/QN (OAI22X2)                0.40     16.77 f
+  MDM_ModEje_mALU/U2062/S (FADDX1)                 0.49     17.26 f
+  MDM_ModEje_mALU/U2063/S (FADDX1)                 0.47     17.73 f
+  MDM_ModEje_mALU/U295/ZN (INVX0)                  0.10     17.83 r
+  MDM_ModEje_mALU/U296/ZN (INVX0)                  0.09     17.92 f
+  MDM_ModEje_mALU/U2065/QN (NOR2X0)                0.13     18.05 r
+  MDM_ModEje_mALU/U2066/ZN (INVX0)                 0.14     18.18 f
+  MDM_ModEje_mALU/U265/QN (NAND2X0)                0.16     18.35 r
+  MDM_ModEje_mALU/U2067/QN (NOR2X0)                0.17     18.52 f
+  MDM_ModEje_mALU/U214/Q (AND2X1)                  0.23     18.75 f
+  MDM_ModEje_mALU/U215/QN (NOR2X1)                 0.15     18.90 r
+  MDM_ModEje_mALU/U236/ZN (INVX0)                  0.15     19.06 f
+  MDM_ModEje_mALU/U237/ZN (INVX0)                  0.12     19.18 r
+  MDM_ModEje_mALU/U814/QN (OAI21X1)                0.40     19.58 f
+  MDM_ModEje_mALU/U2522/ZN (INVX0)                 0.22     19.80 r
+  MDM_ModEje_mALU/U109/QN (OAI21X2)                0.44     20.24 f
+  MDM_ModEje_mALU/U2541/Q (XNOR2X1)                0.44     20.68 f
+  MDM_ModEje_mALU/U2542/Q (AND2X1)                 0.25     20.94 f
+  MDM_ModEje_mALU/U520/QN (NOR2X0)                 0.24     21.18 r
+  MDM_ModEje_mALU/U1647/QN (NAND2X0)               0.24     21.41 f
+  MDM_ModEje_mALU/U3092/Q (OR2X1)                  0.27     21.68 f
+  MDM_ModEje_mALU/U3093/ZN (INVX0)                 0.11     21.80 r
+  MDM_ModEje_mALU/U1029/Q (AND2X1)                 0.26     22.06 r
+  MDM_ModEje_mALU/U227/QN (NAND2X1)                0.13     22.19 f
+  MDM_ModEje_mALU/U1078/ZN (INVX0)                 0.11     22.30 r
+  MDM_ModEje_mALU/U1079/ZN (INVX0)                 0.16     22.46 f
+  MDM_ModEje_mALU/U13/Q (OR3X2)                    0.30     22.76 f
+  MDM_ModEje_mALU/U3104/Q (MUX21X1)                0.26     23.02 f
+  MDM_ModEje_mALU/U3105/Q (OA21X1)                 0.25     23.27 f
+  U1784/QN (NAND2X0)                               0.13     23.40 r
+  U3184/Q (AND3X1)                                 0.34     23.74 r
+  U984/Q (AND3X1)                                  0.43     24.17 r
+  U2102/ZN (INVX0)                                 0.34     24.51 f
+  U2514/Q (MUX21X2)                                0.39     24.90 f
+  MDM_ModInt_DIO_RegSal_Q_reg_15_/D (DFFNARX1)     0.00     24.90 f
+  data arrival time                                         24.90
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModInt_DIO_RegSal_Q_reg_15_/CLK (DFFNARX1)   0.00      0.50 f
+  clock uncertainty                               -0.05      0.45
+  library setup time                              -0.34      0.11
+  data required time                                         0.11
+  ------------------------------------------------------------------------
+  data required time                                         0.11
+  data arrival time                                        -24.90
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -24.79
+
+
+
+  Startpoint: MDM_ModEje_RegInst_Q_reg_41_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: MDM_ModEje_BanEje_RegSI_Q_reg_10_ (falling edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  MDM_ModEje_RegInst_Q_reg_41_/CLK (DFFARX2)       0.00      0.00 r
+  MDM_ModEje_RegInst_Q_reg_41_/QN (DFFARX2)        0.48      0.48 f
+  U668/ZN (INVX0)                                  0.44      0.93 r
+  U1261/ZN (INVX0)                                 0.33      1.25 f
+  U667/ZN (INVX0)                                  0.17      1.42 r
+  CDM/U126/QN (AOI22X1)                            0.44      1.87 f
+  CDM/U128/ZN (INVX0)                              0.22      2.08 r
+  CDM/U80/ZN (INVX0)                               0.24      2.32 f
+  CDM/U275/ZN (INVX0)                              0.10      2.42 r
+  CDM/U276/ZN (INVX0)                              0.18      2.60 f
+  CDM/U362/QN (NAND2X0)                            0.18      2.78 r
+  CDM/U68/ZN (INVX0)                               0.17      2.95 f
+  CDM/U70/ZN (INVX0)                               0.15      3.10 r
+  CDM/U854/ZN (INVX0)                              0.12      3.22 f
+  CDM/U456/QN (NAND2X0)                            0.16      3.38 r
+  CDM/U21/QN (NAND2X1)                             0.19      3.57 f
+  CDM/U383/QN (NOR4X1)                             0.37      3.94 r
+  CDM/U90/QN (NAND2X1)                             0.30      4.24 f
+  CDM/U445/ZN (INVX0)                              0.15      4.39 r
+  CDM/U87/ZN (INVX1)                               0.12      4.51 f
+  CDM/U440/ZN (INVX0)                              0.16      4.67 r
+  CDM/U153/ZN (INVX0)                              0.16      4.83 f
+  CDM/U49/Q (AND2X2)                               0.25      5.08 f
+  CDM/U50/ZN (INVX0)                               0.09      5.17 r
+  CDM/U649/Q (OR2X1)                               0.22      5.39 r
+  CDM/U666/ZN (INVX0)                              0.12      5.51 f
+  CDM/U242/QN (NAND2X1)                            0.12      5.63 r
+  CDM/U610/Q (AND4X1)                              0.42      6.05 r
+  CDM/U147/Q (AND2X2)                              0.28      6.33 r
+  CDM/U98/QN (NAND2X0)                             0.38      6.71 f
+  CDM/DDE/U52/ZN (INVX0)                           0.36      7.07 r
+  CDM/DDE/U237/ZN (INVX0)                          0.29      7.36 f
+  CDM/DDE/U527/ZN (INVX0)                          0.19      7.55 r
+  CDM/DDE/U304/ZN (INVX0)                          0.17      7.71 f
+  CDM/DDE/U164/ZN (INVX0)                          0.23      7.94 r
+  CDM/DDE/U529/ZN (INVX0)                          0.31      8.25 f
+  CDM/DDE/U109/ZN (INVX1)                          0.18      8.43 r
+  CDM/DDE/U703/Q (OR2X1)                           0.29      8.72 r
+  CDM/DDE/U208/ZN (INVX0)                          0.13      8.85 f
+  CDM/DDE/U291/ZN (INVX0)                          0.08      8.93 r
+  CDM/DDE/U209/Q (AND2X1)                          0.20      9.13 r
+  CDM/DDE/U279/QN (NAND2X0)                        0.28      9.41 f
+  CDM/DDE/U289/ZN (INVX0)                          0.19      9.61 r
+  CDM/DDE/U247/QN (NAND2X0)                        0.19      9.80 f
+  CDM/DDE/U246/QN (NOR2X0)                         0.19      9.99 r
+  CDM/DDE/U210/QN (NAND3X1)                        0.54     10.53 f
+  MDM_ModEje_mALU/U1538/Z (NBUFFX2)                0.24     10.77 f
+  MDM_ModEje_mALU/U732/ZN (INVX1)                  0.15     10.92 r
+  MDM_ModEje_mALU/U1665/ZN (INVX0)                 0.27     11.19 f
+  MDM_ModEje_mALU/U998/Q (AND2X2)                  0.33     11.52 f
+  MDM_ModEje_mALU/U1007/ZN (INVX1)                 0.18     11.69 r
+  MDM_ModEje_mALU/U181/QN (NAND3X2)                0.43     12.12 f
+  MDM_ModEje_mALU/U1730/QN (NAND2X1)               0.11     12.23 r
+  MDM_ModEje_mALU/U1746/QN (NAND2X1)               0.18     12.41 f
+  MDM_ModEje_mALU/U1783/Q (AND2X1)                 0.24     12.65 f
+  MDM_ModEje_mALU/U1784/ZN (INVX0)                 0.13     12.78 r
+  MDM_ModEje_mALU/U1785/Q (OA22X1)                 0.35     13.13 r
+  MDM_ModEje_mALU/U670/Q (OR2X1)                   0.21     13.34 r
+  MDM_ModEje_mALU/U952/ZN (INVX0)                  0.11     13.45 f
+  MDM_ModEje_mALU/U102/QN (NOR2X2)                 0.10     13.55 r
+  MDM_ModEje_mALU/U94/Q (AND4X1)                   0.37     13.92 r
+  MDM_ModEje_mALU/U95/ZN (INVX0)                   0.11     14.03 f
+  MDM_ModEje_mALU/U255/Q (OR2X2)                   0.23     14.26 f
+  MDM_ModEje_mALU/U1884/QN (NOR2X0)                0.13     14.38 r
+  MDM_ModEje_mALU/U1134/ZN (INVX0)                 0.14     14.53 f
+  MDM_ModEje_mALU/U1135/ZN (INVX0)                 0.09     14.61 r
+  MDM_ModEje_mALU/U1925/Q (AND2X1)                 0.24     14.86 r
+  MDM_ModEje_mALU/U1989/QN (NAND2X1)               0.15     15.00 f
+  MDM_ModEje_mALU/U1990/Q (OA21X1)                 0.32     15.33 f
+  MDM_ModEje_mALU/U1991/ZN (INVX0)                 0.28     15.61 r
+  MDM_ModEje_mALU/U1372/ZN (INVX1)                 0.31     15.92 f
+  MDM_ModEje_mALU/U595/Q (XNOR2X1)                 0.45     16.37 r
+  MDM_ModEje_mALU/U158/QN (OAI22X2)                0.40     16.77 f
+  MDM_ModEje_mALU/U2062/S (FADDX1)                 0.49     17.26 f
+  MDM_ModEje_mALU/U2063/S (FADDX1)                 0.47     17.73 f
+  MDM_ModEje_mALU/U295/ZN (INVX0)                  0.10     17.83 r
+  MDM_ModEje_mALU/U296/ZN (INVX0)                  0.09     17.92 f
+  MDM_ModEje_mALU/U2065/QN (NOR2X0)                0.13     18.05 r
+  MDM_ModEje_mALU/U2066/ZN (INVX0)                 0.14     18.18 f
+  MDM_ModEje_mALU/U265/QN (NAND2X0)                0.16     18.35 r
+  MDM_ModEje_mALU/U2067/QN (NOR2X0)                0.17     18.52 f
+  MDM_ModEje_mALU/U214/Q (AND2X1)                  0.23     18.75 f
+  MDM_ModEje_mALU/U215/QN (NOR2X1)                 0.15     18.90 r
+  MDM_ModEje_mALU/U236/ZN (INVX0)                  0.15     19.06 f
+  MDM_ModEje_mALU/U237/ZN (INVX0)                  0.12     19.18 r
+  MDM_ModEje_mALU/U814/QN (OAI21X1)                0.40     19.58 f
+  MDM_ModEje_mALU/U2522/ZN (INVX0)                 0.22     19.80 r
+  MDM_ModEje_mALU/U109/QN (OAI21X2)                0.44     20.24 f
+  MDM_ModEje_mALU/U2541/Q (XNOR2X1)                0.44     20.68 f
+  MDM_ModEje_mALU/U2542/Q (AND2X1)                 0.25     20.94 f
+  MDM_ModEje_mALU/U520/QN (NOR2X0)                 0.24     21.18 r
+  MDM_ModEje_mALU/U1647/QN (NAND2X0)               0.24     21.41 f
+  MDM_ModEje_mALU/U3092/Q (OR2X1)                  0.27     21.68 f
+  MDM_ModEje_mALU/U3093/ZN (INVX0)                 0.11     21.80 r
+  MDM_ModEje_mALU/U1029/Q (AND2X1)                 0.26     22.06 r
+  MDM_ModEje_mALU/U1545/ZN (INVX0)                 0.10     22.17 f
+  MDM_ModEje_mALU/U335/ZN (INVX0)                  0.10     22.26 r
+  MDM_ModEje_mALU/U334/ZN (INVX0)                  0.11     22.37 f
+  MDM_ModEje_mALU/U3582/Q (OA22X1)                 0.27     22.64 f
+  MDM_ModEje_mALU/U3583/Q (AND2X1)                 0.23     22.87 f
+  U2185/QN (NAND2X0)                               0.12     22.98 r
+  U1669/QN (NAND2X0)                               0.19     23.18 f
+  U3149/QN (AOI21X1)                               0.29     23.47 r
+  U3150/Q (AND2X1)                                 0.26     23.72 r
+  U3312/ZN (INVX0)                                 0.16     23.88 f
+  U2051/ZN (INVX0)                                 0.24     24.13 r
+  U3317/ZN (INVX0)                                 0.41     24.53 f
+  U1316/Q (MUX21X1)                                0.36     24.89 f
+  MDM_ModEje_BanEje_RegSI_Q_reg_10_/D (DFFNARX1)   0.00     24.89 f
+  data arrival time                                         24.89
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModEje_BanEje_RegSI_Q_reg_10_/CLK (DFFNARX1)
+                                                   0.00      0.50 f
+  clock uncertainty                               -0.05      0.45
+  library setup time                              -0.35      0.10
+  data required time                                         0.10
+  ------------------------------------------------------------------------
+  data required time                                         0.10
+  data arrival time                                        -24.89
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -24.79
+
+
+
+  Startpoint: MDM_ModEje_RegInst_Q_reg_41_ (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: MDM_ModEje_BanEje_RegAH_Q_reg_7_ (falling edge-triggered flip-flop clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  MDM_ModEje_RegInst_Q_reg_41_/CLK (DFFARX2)       0.00      0.00 r
+  MDM_ModEje_RegInst_Q_reg_41_/QN (DFFARX2)        0.48      0.48 f
+  U668/ZN (INVX0)                                  0.44      0.93 r
+  U1261/ZN (INVX0)                                 0.33      1.25 f
+  U667/ZN (INVX0)                                  0.17      1.42 r
+  CDM/U126/QN (AOI22X1)                            0.44      1.87 f
+  CDM/U128/ZN (INVX0)                              0.22      2.08 r
+  CDM/U80/ZN (INVX0)                               0.24      2.32 f
+  CDM/U275/ZN (INVX0)                              0.10      2.42 r
+  CDM/U276/ZN (INVX0)                              0.18      2.60 f
+  CDM/U362/QN (NAND2X0)                            0.18      2.78 r
+  CDM/U68/ZN (INVX0)                               0.17      2.95 f
+  CDM/U70/ZN (INVX0)                               0.15      3.10 r
+  CDM/U854/ZN (INVX0)                              0.12      3.22 f
+  CDM/U456/QN (NAND2X0)                            0.16      3.38 r
+  CDM/U21/QN (NAND2X1)                             0.19      3.57 f
+  CDM/U383/QN (NOR4X1)                             0.37      3.94 r
+  CDM/U90/QN (NAND2X1)                             0.30      4.24 f
+  CDM/U445/ZN (INVX0)                              0.15      4.39 r
+  CDM/U87/ZN (INVX1)                               0.12      4.51 f
+  CDM/U440/ZN (INVX0)                              0.16      4.67 r
+  CDM/U153/ZN (INVX0)                              0.16      4.83 f
+  CDM/U49/Q (AND2X2)                               0.25      5.08 f
+  CDM/U50/ZN (INVX0)                               0.09      5.17 r
+  CDM/U649/Q (OR2X1)                               0.22      5.39 r
+  CDM/U666/ZN (INVX0)                              0.12      5.51 f
+  CDM/U242/QN (NAND2X1)                            0.12      5.63 r
+  CDM/U610/Q (AND4X1)                              0.42      6.05 r
+  CDM/U147/Q (AND2X2)                              0.28      6.33 r
+  CDM/U98/QN (NAND2X0)                             0.38      6.71 f
+  CDM/DDE/U52/ZN (INVX0)                           0.36      7.07 r
+  CDM/DDE/U237/ZN (INVX0)                          0.29      7.36 f
+  CDM/DDE/U527/ZN (INVX0)                          0.19      7.55 r
+  CDM/DDE/U304/ZN (INVX0)                          0.17      7.71 f
+  CDM/DDE/U164/ZN (INVX0)                          0.23      7.94 r
+  CDM/DDE/U529/ZN (INVX0)                          0.31      8.25 f
+  CDM/DDE/U109/ZN (INVX1)                          0.18      8.43 r
+  CDM/DDE/U703/Q (OR2X1)                           0.29      8.72 r
+  CDM/DDE/U208/ZN (INVX0)                          0.13      8.85 f
+  CDM/DDE/U291/ZN (INVX0)                          0.08      8.93 r
+  CDM/DDE/U209/Q (AND2X1)                          0.20      9.13 r
+  CDM/DDE/U279/QN (NAND2X0)                        0.28      9.41 f
+  CDM/DDE/U289/ZN (INVX0)                          0.19      9.61 r
+  CDM/DDE/U247/QN (NAND2X0)                        0.19      9.80 f
+  CDM/DDE/U246/QN (NOR2X0)                         0.19      9.99 r
+  CDM/DDE/U210/QN (NAND3X1)                        0.54     10.53 f
+  MDM_ModEje_mALU/U1538/Z (NBUFFX2)                0.24     10.77 f
+  MDM_ModEje_mALU/U732/ZN (INVX1)                  0.15     10.92 r
+  MDM_ModEje_mALU/U1665/ZN (INVX0)                 0.27     11.19 f
+  MDM_ModEje_mALU/U998/Q (AND2X2)                  0.33     11.52 f
+  MDM_ModEje_mALU/U1007/ZN (INVX1)                 0.18     11.69 r
+  MDM_ModEje_mALU/U181/QN (NAND3X2)                0.43     12.12 f
+  MDM_ModEje_mALU/U1730/QN (NAND2X1)               0.11     12.23 r
+  MDM_ModEje_mALU/U1746/QN (NAND2X1)               0.18     12.41 f
+  MDM_ModEje_mALU/U1783/Q (AND2X1)                 0.24     12.65 f
+  MDM_ModEje_mALU/U1784/ZN (INVX0)                 0.13     12.78 r
+  MDM_ModEje_mALU/U1785/Q (OA22X1)                 0.35     13.13 r
+  MDM_ModEje_mALU/U670/Q (OR2X1)                   0.21     13.34 r
+  MDM_ModEje_mALU/U952/ZN (INVX0)                  0.11     13.45 f
+  MDM_ModEje_mALU/U102/QN (NOR2X2)                 0.10     13.55 r
+  MDM_ModEje_mALU/U94/Q (AND4X1)                   0.37     13.92 r
+  MDM_ModEje_mALU/U95/ZN (INVX0)                   0.11     14.03 f
+  MDM_ModEje_mALU/U255/Q (OR2X2)                   0.23     14.26 f
+  MDM_ModEje_mALU/U1884/QN (NOR2X0)                0.13     14.38 r
+  MDM_ModEje_mALU/U1134/ZN (INVX0)                 0.14     14.53 f
+  MDM_ModEje_mALU/U1135/ZN (INVX0)                 0.09     14.61 r
+  MDM_ModEje_mALU/U1925/Q (AND2X1)                 0.24     14.86 r
+  MDM_ModEje_mALU/U1989/QN (NAND2X1)               0.15     15.00 f
+  MDM_ModEje_mALU/U1990/Q (OA21X1)                 0.32     15.33 f
+  MDM_ModEje_mALU/U1991/ZN (INVX0)                 0.28     15.61 r
+  MDM_ModEje_mALU/U1372/ZN (INVX1)                 0.31     15.92 f
+  MDM_ModEje_mALU/U595/Q (XNOR2X1)                 0.45     16.37 r
+  MDM_ModEje_mALU/U158/QN (OAI22X2)                0.40     16.77 f
+  MDM_ModEje_mALU/U2062/S (FADDX1)                 0.49     17.26 f
+  MDM_ModEje_mALU/U2063/S (FADDX1)                 0.47     17.73 f
+  MDM_ModEje_mALU/U295/ZN (INVX0)                  0.10     17.83 r
+  MDM_ModEje_mALU/U296/ZN (INVX0)                  0.09     17.92 f
+  MDM_ModEje_mALU/U2065/QN (NOR2X0)                0.13     18.05 r
+  MDM_ModEje_mALU/U2066/ZN (INVX0)                 0.14     18.18 f
+  MDM_ModEje_mALU/U265/QN (NAND2X0)                0.16     18.35 r
+  MDM_ModEje_mALU/U2067/QN (NOR2X0)                0.17     18.52 f
+  MDM_ModEje_mALU/U214/Q (AND2X1)                  0.23     18.75 f
+  MDM_ModEje_mALU/U215/QN (NOR2X1)                 0.15     18.90 r
+  MDM_ModEje_mALU/U236/ZN (INVX0)                  0.15     19.06 f
+  MDM_ModEje_mALU/U237/ZN (INVX0)                  0.12     19.18 r
+  MDM_ModEje_mALU/U814/QN (OAI21X1)                0.40     19.58 f
+  MDM_ModEje_mALU/U2522/ZN (INVX0)                 0.22     19.80 r
+  MDM_ModEje_mALU/U109/QN (OAI21X2)                0.44     20.24 f
+  MDM_ModEje_mALU/U2541/Q (XNOR2X1)                0.44     20.68 f
+  MDM_ModEje_mALU/U2542/Q (AND2X1)                 0.25     20.94 f
+  MDM_ModEje_mALU/U520/QN (NOR2X0)                 0.24     21.18 r
+  MDM_ModEje_mALU/U1647/QN (NAND2X0)               0.24     21.41 f
+  MDM_ModEje_mALU/U3092/Q (OR2X1)                  0.27     21.68 f
+  MDM_ModEje_mALU/U3093/ZN (INVX0)                 0.11     21.80 r
+  MDM_ModEje_mALU/U1029/Q (AND2X1)                 0.26     22.06 r
+  MDM_ModEje_mALU/U227/QN (NAND2X1)                0.13     22.19 f
+  MDM_ModEje_mALU/U1078/ZN (INVX0)                 0.11     22.30 r
+  MDM_ModEje_mALU/U1079/ZN (INVX0)                 0.16     22.46 f
+  MDM_ModEje_mALU/U13/Q (OR3X2)                    0.30     22.76 f
+  MDM_ModEje_mALU/U3104/Q (MUX21X1)                0.26     23.02 f
+  MDM_ModEje_mALU/U3105/Q (OA21X1)                 0.25     23.27 f
+  U1846/ZN (INVX0)                                 0.10     23.36 r
+  U1337/Q (AND2X1)                                 0.22     23.58 r
+  U1326/Q (AND2X1)                                 0.24     23.82 r
+  U735/Q (AND2X1)                                  0.23     24.05 r
+  U3307/QN (NAND2X0)                               0.17     24.21 f
+  U3310/Q (AND3X1)                                 0.37     24.59 f
+  U58/Q (MUX21X1)                                  0.30     24.89 f
+  MDM_ModEje_BanEje_RegAH_Q_reg_7_/D (DFFNARX1)    0.00     24.89 f
+  data arrival time                                         24.89
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModEje_BanEje_RegAH_Q_reg_7_/CLK (DFFNARX1)
+                                                   0.00      0.50 f
+  clock uncertainty                               -0.05      0.45
+  library setup time                              -0.35      0.10
+  data required time                                         0.10
+  ------------------------------------------------------------------------
+  data required time                                         0.10
+  data arrival time                                        -24.89
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                         -24.78
+
+
+1
