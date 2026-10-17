@@ -1,0 +1,27 @@
+****************************************
+Report : Supply Net
+Design : Micro8088
+Corner : default
+Version: R-2020.09-SP6
+Date   : Wed Dec  3 19:46:25 2025
+****************************************
+------------------------------------------------------
+Supply Net              :  VDD
+Current Scope           :  / (top scope)
+Operating Voltage       :  -- Max --    -- Min --
+                           0.70         0.70
+Supply States           :  
+Available Power Domains :  VCC (*)
+Supply Ports            :  VDD
+Resolve Type            :  unresolved
+------------------------------------------------------
+Supply Net              :  VSS
+Current Scope           :  / (top scope)
+Operating Voltage       :  -- Max --    -- Min --
+                           --           --
+Supply States           :  
+Available Power Domains :  VCC (*)
+Supply Ports            :  VSS
+Resolve Type            :  unresolved
+------------------------------------------------------
+1

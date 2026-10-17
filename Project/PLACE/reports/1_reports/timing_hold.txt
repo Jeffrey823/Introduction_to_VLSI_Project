@@ -1,0 +1,673 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 20
+        -report_by design
+Design : Micro8088
+Version: R-2020.09-SP6
+Date   : Wed Dec  3 19:46:25 2025
+****************************************
+
+  Startpoint: RST (input port clocked by CLK)
+  Endpoint: CDM/MDE_FCI_PRE_reg_0_ (removal check against rising-edge clock clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  input external delay                             0.00      0.00 f
+  RST (in)                                         0.00      0.00 f
+  CDM/U717/ZN (INVX0)                              0.16      0.16 r
+  CDM/MDE_FCI_PRE_reg_0_/RSTB (DFFARX1)            0.00      0.16 r
+  data arrival time                                          0.16
+
+  clock CLK (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  CDM/MDE_FCI_PRE_reg_0_/CLK (DFFARX1)             0.00      0.00 r
+  clock uncertainty                                0.05      0.05
+  library hold time                                0.39      0.44
+  data required time                                         0.44
+  ------------------------------------------------------------------------
+  data required time                                         0.44
+  data arrival time                                         -0.16
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.28
+
+
+
+  Startpoint: RST (input port clocked by CLK)
+  Endpoint: MDM_ModEje_mALU/UnidPro_Divisor_RegDeC_Q1_Q_reg (removal check against falling-edge clock clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            1.00      1.00
+  clock network delay (ideal)                      0.00      1.00
+  input external delay                             0.00      1.00 f
+  RST (in)                                         0.00      1.00 f
+  MDM_ModEje_mALU/U1574/ZN (INVX1)                 0.16      1.16 r
+  MDM_ModEje_mALU/UnidPro_Divisor_RegDeC_Q1_Q_reg/RSTB (DFFNARX1)
+                                                   0.00      1.16 r
+  data arrival time                                          1.16
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModEje_mALU/UnidPro_Divisor_RegDeC_Q1_Q_reg/CLK (DFFNARX1)
+                                                   0.00      0.50 f
+  clock uncertainty                                0.05      0.55
+  library hold time                                0.76      1.31
+  data required time                                         1.31
+  ------------------------------------------------------------------------
+  data required time                                         1.31
+  data arrival time                                         -1.16
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.15
+
+
+
+  Startpoint: RST (input port clocked by CLK)
+  Endpoint: MDM_ModEje_mALU/UnidPro_Divisor_MaqEstDivi_PRE_reg_0_ (removal check against falling-edge clock clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            1.00      1.00
+  clock network delay (ideal)                      0.00      1.00
+  input external delay                             0.00      1.00 f
+  RST (in)                                         0.00      1.00 f
+  MDM_ModEje_mALU/U1574/ZN (INVX1)                 0.16      1.16 r
+  MDM_ModEje_mALU/UnidPro_Divisor_MaqEstDivi_PRE_reg_0_/RSTB (DFFNARX1)
+                                                   0.00      1.16 r
+  data arrival time                                          1.16
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModEje_mALU/UnidPro_Divisor_MaqEstDivi_PRE_reg_0_/CLK (DFFNARX1)
+                                                   0.00      0.50 f
+  clock uncertainty                                0.05      0.55
+  library hold time                                0.76      1.31
+  data required time                                         1.31
+  ------------------------------------------------------------------------
+  data required time                                         1.31
+  data arrival time                                         -1.16
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.15
+
+
+
+  Startpoint: RST (input port clocked by CLK)
+  Endpoint: MDM_ModInt_DIO_RDatos/r1_Q_reg_0_ (removal check against falling-edge clock clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            1.00      1.00
+  clock network delay (ideal)                      0.00      1.00
+  input external delay                             0.00      1.00 f
+  RST (in)                                         0.00      1.00 f
+  MDM_ModInt_DIO_RDatos/U25/ZN (INVX2)             0.14      1.14 r
+  MDM_ModInt_DIO_RDatos/r1_Q_reg_0_/RSTB (DFFNARX1)
+                                                   0.00      1.14 r
+  data arrival time                                          1.14
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModInt_DIO_RDatos/r1_Q_reg_0_/CLK (DFFNARX1)
+                                                   0.00      0.50 f
+  clock uncertainty                                0.05      0.55
+  library hold time                                0.74      1.29
+  data required time                                         1.29
+  ------------------------------------------------------------------------
+  data required time                                         1.29
+  data arrival time                                         -1.14
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.15
+
+
+
+  Startpoint: RST (input port clocked by CLK)
+  Endpoint: MDM_ModInt_DIO_RDatos/r1_Q_reg_5_ (removal check against falling-edge clock clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            1.00      1.00
+  clock network delay (ideal)                      0.00      1.00
+  input external delay                             0.00      1.00 f
+  RST (in)                                         0.00      1.00 f
+  MDM_ModInt_DIO_RDatos/U25/ZN (INVX2)             0.14      1.14 r
+  MDM_ModInt_DIO_RDatos/r1_Q_reg_5_/RSTB (DFFNARX1)
+                                                   0.00      1.14 r
+  data arrival time                                          1.14
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModInt_DIO_RDatos/r1_Q_reg_5_/CLK (DFFNARX1)
+                                                   0.00      0.50 f
+  clock uncertainty                                0.05      0.55
+  library hold time                                0.74      1.29
+  data required time                                         1.29
+  ------------------------------------------------------------------------
+  data required time                                         1.29
+  data arrival time                                         -1.14
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.15
+
+
+
+  Startpoint: RST (input port clocked by CLK)
+  Endpoint: MDM_ModInt_DIO_RDatos/r3_Q_reg_0_ (removal check against falling-edge clock clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            1.00      1.00
+  clock network delay (ideal)                      0.00      1.00
+  input external delay                             0.00      1.00 f
+  RST (in)                                         0.00      1.00 f
+  MDM_ModInt_DIO_RDatos/U25/ZN (INVX2)             0.14      1.14 r
+  MDM_ModInt_DIO_RDatos/r3_Q_reg_0_/RSTB (DFFNARX1)
+                                                   0.00      1.14 r
+  data arrival time                                          1.14
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModInt_DIO_RDatos/r3_Q_reg_0_/CLK (DFFNARX1)
+                                                   0.00      0.50 f
+  clock uncertainty                                0.05      0.55
+  library hold time                                0.74      1.29
+  data required time                                         1.29
+  ------------------------------------------------------------------------
+  data required time                                         1.29
+  data arrival time                                         -1.14
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.14
+
+
+
+  Startpoint: RST (input port clocked by CLK)
+  Endpoint: MDM_ModInt_DIO_RDatos/r2_Q_reg_0_ (removal check against falling-edge clock clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            1.00      1.00
+  clock network delay (ideal)                      0.00      1.00
+  input external delay                             0.00      1.00 f
+  RST (in)                                         0.00      1.00 f
+  MDM_ModInt_DIO_RDatos/U25/ZN (INVX2)             0.14      1.14 r
+  MDM_ModInt_DIO_RDatos/r2_Q_reg_0_/RSTB (DFFNARX1)
+                                                   0.00      1.14 r
+  data arrival time                                          1.14
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModInt_DIO_RDatos/r2_Q_reg_0_/CLK (DFFNARX1)
+                                                   0.00      0.50 f
+  clock uncertainty                                0.05      0.55
+  library hold time                                0.74      1.29
+  data required time                                         1.29
+  ------------------------------------------------------------------------
+  data required time                                         1.29
+  data arrival time                                         -1.14
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.14
+
+
+
+  Startpoint: RST (input port clocked by CLK)
+  Endpoint: MDM_ModEje_RegNMI_Q_reg (removal check against falling-edge clock clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            1.00      1.00
+  clock network delay (ideal)                      0.00      1.00
+  input external delay                             0.00      1.00 f
+  RST (in)                                         0.00      1.00 f
+  U2899/QN (NOR2X0)                                0.14      1.14 r
+  MDM_ModEje_RegNMI_Q_reg/RSTB (DFFNARX1)          0.00      1.14 r
+  data arrival time                                          1.14
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModEje_RegNMI_Q_reg/CLK (DFFNARX1)           0.00      0.50 f
+  clock uncertainty                                0.05      0.55
+  library hold time                                0.74      1.29
+  data required time                                         1.29
+  ------------------------------------------------------------------------
+  data required time                                         1.29
+  data arrival time                                         -1.14
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.14
+
+
+
+  Startpoint: RST (input port clocked by CLK)
+  Endpoint: MDM_ModInt_DIO_RDatos/r2_Q_reg_5_ (removal check against falling-edge clock clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            1.00      1.00
+  clock network delay (ideal)                      0.00      1.00
+  input external delay                             0.00      1.00 f
+  RST (in)                                         0.00      1.00 f
+  MDM_ModInt_DIO_RDatos/U25/ZN (INVX2)             0.14      1.14 r
+  MDM_ModInt_DIO_RDatos/r2_Q_reg_5_/RSTB (DFFNARX1)
+                                                   0.00      1.14 r
+  data arrival time                                          1.14
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModInt_DIO_RDatos/r2_Q_reg_5_/CLK (DFFNARX1)
+                                                   0.00      0.50 f
+  clock uncertainty                                0.05      0.55
+  library hold time                                0.74      1.29
+  data required time                                         1.29
+  ------------------------------------------------------------------------
+  data required time                                         1.29
+  data arrival time                                         -1.14
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.14
+
+
+
+  Startpoint: RST (input port clocked by CLK)
+  Endpoint: MDM_ModInt_DIO_RDatos/r4_Q_reg_5_ (removal check against falling-edge clock clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            1.00      1.00
+  clock network delay (ideal)                      0.00      1.00
+  input external delay                             0.00      1.00 f
+  RST (in)                                         0.00      1.00 f
+  MDM_ModInt_DIO_RDatos/U25/ZN (INVX2)             0.14      1.14 r
+  MDM_ModInt_DIO_RDatos/r4_Q_reg_5_/RSTB (DFFNARX1)
+                                                   0.00      1.14 r
+  data arrival time                                          1.14
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModInt_DIO_RDatos/r4_Q_reg_5_/CLK (DFFNARX1)
+                                                   0.00      0.50 f
+  clock uncertainty                                0.05      0.55
+  library hold time                                0.74      1.29
+  data required time                                         1.29
+  ------------------------------------------------------------------------
+  data required time                                         1.29
+  data arrival time                                         -1.14
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.14
+
+
+
+  Startpoint: RST (input port clocked by CLK)
+  Endpoint: MDM_ModInt_DIO_RDatos/r5_Q_reg_5_ (removal check against falling-edge clock clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            1.00      1.00
+  clock network delay (ideal)                      0.00      1.00
+  input external delay                             0.00      1.00 f
+  RST (in)                                         0.00      1.00 f
+  MDM_ModInt_DIO_RDatos/U25/ZN (INVX2)             0.14      1.14 r
+  MDM_ModInt_DIO_RDatos/r5_Q_reg_5_/RSTB (DFFNARX1)
+                                                   0.00      1.14 r
+  data arrival time                                          1.14
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModInt_DIO_RDatos/r5_Q_reg_5_/CLK (DFFNARX1)
+                                                   0.00      0.50 f
+  clock uncertainty                                0.05      0.55
+  library hold time                                0.74      1.29
+  data required time                                         1.29
+  ------------------------------------------------------------------------
+  data required time                                         1.29
+  data arrival time                                         -1.14
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.14
+
+
+
+  Startpoint: RST (input port clocked by CLK)
+  Endpoint: MDM_ModInt_NextIns/r1_Q_reg_1_ (removal check against falling-edge clock clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            1.00      1.00
+  clock network delay (ideal)                      0.00      1.00
+  input external delay                             0.00      1.00 f
+  RST (in)                                         0.00      1.00 f
+  MDM_ModInt_NextIns/U27/ZN (INVX2)                0.15      1.15 r
+  MDM_ModInt_NextIns/r1_Q_reg_1_/RSTB (DFFNARX1)   0.00      1.15 r
+  data arrival time                                          1.15
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModInt_NextIns/r1_Q_reg_1_/CLK (DFFNARX1)    0.00      0.50 f
+  clock uncertainty                                0.05      0.55
+  library hold time                                0.74      1.29
+  data required time                                         1.29
+  ------------------------------------------------------------------------
+  data required time                                         1.29
+  data arrival time                                         -1.15
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.14
+
+
+
+  Startpoint: RST (input port clocked by CLK)
+  Endpoint: MDM_ModInt_NextIns/r1_Q_reg_0_ (removal check against falling-edge clock clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            1.00      1.00
+  clock network delay (ideal)                      0.00      1.00
+  input external delay                             0.00      1.00 f
+  RST (in)                                         0.00      1.00 f
+  MDM_ModInt_NextIns/U27/ZN (INVX2)                0.15      1.15 r
+  MDM_ModInt_NextIns/r1_Q_reg_0_/RSTB (DFFNARX1)   0.00      1.15 r
+  data arrival time                                          1.15
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModInt_NextIns/r1_Q_reg_0_/CLK (DFFNARX1)    0.00      0.50 f
+  clock uncertainty                                0.05      0.55
+  library hold time                                0.74      1.29
+  data required time                                         1.29
+  ------------------------------------------------------------------------
+  data required time                                         1.29
+  data arrival time                                         -1.15
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.14
+
+
+
+  Startpoint: RST (input port clocked by CLK)
+  Endpoint: MDM_ModInt_NextIns/r1_Q_reg_2_ (removal check against falling-edge clock clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            1.00      1.00
+  clock network delay (ideal)                      0.00      1.00
+  input external delay                             0.00      1.00 f
+  RST (in)                                         0.00      1.00 f
+  MDM_ModInt_NextIns/U27/ZN (INVX2)                0.15      1.15 r
+  MDM_ModInt_NextIns/r1_Q_reg_2_/RSTB (DFFNARX1)   0.00      1.15 r
+  data arrival time                                          1.15
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModInt_NextIns/r1_Q_reg_2_/CLK (DFFNARX1)    0.00      0.50 f
+  clock uncertainty                                0.05      0.55
+  library hold time                                0.74      1.29
+  data required time                                         1.29
+  ------------------------------------------------------------------------
+  data required time                                         1.29
+  data arrival time                                         -1.15
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.14
+
+
+
+  Startpoint: RST (input port clocked by CLK)
+  Endpoint: MDM_ModInt_NextIns/r5_Q_reg_3_ (removal check against falling-edge clock clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            1.00      1.00
+  clock network delay (ideal)                      0.00      1.00
+  input external delay                             0.00      1.00 f
+  RST (in)                                         0.00      1.00 f
+  MDM_ModInt_NextIns/U27/ZN (INVX2)                0.15      1.15 r
+  MDM_ModInt_NextIns/r5_Q_reg_3_/RSTB (DFFNARX1)   0.00      1.15 r
+  data arrival time                                          1.15
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModInt_NextIns/r5_Q_reg_3_/CLK (DFFNARX1)    0.00      0.50 f
+  clock uncertainty                                0.05      0.55
+  library hold time                                0.74      1.29
+  data required time                                         1.29
+  ------------------------------------------------------------------------
+  data required time                                         1.29
+  data arrival time                                         -1.15
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.14
+
+
+
+  Startpoint: RST (input port clocked by CLK)
+  Endpoint: MDM_ModInt_NextIns/r5_Q_reg_2_ (removal check against falling-edge clock clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            1.00      1.00
+  clock network delay (ideal)                      0.00      1.00
+  input external delay                             0.00      1.00 f
+  RST (in)                                         0.00      1.00 f
+  MDM_ModInt_NextIns/U27/ZN (INVX2)                0.15      1.15 r
+  MDM_ModInt_NextIns/r5_Q_reg_2_/RSTB (DFFNARX1)   0.00      1.15 r
+  data arrival time                                          1.15
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModInt_NextIns/r5_Q_reg_2_/CLK (DFFNARX1)    0.00      0.50 f
+  clock uncertainty                                0.05      0.55
+  library hold time                                0.74      1.29
+  data required time                                         1.29
+  ------------------------------------------------------------------------
+  data required time                                         1.29
+  data arrival time                                         -1.15
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.14
+
+
+
+  Startpoint: RST (input port clocked by CLK)
+  Endpoint: MDM_ModInt_NextIns/r5_Q_reg_1_ (removal check against falling-edge clock clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            1.00      1.00
+  clock network delay (ideal)                      0.00      1.00
+  input external delay                             0.00      1.00 f
+  RST (in)                                         0.00      1.00 f
+  MDM_ModInt_NextIns/U27/ZN (INVX2)                0.15      1.15 r
+  MDM_ModInt_NextIns/r5_Q_reg_1_/RSTB (DFFNARX1)   0.00      1.15 r
+  data arrival time                                          1.15
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModInt_NextIns/r5_Q_reg_1_/CLK (DFFNARX1)    0.00      0.50 f
+  clock uncertainty                                0.05      0.55
+  library hold time                                0.74      1.29
+  data required time                                         1.29
+  ------------------------------------------------------------------------
+  data required time                                         1.29
+  data arrival time                                         -1.15
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.14
+
+
+
+  Startpoint: RST (input port clocked by CLK)
+  Endpoint: MDM_ModInt_NextIns/r5_Q_reg_0_ (removal check against falling-edge clock clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            1.00      1.00
+  clock network delay (ideal)                      0.00      1.00
+  input external delay                             0.00      1.00 f
+  RST (in)                                         0.00      1.00 f
+  MDM_ModInt_NextIns/U27/ZN (INVX2)                0.15      1.15 r
+  MDM_ModInt_NextIns/r5_Q_reg_0_/RSTB (DFFNARX1)   0.00      1.15 r
+  data arrival time                                          1.15
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModInt_NextIns/r5_Q_reg_0_/CLK (DFFNARX1)    0.00      0.50 f
+  clock uncertainty                                0.05      0.55
+  library hold time                                0.74      1.29
+  data required time                                         1.29
+  ------------------------------------------------------------------------
+  data required time                                         1.29
+  data arrival time                                         -1.15
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.14
+
+
+
+  Startpoint: RST (input port clocked by CLK)
+  Endpoint: MDM_ModEje_BanEje_RegAH_Q_reg_3_ (removal check against falling-edge clock clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            1.00      1.00
+  clock network delay (ideal)                      0.00      1.00
+  input external delay                             0.00      1.00 f
+  RST (in)                                         0.00      1.00 f
+  U2532/ZN (INVX2)                                 0.21      1.21 r
+  MDM_ModEje_BanEje_RegAH_Q_reg_3_/RSTB (DFFNARX2)
+                                                   0.00      1.21 r
+  data arrival time                                          1.21
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModEje_BanEje_RegAH_Q_reg_3_/CLK (DFFNARX2)
+                                                   0.00      0.50 f
+  clock uncertainty                                0.05      0.55
+  library hold time                                0.78      1.33
+  data required time                                         1.33
+  ------------------------------------------------------------------------
+  data required time                                         1.33
+  data arrival time                                         -1.21
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.12
+
+
+
+  Startpoint: RST (input port clocked by CLK)
+  Endpoint: MDM_ModEje_BanEje_RegCH_Q_reg_3_ (removal check against falling-edge clock clocked by CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: **in2reg_default**
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock CLK (rise edge)                            1.00      1.00
+  clock network delay (ideal)                      0.00      1.00
+  input external delay                             0.00      1.00 f
+  RST (in)                                         0.00      1.00 f
+  U2532/ZN (INVX2)                                 0.21      1.21 r
+  MDM_ModEje_BanEje_RegCH_Q_reg_3_/RSTB (DFFNARX2)
+                                                   0.00      1.21 r
+  data arrival time                                          1.21
+
+  clock CLK (fall edge)                            0.50      0.50
+  clock network delay (ideal)                      0.00      0.50
+  MDM_ModEje_BanEje_RegCH_Q_reg_3_/CLK (DFFNARX2)
+                                                   0.00      0.50 f
+  clock uncertainty                                0.05      0.55
+  library hold time                                0.78      1.33
+  data required time                                         1.33
+  ------------------------------------------------------------------------
+  data required time                                         1.33
+  data arrival time                                         -1.21
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.12
+
+
+1

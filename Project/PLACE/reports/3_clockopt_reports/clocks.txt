@@ -1,0 +1,19 @@
+****************************************
+Report : clock
+Design : Micro8088
+Mode   : default
+Version: R-2020.09-SP6
+Date   : Wed Dec  3 21:02:41 2025
+****************************************
+
+
+Attributes:
+    p - Propagated clock
+    G - Generated  clock
+    U - Unexpanded generated clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+CLK              1.00   {0 0.5}             p         {CLK}
+
+1
