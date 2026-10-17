@@ -1,0 +1,83 @@
+ 
+****************************************
+Report : qor
+Design : Micro8088
+Version: R-2020.09-SP5-1
+Date   : Wed Dec  3 11:31:35 2025
+****************************************
+
+
+  Timing Path Group 'CLK'
+  -----------------------------------
+  Levels of Logic:              41.00
+  Critical Path Length:         85.56
+  Critical Path Slack:         -85.38
+  Critical Path Clk Period:      1.00
+  Total Negative Slack:     -44957.75
+  No. of Violating Paths:      643.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          6
+  Hierarchical Port Count:        397
+  Leaf Cell Count:              10479
+  Buf/Inv Cell Count:            3290
+  Buf Cell Count:                 640
+  Inv Cell Count:                2650
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:      9869
+  Sequential Cell Count:          610
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:    76451.328822
+  Noncombinational Area: 20212.531597
+  Buf/Inv Area:          18467.021232
+  Total Buffer Area:          3538.94
+  Total Inverter Area:       14928.08
+  Macro/Black Box Area:      0.000000
+  Net Area:               6007.995700
+  -----------------------------------
+  Cell Area:             96663.860419
+  Design Area:          102671.856119
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:         11025
+  Nets With Violations:           315
+  Max Trans Violations:           315
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: redhatalajuela
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    7.07
+  Logic Optimization:                110.73
+  Mapping Optimization:              125.56
+  -----------------------------------------
+  Overall Compile Time:              356.54
+  Overall Compile Wall Clock Time:   362.02
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 85.38  TNS: 44957.75  Number of Violating Paths: 643
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1
