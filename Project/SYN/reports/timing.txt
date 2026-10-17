@@ -1,0 +1,94 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Micro8088
+Version: R-2020.09-SP5-1
+Date   : Wed Dec  3 11:31:35 2025
+****************************************
+
+Operating Conditions: WORST   Library: saed90nm_max
+Wire Load Model Mode: enclosed
+
+  Startpoint: CDM/RegopMI_Q_reg
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: MDM_ModInt_BanInt_RegCS_Q_reg_5_
+            (falling edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Micro8088          140000                saed90nm_max
+  ControlMicro       35000                 saed90nm_max
+  DecoDeEjecucion    16000                 saed90nm_max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  CDM/RegopMI_Q_reg/CLK (DFFARX2)                         0.00       0.00 r
+  CDM/RegopMI_Q_reg/Q (DFFARX2)                           0.84       0.84 r
+  CDM/U835/Z (NBUFFX2)                                    1.17       2.01 r
+  CDM/U123/Q (AO22X2)                                     6.70       8.71 r
+  CDM/U36/QN (NOR2X1)                                     3.27      11.98 f
+  CDM/U34/Q (AND2X1)                                      0.36      12.34 f
+  CDM/U624/ZN (INVX0)                                     0.46      12.80 r
+  CDM/U31/ZN (INVX0)                                      0.23      13.03 f
+  CDM/U232/Q (AND2X1)                                     0.22      13.25 f
+  CDM/U231/QN (NOR2X0)                                    0.13      13.38 r
+  CDM/U310/QN (NAND3X1)                                   0.36      13.74 f
+  CDM/U185/QN (NAND2X1)                                   0.27      14.01 r
+  CDM/U369/ZN (INVX0)                                     0.12      14.13 f
+  CDM/U48/QN (NOR2X1)                                     0.14      14.26 r
+  CDM/U9/QN (NAND2X1)                                     0.15      14.41 f
+  CDM/U406/ZN (INVX0)                                     0.12      14.54 r
+  CDM/U404/ZN (INVX0)                                     0.29      14.83 f
+  CDM/U183/Z (NBUFFX2)                                    0.80      15.63 f
+  CDM/U739/Z (NBUFFX2)                                    1.26      16.89 f
+  CDM/U733/QN (NOR2X0)                                    0.96      17.85 r
+  CDM/U229/ZN (INVX0)                                     0.28      18.14 f
+  CDM/U719/ZN (INVX0)                                     0.25      18.39 r
+  CDM/U734/QN (NAND2X0)                                   0.27      18.66 f
+  CDM/U77/QN (NAND4X1)                                    0.39      19.05 r
+  CDM/U76/QN (NOR2X2)                                     0.86      19.91 f
+  CDM/U98/QN (NAND2X0)                                    0.27      20.18 r
+  CDM/DDE/Tipo[0] (DecoDeEjecucion)                       0.00      20.18 r
+  CDM/DDE/U255/ZN (INVX0)                                 0.29      20.48 f
+  CDM/DDE/U726/Z (NBUFFX2)                                0.27      20.74 f
+  CDM/DDE/U86/ZN (INVX1)                                  2.14      22.88 r
+  CDM/DDE/U76/QN (NOR2X2)                                 0.77      23.65 f
+  CDM/DDE/U75/Q (AND2X2)                                  1.49      25.15 f
+  CDM/DDE/U37/ZN (INVX1)                                  0.29      25.44 r
+  CDM/DDE/U39/Q (OR2X2)                                   1.56      27.00 r
+  CDM/DDE/U430/QN (NAND4X0)                               0.16      27.15 f
+  CDM/DDE/U159/Q (OR4X2)                                  0.53      27.68 f
+  CDM/DDE/WBDI (DecoDeEjecucion)                          0.00      27.68 f
+  CDM/WBDI (ControlMicro)                                 0.00      27.68 f
+  U494/ZN (INVX0)                                         2.13      29.81 r
+  U912/ZN (INVX0)                                         1.80      31.62 f
+  U1530/Z (NBUFFX2)                                       1.02      32.64 f
+  U1605/Z (NBUFFX2)                                       1.01      33.65 f
+  U1309/QN (NAND2X1)                                      2.54      36.19 r
+  U3389/Z (NBUFFX2)                                       4.27      40.46 r
+  U1651/Z (NBUFFX2)                                      28.66      69.12 r
+  U1328/Q (MUX21X1)                                      16.17      85.29 f
+  MDM_ModInt_BanInt_RegCS_Q_reg_5_/D (DFFNASX1)           0.27      85.56 f
+  data arrival time                                                 85.56
+
+  clock CLK (fall edge)                                   0.50       0.50
+  clock network delay (ideal)                             0.00       0.50
+  clock uncertainty                                      -0.05       0.45
+  MDM_ModInt_BanInt_RegCS_Q_reg_5_/CLK (DFFNASX1)         0.00       0.45 f
+  library setup time                                     -0.27       0.18
+  data required time                                                 0.18
+  --------------------------------------------------------------------------
+  data required time                                                 0.18
+  data arrival time                                                -85.56
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -85.38
+
+
+1

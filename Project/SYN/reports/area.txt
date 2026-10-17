@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : Micro8088
+Version: R-2020.09-SP5-1
+Date   : Wed Dec  3 11:31:35 2025
+****************************************
+
+Library(s) Used:
+
+    saed90nm_max (File: /mnt/vol_NFS_alajuela/VLSI/Estudiantes/jsalas/Tarea10/SYN/libs/saed90nm_max.db)
+
+Number of ports:                          436
+Number of nets:                         11411
+Number of cells:                        10487
+Number of combinational cells:           9838
+Number of sequential cells:               641
+Number of macros/black boxes:               0
+Number of buf/inv:                       3290
+Number of references:                      67
+
+Combinational area:              76451.328822
+Buf/Inv area:                    18467.021232
+Noncombinational area:           20212.531597
+Macro/Black Box area:                0.000000
+Net Interconnect area:            6007.995700
+
+Total cell area:                 96663.860419
+Total area:                     102671.856119
+1
